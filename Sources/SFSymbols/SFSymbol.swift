@@ -40,10 +40,10 @@ internal extension String {
     
     // MARK: - Modifiers
     
-    var fill: String { self + "fill" }
-    var circle: String { self + "circle" }
-    var square: String { self + "square" }
-    var slash: String { self + "slash" }
-    var app: String { self + "app" }
-    var rectangle: String { self + "rectangle" }
+    var fill: String { self + ".fill" }
+    var circle: String { self + ".circle" }
+    var square: String { self + ".square" }
+    var slash: String { self + ".slash" }
+    var app: String { self + ".app" }
+    var rectangle: String { self + ".rectangle" }
 }
