@@ -27,39 +27,40 @@ extension SFSymbol {
     
     open class Xmark: SFSymbol {
         
-        open var xmarkBin: SFSymbol { ext(.start + ".bin") }
-        open var xmarkBinFill: SFSymbol { ext(.start + ".bin".fill) }
-        open var xmarkBinCircle: SFSymbol { ext(.start + ".bin".circle) }
-        open var xmarkBinCircleFill: SFSymbol { ext(.start + ".bin".circle.fill) }
+        open var fill: SFSymbol { ext(.start + ".shield".fill) }
         
-        open var xmarkSeal: SFSymbol { ext(.start + ".seal") }
-        open var xmarkSealFill: SFSymbol { ext(.start + ".seal".fill) }
+        open var bin: SFSymbol { ext(.start + ".bin") }
+        open var binFill: SFSymbol { ext(.start + ".bin".fill) }
+        open var binCircle: SFSymbol { ext(.start + ".bin".circle) }
+        open var binCircleFill: SFSymbol { ext(.start + ".bin".circle.fill) }
         
-        open var xmarkIcloud: SFSymbol { ext(.start + ".icloud") }
-        open var xmarkIcloudFill: SFSymbol { ext(.start + ".icloud".fill) }
+        open var seal: SFSymbol { ext(.start + ".seal") }
+        open var sealFill: SFSymbol { ext(.start + ".seal".fill) }
         
-        open var xmarkApp: SFSymbol { ext(.start.app) }
-        open var xmarkAppFill: SFSymbol { ext(.start.app.fill) }
+        open var icloud: SFSymbol { ext(.start + ".icloud") }
+        open var icloudFill: SFSymbol { ext(.start + ".icloud".fill) }
         
-        open var xmarkRectangle: SFSymbol { ext(.start.rectangle) }
-        open var xmarkRectangleFill: SFSymbol { ext(.start.rectangle.fill) }
-        open var xmarkRectanglePortair: SFSymbol { ext(.start.rectangle + ".portair") }
-        open var xmarkRectanglePortairFill: SFSymbol { ext(.start.rectangle + ".portair".fill) }
+        open var app: SFSymbol { ext(.start.app) }
+        open var appFill: SFSymbol { ext(.start.app.fill) }
         
-        open var xmarkDiamond: SFSymbol { ext(.start + ".diamond") }
-        open var xmarkDiamondFill: SFSymbol { ext(.start + ".diamond".fill) }
+        open var rectangle: SFSymbol { ext(.start.rectangle) }
+        open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+        open var rectanglePortair: SFSymbol { ext(.start.rectangle + ".portair") }
+        open var rectanglePortairFill: SFSymbol { ext(.start.rectangle + ".portair".fill) }
         
-        open var xmarkShield: SFSymbol { ext(.start + ".shield") }
-        open var xmarkFill: SFSymbol { ext(.start + ".shield".fill) }
+        open var diamond: SFSymbol { ext(.start + ".diamond") }
+        open var diamondFill: SFSymbol { ext(.start + ".diamond".fill) }
         
-        open var xmarkOctagon: SFSymbol { ext(.start + ".octagon") }
-        open var xmarkOctagonFill: SFSymbol { ext(.start + ".octagon".fill) }
+        open var shield: SFSymbol { ext(.start + ".shield") }
         
-        open var xmarkCircle: SFSymbol { ext(.start.circle) }
-        open var xmarkCircleFill: SFSymbol { ext(.start.circle.fill) }
+        open var octagon: SFSymbol { ext(.start + ".octagon") }
+        open var octagonFill: SFSymbol { ext(.start + ".octagon".fill) }
         
-        open var xmarkSquare: SFSymbol { ext(.start.square) }
-        open var xmarkSquareFill: SFSymbol { ext(.start.square.fill) }
+        open var circle: SFSymbol { ext(.start.circle) }
+        open var circleFill: SFSymbol { ext(.start.circle.fill) }
+        
+        open var square: SFSymbol { ext(.start.square) }
+        open var squareFill: SFSymbol { ext(.start.square.fill) }
         
     }
 }

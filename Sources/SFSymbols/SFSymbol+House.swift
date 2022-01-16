@@ -27,10 +27,10 @@ extension SFSymbol {
     
     open class House: SFSymbol {
         
-        open var houseFill: SFSymbol { ext(.start.fill) }
+        open var fill: SFSymbol { ext(.start.fill) }
         
-        open var houseCircle: SFSymbol { ext(.start.circle) }
-        open var houseCircleFill: SFSymbol { ext(.start.circle.fill) }
+        open var circle: SFSymbol { ext(.start.circle) }
+        open var circleFill: SFSymbol { ext(.start.circle.fill) }
         
     }
 }
