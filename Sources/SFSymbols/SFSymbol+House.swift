@@ -23,22 +23,14 @@ import UIKit
 
 extension SFSymbol {
     
-    public static var pencil: Pencil { .init(name: "pencil") }
+    public static var house: House { .init(name: "house") }
     
-    open class Pencil: SFSymbol {
+    open class House: SFSymbol {
         
-        open var pencilCircle: SFSymbol { ext(.start.circle) }
-        open var pencilCircleFill: SFSymbol { ext(.start.circle.fill) }
+        open var houseFill: SFSymbol { ext(.start.fill) }
         
-        open var pencilSlash: SFSymbol { ext(.start + ".slash") }
-        
-        open var pencilAndOutline: SFSymbol { ext(.start + ".and.outline") }
-        
-        open var pencilTip: SFSymbol { ext(.start + ".tip") }
-        open var pencilTipCropCircle: SFSymbol { ext(.start + ".tip.crop".circle) }
-        open var pencilTipCropCircleBadgePlus: SFSymbol { ext(.start + ".tip.crop".circle + ".badge.plus") }
-        open var pencilTipCropCircleBadgeMinus: SFSymbol { ext(.start + ".tip.crop".circle + ".badge.minus") }
-        open var pencilTipCropCircleBadgeArrowForward: SFSymbol { ext(.start + ".tip.crop".circle + ".badge.arrow.forward") }
+        open var houseCircle: SFSymbol { ext(.start.circle) }
+        open var houseCircleFill: SFSymbol { ext(.start.circle.fill) }
         
     }
 }
