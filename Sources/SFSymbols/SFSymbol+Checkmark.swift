@@ -27,31 +27,31 @@ extension SFSymbol {
     
     open class Checkmark: SFSymbol {
         
-        open var checkmarkSeal: SFSymbol { ext(.start + ".seal") }
-        open var checkmarkSealFill: SFSymbol { ext(.start + ".seal".fill) }
+        open var seal: SFSymbol { ext(.start + ".seal") }
+        open var sealFill: SFSymbol { ext(.start + ".seal".fill) }
         
-        open var checkmarkIcloud: SFSymbol { ext(.start + ".icloud") }
-        open var checkmarkIcloudFill: SFSymbol { ext(.start + ".icloud".fill) }
+        open var icloud: SFSymbol { ext(.start + ".icloud") }
+        open var icloudFill: SFSymbol { ext(.start + ".icloud".fill) }
         
-        open var checkmarkBubble: SFSymbol { ext(.start + ".bubble") }
-        open var checkmarkBubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
+        open var bubble: SFSymbol { ext(.start + ".bubble") }
+        open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
         
-        open var checkmarkCircle: SFSymbol { ext(.start.circle) }
-        open var checkmarkCircleFill: SFSymbol { ext(.start.circle.fill) }
-        open var checkmarkCircleTrianglebadgeExclamationmark: SFSymbol { ext(.start.circle + ".trianglebadge" + ".exclamationmark") }
+        open var circle: SFSymbol { ext(.start.circle) }
+        open var circleFill: SFSymbol { ext(.start.circle.fill) }
+        open var circleTrianglebadgeExclamationmark: SFSymbol { ext(.start.circle + ".trianglebadge" + ".exclamationmark") }
         
-        open var checkmarkSquare: SFSymbol { ext(.start.square) }
-        open var checkmarkSquareFill: SFSymbol { ext(.start.square.fill) }
+        open var square: SFSymbol { ext(.start.square) }
+        open var squareFill: SFSymbol { ext(.start.square.fill) }
         
-        open var checkmarkRectangle: SFSymbol { ext(.start.rectangle) }
-        open var checkmarkRectangleFill: SFSymbol { ext(.start.rectangle.fill) }
-        open var checkmarkRectanglePortair: SFSymbol { ext(.start.rectangle + ".portair") }
+        open var rectangle: SFSymbol { ext(.start.rectangle) }
+        open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+        open var rectanglePortair: SFSymbol { ext(.start.rectangle + ".portair") }
         
-        open var checkmarkDiamond: SFSymbol { ext(.start + ".diamond") }
-        open var checkmarkDiamondFill: SFSymbol { ext(.start + ".diamond".fill) }
+        open var diamond: SFSymbol { ext(.start + ".diamond") }
+        open var diamondFill: SFSymbol { ext(.start + ".diamond".fill) }
         
-        open var checkmarkShield: SFSymbol { ext(.start + ".shield") }
-        open var checkmarkShieldFill: SFSymbol { ext(.start + ".shield".fill) }
+        open var shield: SFSymbol { ext(.start + ".shield") }
+        open var shieldFill: SFSymbol { ext(.start + ".shield".fill) }
         
     }
 }
