@@ -27,33 +27,33 @@ extension SFSymbol {
     
     open class Camera: SFSymbol {
         
-        open var cameraFill: SFSymbol { ext(.start.fill) }
-        open var cameraFillBadgeElipsis: SFSymbol { ext(.start.fill + ".badge.ellipsis") }
-        open var cameraCircle: SFSymbol { ext(.start.circle) }
-        open var cameraCircleFill: SFSymbol { ext(.start.circle.fill) }
+        open var fill: SFSymbol { ext(.start.fill) }
+        open var fillBadgeElipsis: SFSymbol { ext(.start.fill + ".badge.ellipsis") }
+        open var circle: SFSymbol { ext(.start.circle) }
+        open var circleFill: SFSymbol { ext(.start.circle.fill) }
         
-        open var cameraViewfinder: SFSymbol { ext(.start + ".viewfinder") }
+        open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
         
-        open var cameraAperture: SFSymbol { ext(.start + ".aperture") }
+        open var aperture: SFSymbol { ext(.start + ".aperture") }
         
-        open var cameraFilters: SFSymbol { ext(.start + ".filters") }
+        open var filters: SFSymbol { ext(.start + ".filters") }
         
-        open var cameraShutterButton: SFSymbol { ext(.start + ".shutter.button") }
-        open var cameraShutterButtonFill: SFSymbol { ext(.start + ".shutter.button".fill) }
+        open var shutterButton: SFSymbol { ext(.start + ".shutter.button") }
+        open var shutterButtonFill: SFSymbol { ext(.start + ".shutter.button".fill) }
         
-        open var cameraBadgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
+        open var badgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
         
-        open var cameraOnRectangle: SFSymbol { ext(.start + ".on".rectangle) }
-        open var cameraOnRectangleFill: SFSymbol { ext(.start + ".on".rectangle.fill) }
+        open var onRectangle: SFSymbol { ext(.start + ".on".rectangle) }
+        open var onRectangleFill: SFSymbol { ext(.start + ".on".rectangle.fill) }
         
-        open var cameraMateringMatrix: SFSymbol { ext(.start + ".metering.matrix") }
-        open var cameraMateringMultispot: SFSymbol { ext(.start + ".metering.multispot") }
-        open var cameraMateringNone: SFSymbol { ext(.start + ".metering.none") }
-        open var cameraMateringPartial: SFSymbol { ext(.start + ".metering.partial") }
-        open var cameraMateringSpot: SFSymbol { ext(.start + ".metering.spot") }
-        open var cameraMateringUnknown: SFSymbol { ext(.start + ".metering.unknown") }
-        open var cameraMateringCenterWeighted: SFSymbol { ext(.start + ".center.weighted") }
-        open var cameraMateringCenterWeightedAverage: SFSymbol { ext(.start + ".center.weighted.average") }
+        open var materingMatrix: SFSymbol { ext(.start + ".metering.matrix") }
+        open var materingMultispot: SFSymbol { ext(.start + ".metering.multispot") }
+        open var materingNone: SFSymbol { ext(.start + ".metering.none") }
+        open var materingPartial: SFSymbol { ext(.start + ".metering.partial") }
+        open var materingSpot: SFSymbol { ext(.start + ".metering.spot") }
+        open var materingUnknown: SFSymbol { ext(.start + ".metering.unknown") }
+        open var materingCenterWeighted: SFSymbol { ext(.start + ".center.weighted") }
+        open var materingCenterWeightedAverage: SFSymbol { ext(.start + ".center.weighted.average") }
         
     }
 }
