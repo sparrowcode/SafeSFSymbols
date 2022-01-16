@@ -23,7 +23,7 @@ import UIKit
 
 extension SFSymbol {
     
-    public static var xmark: Checkmark { .init(name: "xmark") }
+    public static var xmark: Xmark { .init(name: "xmark") }
     
     open class Xmark: SFSymbol {
         
