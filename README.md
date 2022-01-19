@@ -27,13 +27,13 @@ If you prefer not to use any of dependency managers, you can integrate manually.
 To create image:
 
 ```swift
-let image = UIImage.system(.trash.circle.fill)
+let image = UIImage.init(.trash.circle.fill)
 ```
 
 If need compability with font, use this:
 
 ```swift
-let image = UIImage.system(.plus, font: UIFont.preferredFont(forTextStyle: .body))
+let image = UIImage.init(.plus, font: UIFont.preferredFont(forTextStyle: .body))
 ```
 
 There are so many symbols, I didn't add all of them. I am happy to PR if you are willing to add this.

@@ -29,8 +29,8 @@ extension UIImage {
      - parameter symbol: Symbol.
      */
     @available(iOS 13, tvOS 13, *)
-    public static func system(_ symbol: SFSymbol) -> UIImage {
-        return UIImage.init(systemName: symbol.name) ?? UIImage()
+    public convenience init(_ symbol: SFSymbol) {
+        self.init(systemName: symbol.name)!
     }
 
     /**
@@ -41,9 +41,9 @@ extension UIImage {
      - parameter weight: Weight of font of image.
      */
     @available(iOS 13, tvOS 13, *)
-    public static func system(_ symbol: SFSymbol, pointSize: CGFloat, weight: UIImage.SymbolWeight) -> UIImage {
+    public convenience init(_ symbol: SFSymbol, pointSize: CGFloat, weight: UIImage.SymbolWeight) {
         let configuration = UIImage.SymbolConfiguration(pointSize: pointSize, weight: weight)
-        return UIImage(systemName: symbol.name, withConfiguration: configuration) ?? UIImage()
+        self.init(systemName: symbol.name, withConfiguration: configuration)!
     }
 
     /**
@@ -53,8 +53,8 @@ extension UIImage {
      - parameter font: Font of image.
      */
     @available(iOS 13, tvOS 13, *)
-    public static func system(_ symbol: SFSymbol, font: UIFont) -> UIImage {
+    public convenience init(_ symbol: SFSymbol, font: UIFont) {
         let configuration = UIImage.SymbolConfiguration(font: font)
-        return UIImage(systemName: symbol.name, withConfiguration: configuration) ?? UIImage()
+        self.init(systemName: symbol.name, withConfiguration: configuration)!
     }
 }
