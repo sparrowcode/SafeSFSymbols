@@ -1,6 +1,6 @@
 # SFSymbols
 
-Wrapper of `SFSymbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon.
+Wrapper of `SFSymbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of iOS/macOS/tvOS, the compiler will show a warning. Processed all symbols by script.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Once you have your Swift package set up, adding as a dependency is as easy as ad
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ivanvorobei/SFSymbols", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/ivanvorobei/SFSymbols", .upToNextMajor(from: "1.0.1"))
 ]
 ```
 
@@ -27,16 +27,14 @@ If you prefer not to use any of dependency managers, you can integrate manually.
 To create image:
 
 ```swift
-let image = UIImage.init(.trash.circleFill)
+let image = UIImage(.trash.circleFill)
 ```
 
-If need compability with font, use this:
+If need with specific font, use this:
 
 ```swift
-let image = UIImage.init(.plus, font: UIFont.preferredFont(forTextStyle: .body))
+let image = UIImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
 ```
-
-There are so many symbols, I didn't add all of them. I am happy to PR if you are willing to add this.
 
 ## Russian Community
 
