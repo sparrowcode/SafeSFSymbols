@@ -27,7 +27,7 @@ If you prefer not to use any of dependency managers, you can integrate manually.
 To create image:
 
 ```swift
-let image = UIImage(.trash.circleFill)
+let image = UIImage(.trash.circle)
 ```
 
 If need with specific font, use this:
