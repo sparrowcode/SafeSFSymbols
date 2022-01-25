@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var forward: Forward { .init(name: "forward") }
@@ -48,6 +46,5 @@ extension SFSymbol {
 		open var frame: SFSymbol { ext(.start + ".frame") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var frameFill: SFSymbol { ext(.start + ".frame".fill) }
-
 	}
 }

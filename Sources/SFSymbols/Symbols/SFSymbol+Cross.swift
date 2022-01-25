@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var cross: Cross { .init(name: "cross") }
@@ -44,6 +42,5 @@ extension SFSymbol {
 		open var vial: SFSymbol { ext(.start + ".vial") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var vialFill: SFSymbol { ext(.start + ".vial".fill) }
-
 	}
 }

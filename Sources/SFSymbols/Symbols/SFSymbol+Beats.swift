@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var beats: Beats { .init(name: "beats") }
@@ -61,6 +59,5 @@ extension SFSymbol {
 		open var studiobudsChargingcase: SFSymbol { ext(.start + ".studiobuds.chargingcase") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var studiobudsChargingcaseFill: SFSymbol { ext(.start + ".studiobuds.chargingcase".fill) }
-
 	}
 }

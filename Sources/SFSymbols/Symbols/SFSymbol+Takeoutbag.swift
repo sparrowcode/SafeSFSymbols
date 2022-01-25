@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var takeoutbag: Takeoutbag { .init(name: "takeoutbag") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var andCupAndStraw: SFSymbol { ext(.start + ".and.cup.and.straw") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var andCupAndStrawFill: SFSymbol { ext(.start + ".and.cup.and.straw".fill) }
-
 	}
 }

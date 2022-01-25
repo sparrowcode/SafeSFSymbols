@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var badge: Badge { .init(name: "badge") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var plusRadiowavesForward: SFSymbol { ext(.start + ".plus.radiowaves.forward") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var plusRadiowavesRight: SFSymbol { ext(.start + ".plus.radiowaves.right") }
-
 	}
 }

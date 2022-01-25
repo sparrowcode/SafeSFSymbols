@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var questionmark: Questionmark { .init(name: "questionmark") }
@@ -87,6 +85,5 @@ extension SFSymbol {
 		open var videoFill: SFSymbol { ext(.start + ".video".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var videoFillAr: SFSymbol { ext(.start + ".video".fill + ".ar") }
-
 	}
 }

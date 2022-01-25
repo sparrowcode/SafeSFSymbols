@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var airplane: Airplane { .init(name: "airplane") }
@@ -37,6 +35,5 @@ extension SFSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var departure: SFSymbol { ext(.start + ".departure") }
-
 	}
 }

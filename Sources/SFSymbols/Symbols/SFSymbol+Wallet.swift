@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var wallet: Wallet { .init(name: "wallet") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var pass: SFSymbol { ext(.start + ".pass") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var passFill: SFSymbol { ext(.start + ".pass".fill) }
-
 	}
 }

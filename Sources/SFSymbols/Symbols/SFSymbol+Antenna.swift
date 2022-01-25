@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var antenna: Antenna { .init(name: "antenna") }
@@ -35,6 +33,5 @@ extension SFSymbol {
 		open var radiowavesLeftAndRightCircleFill: SFSymbol { ext(.start + ".radiowaves.left.and.right".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var radiowavesLeftAndRightSlash: SFSymbol { ext(.start + ".radiowaves.left.and.right".slash) }
-
 	}
 }

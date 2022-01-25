@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var point: Point { .init(name: "point") }
@@ -39,6 +37,5 @@ extension SFSymbol {
 		open var topleftDownCurvedtoPointBottomrightUpFill: SFSymbol { ext(.start + ".topleft.down.curvedto.point.bottomright.up".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var topleftDownCurvedtoPointFilledBottomrightUp: SFSymbol { ext(.start + ".topleft.down.curvedto.point.filled.bottomright.up") }
-
 	}
 }

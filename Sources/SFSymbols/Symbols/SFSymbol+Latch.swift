@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var latch: Latch { .init(name: "latch") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var _2Case: SFSymbol { ext(.start + ".2.case") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var _2CaseFill: SFSymbol { ext(.start + ".2.case".fill) }
-
 	}
 }

@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var keyboard: Keyboard { .init(name: "keyboard") }
@@ -42,6 +40,5 @@ extension SFSymbol {
 		open var onehandedLeft: SFSymbol { ext(.start + ".onehanded.left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var onehandedRight: SFSymbol { ext(.start + ".onehanded.right") }
-
 	}
 }

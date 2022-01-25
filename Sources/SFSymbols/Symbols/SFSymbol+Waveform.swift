@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var waveform: Waveform { .init(name: "waveform") }
@@ -54,6 +52,5 @@ extension SFSymbol {
 		open var pathEcgRectangle: SFSymbol { ext(.start + ".path.ecg".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var pathEcgRectangleFill: SFSymbol { ext(.start + ".path.ecg".rectangle.fill) }
-
 	}
 }

@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var arrow: Arrow { .init(name: "arrow") }
@@ -496,6 +494,5 @@ extension SFSymbol {
 		open var uturnUpSquare: SFSymbol { ext(.start + ".uturn.up".square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var uturnUpSquareFill: SFSymbol { ext(.start + ".uturn.up".square.fill) }
-
 	}
 }

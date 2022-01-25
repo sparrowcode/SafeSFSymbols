@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var printer: Printer { .init(name: "printer") }
@@ -39,6 +37,5 @@ extension SFSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var filledAndPaper: SFSymbol { ext(.start + ".filled.and.paper") }
-
 	}
 }

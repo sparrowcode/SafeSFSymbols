@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var figure: Figure { .init(name: "figure") }
@@ -52,6 +50,5 @@ extension SFSymbol {
 		open var waveCircle: SFSymbol { ext(.start + ".wave".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var waveCircleFill: SFSymbol { ext(.start + ".wave".circle.fill) }
-
 	}
 }

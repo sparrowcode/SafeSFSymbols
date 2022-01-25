@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var gauge: Gauge { .init(name: "gauge") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var badgeMinus: SFSymbol { ext(.start + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
-
 	}
 }

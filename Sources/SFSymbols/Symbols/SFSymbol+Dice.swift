@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var dice: Dice { .init(name: "dice") }
@@ -29,6 +27,5 @@ extension SFSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var fill: SFSymbol { ext(.start.fill) }
-
 	}
 }

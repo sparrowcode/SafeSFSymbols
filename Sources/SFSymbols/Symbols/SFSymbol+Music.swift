@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var music: Music { .init(name: "music") }
@@ -38,6 +36,5 @@ extension SFSymbol {
 		open var noteTv: SFSymbol { ext(.start + ".note.tv") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var noteTvFill: SFSymbol { ext(.start + ".note.tv".fill) }
-
 	}
 }

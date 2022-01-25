@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var paintbrush: Paintbrush { .init(name: "paintbrush") }
@@ -34,6 +32,5 @@ extension SFSymbol {
 		open var pointed: SFSymbol { ext(.start + ".pointed") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var pointedFill: SFSymbol { ext(.start + ".pointed".fill) }
-
 	}
 }

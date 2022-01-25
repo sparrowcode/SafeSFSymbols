@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var textformat: Textformat { .init(name: "textformat") }
@@ -124,6 +122,5 @@ extension SFSymbol {
 		open var superscriptTh: SFSymbol { ext(.start + ".superscript.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var superscriptZh: SFSymbol { ext(.start + ".superscript.zh") }
-
 	}
 }

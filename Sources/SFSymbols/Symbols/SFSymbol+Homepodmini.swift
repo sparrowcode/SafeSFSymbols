@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var homepodmini: Homepodmini { .init(name: "homepodmini") }
@@ -39,6 +37,5 @@ extension SFSymbol {
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
 		open var fill: SFSymbol { ext(.start.fill) }
-
 	}
 }

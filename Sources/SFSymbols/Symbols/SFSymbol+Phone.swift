@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var phone: Phone { .init(name: "phone") }
@@ -76,6 +74,5 @@ extension SFSymbol {
 		open var fillBadgePlus: SFSymbol { ext(.start.fill + ".badge.plus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var fillConnection: SFSymbol { ext(.start.fill + ".connection") }
-
 	}
 }

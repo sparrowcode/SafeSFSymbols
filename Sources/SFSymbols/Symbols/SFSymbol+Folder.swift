@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var folder: Folder { .init(name: "folder") }
@@ -59,6 +57,5 @@ extension SFSymbol {
 		open var fillBadgeQuestionmark: SFSymbol { ext(.start.fill + ".badge.questionmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var fillBadgeQuestionmarkAr: SFSymbol { ext(.start.fill + ".badge.questionmark.ar") }
-
 	}
 }

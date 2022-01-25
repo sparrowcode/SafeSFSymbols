@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var ear: Ear { .init(name: "ear") }
@@ -38,6 +36,5 @@ extension SFSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var trianglebadgeExclamationmark: SFSymbol { ext(.start + ".trianglebadge.exclamationmark") }
-
 	}
 }

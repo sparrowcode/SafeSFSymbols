@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import UIKit
-
 extension SFSymbol {
 
 	public static var calendar: Calendar { .init(name: "calendar") }
@@ -51,6 +49,5 @@ extension SFSymbol {
 		open var dayTimelineRight: SFSymbol { ext(.start + ".day.timeline.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var dayTimelineTrailing: SFSymbol { ext(.start + ".day.timeline.trailing") }
-
 	}
 }
