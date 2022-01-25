@@ -24,7 +24,24 @@ If you prefer not to use any of dependency managers, you can integrate manually.
 
 ## Usage
 
-To create image:
+### SwiftUI
+
+To create an image:
+
+```swift
+Image(.trash.circle)
+```
+
+With a font:
+
+```swift
+Image(.plus)
+    .font(.body)
+```
+
+### UIKit
+
+To create an image:
 
 ```swift
 let image = UIImage(.trash.circle)
@@ -34,6 +51,20 @@ If need with specific font, use this:
 
 ```swift
 let image = UIImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
+```
+
+### AppKit
+
+To create an image:
+
+```swift
+let image = NSImage(.trash.circle)
+```
+
+If need with specific font, use this:
+
+```swift
+let image = NSImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
 ```
 
 ## Russian Community

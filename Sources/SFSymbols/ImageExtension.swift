@@ -19,6 +19,44 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+
+#if canImport(SwiftUI)
+import SwiftUI
+
+extension Image {
+    
+    /**
+     SFSymbols: Create `SFSymbols` image by symbol.
+     
+     - parameter symbol: Symbol.
+     */
+    public init(_ symbol: SFSymbol) {
+        self.init(systemName: symbol.name)
+    }
+}
+#endif
+
+#if canImport(AppKit)
+import AppKit
+
+extension NSImage {
+    
+    #if targetEnvironment(macCatalyst)
+    
+    #else
+    /**
+     SFSymbols: Create `SFSymbols` image by symbol.
+     
+     - parameter symbol: Symbol.
+     */
+    public convenience init(_ symbol: SFSymbol) {
+        self.init(systemSymbolName: symbol.name, accessibilityDescription: nil)!
+    }
+    #endif
+}
+#endif
+
+#if canImport(UIKit)
 import UIKit
 
 extension UIImage {
@@ -32,7 +70,7 @@ extension UIImage {
     public convenience init(_ symbol: SFSymbol) {
         self.init(systemName: symbol.name)!
     }
-
+    
     /**
      SFSymbols: Create `SFSymbols` image by symbol with specific configuration.
      
@@ -45,9 +83,9 @@ extension UIImage {
         let configuration = UIImage.SymbolConfiguration(pointSize: pointSize, weight: weight)
         self.init(systemName: symbol.name, withConfiguration: configuration)!
     }
-
+    
     /**
-     SparrowKit: Create `SFSymbols` image by symbol with specific configuration.
+     SFSymbols: Create `SFSymbols` image by symbol with specific configuration.
      
      - parameter symbol: Symbol.
      - parameter font: Font of image.
@@ -58,3 +96,4 @@ extension UIImage {
         self.init(systemName: symbol.name, withConfiguration: configuration)!
     }
 }
+#endif

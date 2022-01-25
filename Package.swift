@@ -6,7 +6,10 @@ let package = Package(
     name: "SFSymbols",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v13), .watchOS(.v6), .tvOS(.v13)
+        .iOS(.v13),
+        .watchOS(.v6),
+        .tvOS(.v13),
+        .macOS(.v11)
     ],
     products: [
         .library(
