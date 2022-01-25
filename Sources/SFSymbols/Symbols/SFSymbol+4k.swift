@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var _4k: Fourk { .init(name: "4k") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var tv: SFSymbol { ext(.start + ".tv") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var tvFill: SFSymbol { ext(.start + ".tv".fill) }
-
 	}
 }

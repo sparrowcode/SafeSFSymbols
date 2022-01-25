@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var speaker: Speaker { .init(name: "speaker") }
@@ -82,6 +80,5 @@ extension SFSymbol {
 		open var zzzFillRtl: SFSymbol { ext(.start + ".zzz".fill + ".rtl") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var zzzRtl: SFSymbol { ext(.start + ".zzz.rtl") }
-
 	}
 }

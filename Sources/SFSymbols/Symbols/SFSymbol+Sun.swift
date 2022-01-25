@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var sun: Sun { .init(name: "sun") }
@@ -55,6 +53,5 @@ extension SFSymbol {
 		open var min: SFSymbol { ext(.start + ".min") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var minFill: SFSymbol { ext(.start + ".min".fill) }
-
 	}
 }

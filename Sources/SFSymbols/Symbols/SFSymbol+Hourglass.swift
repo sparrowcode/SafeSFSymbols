@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var hourglass: Hourglass { .init(name: "hourglass") }
@@ -40,6 +38,5 @@ extension SFSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var tophalfFilled: SFSymbol { ext(.start + ".tophalf.filled") }
-
 	}
 }

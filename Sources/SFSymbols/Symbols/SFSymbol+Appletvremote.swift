@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var appletvremote: Appletvremote { .init(name: "appletvremote") }
@@ -46,6 +44,5 @@ extension SFSymbol {
 		open var gen4: SFSymbol { ext(.start + ".gen4") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var gen4Fill: SFSymbol { ext(.start + ".gen4".fill) }
-
 	}
 }

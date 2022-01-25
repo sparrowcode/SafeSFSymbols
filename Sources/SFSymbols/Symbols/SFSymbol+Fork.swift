@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var fork: Fork { .init(name: "fork") }
@@ -33,6 +31,5 @@ extension SFSymbol {
 		open var knifeCircle: SFSymbol { ext(.start + ".knife".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var knifeCircleFill: SFSymbol { ext(.start + ".knife".circle.fill) }
-
 	}
 }

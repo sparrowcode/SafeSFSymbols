@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var staroflife: Staroflife { .init(name: "staroflife") }
@@ -34,6 +32,5 @@ extension SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var fill: SFSymbol { ext(.start.fill) }
-
 	}
 }

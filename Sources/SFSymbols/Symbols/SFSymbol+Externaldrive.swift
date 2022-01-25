@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var externaldrive: Externaldrive { .init(name: "externaldrive") }
@@ -67,6 +65,5 @@ extension SFSymbol {
 		open var fillBadgeWifi: SFSymbol { ext(.start.fill + ".badge.wifi") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var fillBadgeXmark: SFSymbol { ext(.start.fill + ".badge.xmark") }
-
 	}
 }

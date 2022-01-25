@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var bookmark: Bookmark { .init(name: "bookmark") }
@@ -44,6 +42,5 @@ extension SFSymbol {
 		open var square: SFSymbol { ext(.start.square) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var squareFill: SFSymbol { ext(.start.square.fill) }
-
 	}
 }

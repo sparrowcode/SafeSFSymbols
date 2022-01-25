@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var _123: OneTwoThree { .init(name: "123") }
@@ -39,6 +37,5 @@ extension SFSymbol {
 		open var rectangleFillHi: SFSymbol { ext(.start.rectangle.fill + ".hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var rectangleHi: SFSymbol { ext(.start.rectangle + ".hi") }
-
 	}
 }

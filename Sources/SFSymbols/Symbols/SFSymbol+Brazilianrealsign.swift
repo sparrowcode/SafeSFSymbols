@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var brazilianrealsign: Brazilianrealsign { .init(name: "brazilianrealsign") }
@@ -36,6 +34,5 @@ extension SFSymbol {
 		open var square: SFSymbol { ext(.start.square) }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var squareFill: SFSymbol { ext(.start.square.fill) }
-
 	}
 }

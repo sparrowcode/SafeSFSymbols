@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var aqi: Aqi { .init(name: "aqi") }
@@ -35,6 +33,5 @@ extension SFSymbol {
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var medium: SFSymbol { ext(.start + ".medium") }
-
 	}
 }

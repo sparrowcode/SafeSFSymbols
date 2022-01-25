@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var line: Line { .init(name: "line") }
@@ -44,6 +42,5 @@ extension SFSymbol {
 		open var _3HorizontalDecreaseCircle: SFSymbol { ext(.start + ".3.horizontal.decrease".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var _3HorizontalDecreaseCircleFill: SFSymbol { ext(.start + ".3.horizontal.decrease".circle.fill) }
-
 	}
 }

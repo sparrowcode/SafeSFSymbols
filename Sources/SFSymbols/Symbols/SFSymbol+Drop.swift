@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var drop: Drop { .init(name: "drop") }
@@ -39,6 +37,5 @@ extension SFSymbol {
 		open var triangle: SFSymbol { ext(.start + ".triangle") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var triangleFill: SFSymbol { ext(.start + ".triangle".fill) }
-
 	}
 }

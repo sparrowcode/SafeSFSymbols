@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var digitalcrown: Digitalcrown { .init(name: "digitalcrown") }
@@ -53,6 +51,5 @@ extension SFSymbol {
 		open var press: SFSymbol { ext(.start + ".press") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var pressFill: SFSymbol { ext(.start + ".press".fill) }
-
 	}
 }

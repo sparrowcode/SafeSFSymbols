@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var apps: Apps { .init(name: "apps") }
@@ -40,6 +38,5 @@ extension SFSymbol {
 		open var iphoneLandscape: SFSymbol { ext(.start + ".iphone.landscape") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var iphoneLandscapeRtl: SFSymbol { ext(.start + ".iphone.landscape.rtl") }
-
 	}
 }

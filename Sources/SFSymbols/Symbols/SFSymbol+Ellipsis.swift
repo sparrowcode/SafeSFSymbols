@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var ellipsis: Ellipsis { .init(name: "ellipsis") }
@@ -42,6 +40,5 @@ extension SFSymbol {
 		open var verticalBubble: SFSymbol { ext(.start + ".vertical.bubble") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var verticalBubbleFill: SFSymbol { ext(.start + ".vertical.bubble".fill) }
-
 	}
 }

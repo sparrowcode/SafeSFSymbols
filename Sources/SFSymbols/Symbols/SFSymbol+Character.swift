@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var character: Character { .init(name: "character") }
@@ -147,6 +145,5 @@ extension SFSymbol {
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var zh: SFSymbol { ext(.start + ".zh") }
-
 	}
 }

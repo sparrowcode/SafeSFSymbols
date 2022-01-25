@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var captions: Captions { .init(name: "captions") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var bubble: SFSymbol { ext(.start + ".bubble") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
-
 	}
 }

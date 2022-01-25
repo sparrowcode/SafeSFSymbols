@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var earbuds: Earbuds { .init(name: "earbuds") }
@@ -31,6 +29,5 @@ extension SFSymbol {
 		open var `case`: SFSymbol { ext(.start + ".case") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var caseFill: SFSymbol { ext(.start + ".case".fill) }
-
 	}
 }

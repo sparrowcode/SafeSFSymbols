@@ -19,8 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
-
 extension SFSymbol {
 
 	public static var hand: Hand { .init(name: "hand") }
@@ -105,6 +103,5 @@ extension SFSymbol {
 		open var wave: SFSymbol { ext(.start + ".wave") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var waveFill: SFSymbol { ext(.start + ".wave".fill) }
-
 	}
 }
