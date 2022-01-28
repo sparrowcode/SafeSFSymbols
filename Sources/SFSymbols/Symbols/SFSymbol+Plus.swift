@@ -26,6 +26,11 @@ extension SFSymbol {
 	open class Plus: SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var app: SFSymbol { ext(.start.app) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var appFill: SFSymbol { ext(.start.app.fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var bubble: SFSymbol { ext(.start + ".bubble") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
@@ -55,10 +60,14 @@ extension SFSymbol {
 		open var rectangle: SFSymbol { ext(.start.rectangle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var rectangleFillOnRectangleFill: SFSymbol { ext(.start.rectangle.fill + ".on".rectangle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var rectangleOnFolder: SFSymbol { ext(.start.rectangle + ".on.folder") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var rectangleOnFolderFill: SFSymbol { ext(.start.rectangle + ".on.folder".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var rectangleOnRectangle: SFSymbol { ext(.start.rectangle + ".on".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var rectanglePortrait: SFSymbol { ext(.start.rectangle + ".portrait") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
@@ -70,5 +79,12 @@ extension SFSymbol {
 		open var squareDashed: SFSymbol { ext(.start.square + ".dashed") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var squareFillOnSquareFill: SFSymbol { ext(.start.square.fill + ".on".square.fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var squareOnSquare: SFSymbol { ext(.start.square + ".on".square) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
 	}
 }

@@ -39,7 +39,13 @@ extension SFSymbol {
 		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slash: SFSymbol { ext(.start.slash) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slashCircle: SFSymbol { ext(.start.slash.circle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var slashCircleFill: SFSymbol { ext(.start.slash.circle.fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slashFill: SFSymbol { ext(.start.slash.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var square: SFSymbol { ext(.start.square) }

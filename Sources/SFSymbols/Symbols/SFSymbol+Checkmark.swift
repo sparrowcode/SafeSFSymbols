@@ -48,6 +48,20 @@ extension SFSymbol {
 		open var icloudFill: SFSymbol { ext(.start + ".icloud".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectanglePortrait: SFSymbol { ext(.start.rectangle + ".portrait") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectanglePortraitFill: SFSymbol { ext(.start.rectangle + ".portrait".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var seal: SFSymbol { ext(.start + ".seal") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var sealFill: SFSymbol { ext(.start + ".seal".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var shield: SFSymbol { ext(.start + ".shield") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var shieldFill: SFSymbol { ext(.start + ".shield".fill) }

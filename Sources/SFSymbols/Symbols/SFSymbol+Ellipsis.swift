@@ -31,10 +31,17 @@ extension SFSymbol {
 		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var circle: SFSymbol { ext(.start.circle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var circleFill: SFSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var curlybraces: SFSymbol { ext(.start + ".curlybraces") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var verticalBubble: SFSymbol { ext(.start + ".vertical.bubble") }

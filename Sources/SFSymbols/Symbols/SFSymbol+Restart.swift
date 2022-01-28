@@ -25,6 +25,8 @@ extension SFSymbol {
 
 	open class Restart: SFSymbol {
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var circle: SFSymbol { ext(.start.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var circleFill: SFSymbol { ext(.start.circle.fill) }
 	}

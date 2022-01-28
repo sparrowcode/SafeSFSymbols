@@ -32,9 +32,20 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var micCircleFill: SFSymbol { ext(.start + ".mic".circle.fill) }
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var note: SFSymbol { ext(.start + ".note") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var noteHouse: SFSymbol { ext(.start + ".note.house") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var noteHouseFill: SFSymbol { ext(.start + ".note.house".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var noteList: SFSymbol { ext(.start + ".note.list") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var noteTv: SFSymbol { ext(.start + ".note.tv") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var noteTvFill: SFSymbol { ext(.start + ".note.tv".fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var quarternote_3: SFSymbol { ext(.start + ".quarternote.3") }
 	}
 }

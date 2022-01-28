@@ -34,6 +34,9 @@ extension SFSymbol {
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var alignright: SFSymbol { ext(.start + ".alignright") }
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var andCommandMacwindow: SFSymbol { ext(.start + ".and.command.macwindow") }
+
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var append: SFSymbol { ext(.start + ".append") }
 
@@ -49,6 +52,15 @@ extension SFSymbol {
 		open var badgeStar: SFSymbol { ext(.start + ".badge.star") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var badgeXmark: SFSymbol { ext(.start + ".badge.xmark") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var belowPhoto: SFSymbol { ext(.start + ".below.photo") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var belowPhotoFill: SFSymbol { ext(.start + ".below.photo".fill) }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var belowPhotoFillRtl: SFSymbol { ext(.start + ".below.photo".fill + ".rtl") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var belowPhotoRtl: SFSymbol { ext(.start + ".below.photo.rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var bookClosed: SFSymbol { ext(.start + ".book.closed") }
@@ -69,17 +81,24 @@ extension SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var justify: SFSymbol { ext(.start + ".justify") }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var justifyleft: SFSymbol { ext(.start + ".justifyleft") }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var justifyright: SFSymbol { ext(.start + ".justifyright") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var justifyLeading: SFSymbol { ext(.start + ".justify.leading") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var justifyLeft: SFSymbol { ext(.start + ".justify.left") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var justifyRight: SFSymbol { ext(.start + ".justify.right") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var justifyTrailing: SFSymbol { ext(.start + ".justify.trailing") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var magnifyingglass: SFSymbol { ext(.start + ".magnifyingglass") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var magnifyingglassRtl: SFSymbol { ext(.start + ".magnifyingglass.rtl") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var quote: SFSymbol { ext(.start + ".quote") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var quoteRtl: SFSymbol { ext(.start + ".quote.rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var redaction: SFSymbol { ext(.start + ".redaction") }

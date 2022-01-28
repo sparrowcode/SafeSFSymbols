@@ -57,10 +57,18 @@ extension SFSymbol {
 		open var grid_2x1LeftFilled: SFSymbol { ext(.start + ".grid.2x1.left.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var grid_2x1RightFilled: SFSymbol { ext(.start + ".grid.2x1.right.filled") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_2x2: SFSymbol { ext(.start + ".grid.2x2") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_2x2Fill: SFSymbol { ext(.start + ".grid.2x2".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_3x3: SFSymbol { ext(.start + ".grid.3x3") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var grid_3x3Circle: SFSymbol { ext(.start + ".grid.3x3".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var grid_3x3CircleFill: SFSymbol { ext(.start + ".grid.3x3".circle.fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_3x3Fill: SFSymbol { ext(.start + ".grid.3x3".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var gridCross: SFSymbol { ext(.start + ".grid.cross") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)

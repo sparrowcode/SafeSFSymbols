@@ -35,6 +35,8 @@ extension SFSymbol {
 		open var applewatch: SFSymbol { ext(.start + ".applewatch") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var arrowCirclepath: SFSymbol { ext(.start + ".arrow.circlepath") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var arrowTriangle_2Circlepath: SFSymbol { ext(.start + ".arrow.triangle.2.circlepath") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -71,6 +73,8 @@ extension SFSymbol {
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var squareFill: SFSymbol { ext(.start.square.fill) }
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var triangle: SFSymbol { ext(.start + ".triangle") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var triangleFill: SFSymbol { ext(.start + ".triangle".fill) }
 	}

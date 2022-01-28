@@ -27,5 +27,10 @@ extension SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var fill: SFSymbol { ext(.start.fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var transparent: SFSymbol { ext(.start + ".transparent") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var transparentFill: SFSymbol { ext(.start + ".transparent".fill) }
 	}
 }

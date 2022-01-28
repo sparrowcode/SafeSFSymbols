@@ -42,5 +42,10 @@ extension SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var fill: SFSymbol { ext(.start.fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var gift: SFSymbol { ext(.start + ".gift") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var giftFill: SFSymbol { ext(.start + ".gift".fill) }
 	}
 }

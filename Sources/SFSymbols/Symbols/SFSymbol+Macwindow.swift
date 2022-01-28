@@ -27,5 +27,10 @@ extension SFSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var onRectangle: SFSymbol { ext(.start + ".on".rectangle) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var onRectangleRtl: SFSymbol { ext(.start + ".on".rectangle + ".rtl") }
 	}
 }

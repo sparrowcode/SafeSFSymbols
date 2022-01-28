@@ -30,6 +30,10 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var _2HorizontalDecreaseCircleFill: SFSymbol { ext(.start + ".2.horizontal.decrease".circle.fill) }
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var _3CrossedSwirlCircle: SFSymbol { ext(.start + ".3.crossed.swirl".circle) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var _3CrossedSwirlCircleFill: SFSymbol { ext(.start + ".3.crossed.swirl".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var _3Horizontal: SFSymbol { ext(.start + ".3.horizontal") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -42,5 +46,13 @@ extension SFSymbol {
 		open var _3HorizontalDecreaseCircle: SFSymbol { ext(.start + ".3.horizontal.decrease".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var _3HorizontalDecreaseCircleFill: SFSymbol { ext(.start + ".3.horizontal.decrease".circle.fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var diagonal: SFSymbol { ext(.start + ".diagonal") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var diagonalArrow: SFSymbol { ext(.start + ".diagonal.arrow") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var horizontalStarFillLineHorizontal: SFSymbol { ext(.start + ".horizontal.star".fill + ".line.horizontal") }
 	}
 }

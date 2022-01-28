@@ -26,6 +26,10 @@ extension SFSymbol {
 	open class Filemenu: SFSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var andCursorarrow: SFSymbol { ext(.start + ".and.cursorarrow") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var andCursorarrowRtl: SFSymbol { ext(.start + ".and.cursorarrow.rtl") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var andSelection: SFSymbol { ext(.start + ".and.selection") }
 	}
 }

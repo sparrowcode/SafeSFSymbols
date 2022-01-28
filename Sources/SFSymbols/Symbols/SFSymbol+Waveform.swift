@@ -43,6 +43,8 @@ extension SFSymbol {
 		open var circleFill: SFSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var path: SFSymbol { ext(.start + ".path") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var pathBadgeMinus: SFSymbol { ext(.start + ".path.badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var pathBadgePlus: SFSymbol { ext(.start + ".path.badge.plus") }

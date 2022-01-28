@@ -26,6 +26,11 @@ extension SFSymbol {
 	open class Circlebadge: SFSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var _2: SFSymbol { ext(.start + ".2") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var fill: SFSymbol { ext(.start.fill) }
 	}
 }

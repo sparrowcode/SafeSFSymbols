@@ -25,6 +25,15 @@ extension SFSymbol {
 
 	open class Doc: SFSymbol {
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var append: SFSymbol { ext(.start + ".append") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var appendFill: SFSymbol { ext(.start + ".append".fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var appendFillRtl: SFSymbol { ext(.start + ".append".fill + ".rtl") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var appendRtl: SFSymbol { ext(.start + ".append.rtl") }
+
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var badgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
@@ -55,6 +64,21 @@ extension SFSymbol {
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var onDocFill: SFSymbol { ext(.start + ".on.doc".fill) }
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var plaintext: SFSymbol { ext(.start + ".plaintext") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var plaintextFill: SFSymbol { ext(.start + ".plaintext".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var richtext: SFSymbol { ext(.start + ".richtext") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var richtextAr: SFSymbol { ext(.start + ".richtext.ar") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var richtextFill: SFSymbol { ext(.start + ".richtext".fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var richtextFillAr: SFSymbol { ext(.start + ".richtext".fill + ".ar") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var richtextFillHe: SFSymbol { ext(.start + ".richtext".fill + ".he") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var richtextFillHi: SFSymbol { ext(.start + ".richtext".fill + ".hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -66,6 +90,10 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var richtextFillZh: SFSymbol { ext(.start + ".richtext".fill + ".zh") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var richtextFillZhTraditional: SFSymbol { ext(.start + ".richtext".fill + ".zh.traditional") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var richtextHe: SFSymbol { ext(.start + ".richtext.he") }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var richtextHi: SFSymbol { ext(.start + ".richtext.hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var richtextJa: SFSymbol { ext(.start + ".richtext.ja") }
@@ -75,9 +103,19 @@ extension SFSymbol {
 		open var richtextTh: SFSymbol { ext(.start + ".richtext.th") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var richtextZh: SFSymbol { ext(.start + ".richtext.zh") }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var richtextZhTraditional: SFSymbol { ext(.start + ".richtext.zh.traditional") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var text: SFSymbol { ext(.start + ".text") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var textBelowEcg: SFSymbol { ext(.start + ".text.below.ecg") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var textBelowEcgFill: SFSymbol { ext(.start + ".text.below.ecg".fill) }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var textBelowEcgFillRtl: SFSymbol { ext(.start + ".text.below.ecg".fill + ".rtl") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var textBelowEcgRtl: SFSymbol { ext(.start + ".text.below.ecg.rtl") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var textFill: SFSymbol { ext(.start + ".text".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -91,5 +129,8 @@ extension SFSymbol {
 		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var viewfinderFill: SFSymbol { ext(.start + ".viewfinder".fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var zipper: SFSymbol { ext(.start + ".zipper") }
 	}
 }

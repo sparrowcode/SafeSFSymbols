@@ -31,6 +31,10 @@ extension SFSymbol {
 		open var circleFill: SFSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var cursive: SFSymbol { ext(.start + ".cursive") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var cursiveCircle: SFSymbol { ext(.start + ".cursive".circle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var cursiveCircleFill: SFSymbol { ext(.start + ".cursive".circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)

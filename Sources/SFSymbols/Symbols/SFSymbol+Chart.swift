@@ -25,12 +25,28 @@ extension SFSymbol {
 
 	open class Chart: SFSymbol {
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var bar: SFSymbol { ext(.start + ".bar") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var barDocHorizontal: SFSymbol { ext(.start + ".bar.doc.horizontal") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var barDocHorizontalFill: SFSymbol { ext(.start + ".bar.doc.horizontal".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var barFill: SFSymbol { ext(.start + ".bar".fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var barXaxis: SFSymbol { ext(.start + ".bar.xaxis") }
+
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var lineUptrendXyaxis: SFSymbol { ext(.start + ".line.uptrend.xyaxis") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var lineUptrendXyaxisCircle: SFSymbol { ext(.start + ".line.uptrend.xyaxis".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var lineUptrendXyaxisCircleFill: SFSymbol { ext(.start + ".line.uptrend.xyaxis".circle.fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var pie: SFSymbol { ext(.start + ".pie") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var pieFill: SFSymbol { ext(.start + ".pie".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var xyaxisLine: SFSymbol { ext(.start + ".xyaxis.line") }

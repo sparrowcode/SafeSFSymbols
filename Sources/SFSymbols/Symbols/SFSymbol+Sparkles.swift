@@ -25,6 +25,11 @@ extension SFSymbol {
 
 	open class Sparkles: SFSymbol {
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectangleStack: SFSymbol { ext(.start.rectangle + ".stack") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectangleStackFill: SFSymbol { ext(.start.rectangle + ".stack".fill) }
+
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var squareFilledOnSquare: SFSymbol { ext(.start.square + ".filled.on".square) }
 

@@ -28,6 +28,17 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var earphones: SFSymbol { ext(.start + ".earphones") }
 
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var fitPro: SFSymbol { ext(.start + ".fit.pro") }
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var fitProChargingcase: SFSymbol { ext(.start + ".fit.pro.chargingcase") }
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var fitProChargingcaseFill: SFSymbol { ext(.start + ".fit.pro.chargingcase".fill) }
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var fitProLeft: SFSymbol { ext(.start + ".fit.pro.left") }
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var fitProRight: SFSymbol { ext(.start + ".fit.pro.right") }
+
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var headphones: SFSymbol { ext(.start + ".headphones") }
 

@@ -25,6 +25,11 @@ extension SFSymbol {
 
 	open class Tablecells: SFSymbol {
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var badgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var fill: SFSymbol { ext(.start.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var fillBadgeEllipsis: SFSymbol { ext(.start.fill + ".badge.ellipsis") }
 	}

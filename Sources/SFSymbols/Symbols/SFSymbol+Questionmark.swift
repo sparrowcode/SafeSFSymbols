@@ -72,6 +72,10 @@ extension SFSymbol {
 		open var square: SFSymbol { ext(.start.square) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var squareAr: SFSymbol { ext(.start.square + ".ar") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var squareDashed: SFSymbol { ext(.start.square + ".dashed") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var squareDashedAr: SFSymbol { ext(.start.square + ".dashed.ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var squareFill: SFSymbol { ext(.start.square.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)

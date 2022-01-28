@@ -39,5 +39,7 @@ extension SFSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var zh: SFSymbol { ext(.start + ".zh") }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var zhTraditional: SFSymbol { ext(.start + ".zh.traditional") }
 	}
 }

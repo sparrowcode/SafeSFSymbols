@@ -26,6 +26,9 @@ extension SFSymbol {
 	open class Camera: SFSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var aperture: SFSymbol { ext(.start + ".aperture") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var badgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -40,6 +43,25 @@ extension SFSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var filters: SFSymbol { ext(.start + ".filters") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringCenterWeighted: SFSymbol { ext(.start + ".metering.center.weighted") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringCenterWeightedAverage: SFSymbol { ext(.start + ".metering.center.weighted.average") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringMatrix: SFSymbol { ext(.start + ".metering.matrix") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringMultispot: SFSymbol { ext(.start + ".metering.multispot") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringNone: SFSymbol { ext(.start + ".metering.none") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringPartial: SFSymbol { ext(.start + ".metering.partial") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringSpot: SFSymbol { ext(.start + ".metering.spot") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringUnknown: SFSymbol { ext(.start + ".metering.unknown") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var meteringUnknownAr: SFSymbol { ext(.start + ".metering.unknown.ar") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var onRectangle: SFSymbol { ext(.start + ".on".rectangle) }

@@ -37,10 +37,18 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var bottomApplewatchCase: SFSymbol { ext(.start + ".bottom.applewatch.case") }
 
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var filledBottomAndArrowDownIphone: SFSymbol { ext(.start + ".filled.bottom.and.arrow.down.iphone") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var filledBottomApplewatchCase: SFSymbol { ext(.start + ".filled.bottom.applewatch.case") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var filledBottomIphone: SFSymbol { ext(.start + ".filled.bottom.iphone") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var filledTopAndArrowUpIphone: SFSymbol { ext(.start + ".filled.top.and.arrow.up.iphone") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var filledTopApplewatchCase: SFSymbol { ext(.start + ".filled.top.applewatch.case") }
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var filledTopIphone: SFSymbol { ext(.start + ".filled.top.iphone") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var topApplewatchCase: SFSymbol { ext(.start + ".top.applewatch.case") }

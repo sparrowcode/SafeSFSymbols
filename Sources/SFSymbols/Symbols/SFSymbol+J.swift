@@ -34,6 +34,8 @@ extension SFSymbol {
 		open var square: SFSymbol { ext(.start.square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var squareOnSquare: SFSymbol { ext(.start.square + ".on".square) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var squareOnSquareFill: SFSymbol { ext(.start.square + ".on".square.fill) }
 	}

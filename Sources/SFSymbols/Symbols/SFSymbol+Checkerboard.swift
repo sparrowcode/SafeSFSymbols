@@ -25,6 +25,9 @@ extension SFSymbol {
 
 	open class Checkerboard: SFSymbol {
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectangle: SFSymbol { ext(.start.rectangle) }
+
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var shield: SFSymbol { ext(.start + ".shield") }
 	}

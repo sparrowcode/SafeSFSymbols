@@ -33,5 +33,12 @@ extension SFSymbol {
 		open var chargingcaseWireless: SFSymbol { ext(.start + ".chargingcase.wireless") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var chargingcaseWirelessFill: SFSymbol { ext(.start + ".chargingcase.wireless".fill) }
+
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var gen3: SFSymbol { ext(.start + ".gen3") }
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var gen3ChargingcaseWireless: SFSymbol { ext(.start + ".gen3.chargingcase.wireless") }
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var gen3ChargingcaseWirelessFill: SFSymbol { ext(.start + ".gen3.chargingcase.wireless".fill) }
 	}
 }

@@ -25,14 +25,21 @@ extension SFSymbol {
 
 	open class List: SFSymbol {
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var andFilm: SFSymbol { ext(.start + ".and.film") }
+
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var bullet: SFSymbol { ext(.start + ".bullet") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var bulletBelowRectangle: SFSymbol { ext(.start + ".bullet.below".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var bulletCircle: SFSymbol { ext(.start + ".bullet".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var bulletCircleFill: SFSymbol { ext(.start + ".bullet".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var bulletIndent: SFSymbol { ext(.start + ".bullet.indent") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var bulletRectangle: SFSymbol { ext(.start + ".bullet".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var bulletRectangleFill: SFSymbol { ext(.start + ".bullet".rectangle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)

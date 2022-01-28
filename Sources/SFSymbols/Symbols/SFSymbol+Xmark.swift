@@ -44,6 +44,11 @@ extension SFSymbol {
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var circleFill: SFSymbol { ext(.start.circle.fill) }
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var diamond: SFSymbol { ext(.start + ".diamond") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var diamondFill: SFSymbol { ext(.start + ".diamond".fill) }
+
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var icloud: SFSymbol { ext(.start + ".icloud") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -53,6 +58,20 @@ extension SFSymbol {
 		open var octagon: SFSymbol { ext(.start + ".octagon") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var octagonFill: SFSymbol { ext(.start + ".octagon".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectanglePortrait: SFSymbol { ext(.start.rectangle + ".portrait") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var rectanglePortraitFill: SFSymbol { ext(.start.rectangle + ".portrait".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var seal: SFSymbol { ext(.start + ".seal") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var sealFill: SFSymbol { ext(.start + ".seal".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var shield: SFSymbol { ext(.start + ".shield") }

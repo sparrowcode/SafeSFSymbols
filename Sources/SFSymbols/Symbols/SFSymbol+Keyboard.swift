@@ -37,6 +37,9 @@ extension SFSymbol {
 		open var fill: SFSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var macwindow: SFSymbol { ext(.start + ".macwindow") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var onehandedLeft: SFSymbol { ext(.start + ".onehanded.left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var onehandedRight: SFSymbol { ext(.start + ".onehanded.right") }

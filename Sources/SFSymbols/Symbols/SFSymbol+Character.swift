@@ -49,6 +49,8 @@ extension SFSymbol {
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var bookClosedFillZh: SFSymbol { ext(.start + ".book.closed".fill + ".zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var bookClosedFillZhTraditional: SFSymbol { ext(.start + ".book.closed".fill + ".zh.traditional") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var bookClosedHe: SFSymbol { ext(.start + ".book.closed.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var bookClosedHi: SFSymbol { ext(.start + ".book.closed.hi") }
@@ -60,6 +62,8 @@ extension SFSymbol {
 		open var bookClosedTh: SFSymbol { ext(.start + ".book.closed.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var bookClosedZh: SFSymbol { ext(.start + ".book.closed.zh") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var bookClosedZhTraditional: SFSymbol { ext(.start + ".book.closed.zh.traditional") }
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
 		open var bubble: SFSymbol { ext(.start + ".bubble") }
@@ -81,6 +85,8 @@ extension SFSymbol {
 		open var bubbleFillTh: SFSymbol { ext(.start + ".bubble".fill + ".th") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var bubbleFillZh: SFSymbol { ext(.start + ".bubble".fill + ".zh") }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var bubbleFillZhTraditional: SFSymbol { ext(.start + ".bubble".fill + ".zh.traditional") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
 		open var bubbleHe: SFSymbol { ext(.start + ".bubble.he") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -93,6 +99,8 @@ extension SFSymbol {
 		open var bubbleTh: SFSymbol { ext(.start + ".bubble.th") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var bubbleZh: SFSymbol { ext(.start + ".bubble.zh") }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var bubbleZhTraditional: SFSymbol { ext(.start + ".bubble.zh.traditional") }
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
 		open var cursorIbeam: SFSymbol { ext(.start + ".cursor.ibeam") }
@@ -110,6 +118,8 @@ extension SFSymbol {
 		open var cursorIbeamTh: SFSymbol { ext(.start + ".cursor.ibeam.th") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
 		open var cursorIbeamZh: SFSymbol { ext(.start + ".cursor.ibeam.zh") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var cursorIbeamZhTraditional: SFSymbol { ext(.start + ".cursor.ibeam.zh.traditional") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var he: SFSymbol { ext(.start + ".he") }
@@ -139,11 +149,15 @@ extension SFSymbol {
 		open var textboxTh: SFSymbol { ext(.start + ".textbox.th") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
 		open var textboxZh: SFSymbol { ext(.start + ".textbox.zh") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxZhTraditional: SFSymbol { ext(.start + ".textbox.zh.traditional") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var th: SFSymbol { ext(.start + ".th") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var zh: SFSymbol { ext(.start + ".zh") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var zhTraditional: SFSymbol { ext(.start + ".zh.traditional") }
 	}
 }

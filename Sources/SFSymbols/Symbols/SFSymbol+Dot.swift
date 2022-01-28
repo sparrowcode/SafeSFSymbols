@@ -25,6 +25,11 @@ extension SFSymbol {
 
 	open class Dot: SFSymbol {
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var arrowtrianglesUpRightDownLeftCircle: SFSymbol { ext(.start + ".arrowtriangles.up.right.down.left".circle) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var circleAndCursorarrow: SFSymbol { ext(.start.circle + ".and.cursorarrow") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var circleAndHandPointUpLeftFill: SFSymbol { ext(.start.circle + ".and.hand.point.up.left".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -38,6 +43,18 @@ extension SFSymbol {
 		open var radiowavesRight: SFSymbol { ext(.start + ".radiowaves.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var radiowavesUpForward: SFSymbol { ext(.start + ".radiowaves.up.forward") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var square: SFSymbol { ext(.start.square) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var squareFill: SFSymbol { ext(.start.square.fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var squareshape: SFSymbol { ext(.start + ".squareshape") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var squareshapeFill: SFSymbol { ext(.start + ".squareshape".fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var squareshapeSplit_2x2: SFSymbol { ext(.start + ".squareshape.split.2x2") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }

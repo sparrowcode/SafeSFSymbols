@@ -26,6 +26,8 @@ extension SFSymbol {
 	open class Purchased: SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var circle: SFSymbol { ext(.start.circle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var circleFill: SFSymbol { ext(.start.circle.fill) }
 	}
 }

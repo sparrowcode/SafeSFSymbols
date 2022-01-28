@@ -69,6 +69,8 @@ extension SFSymbol {
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var sizeLargerZh: SFSymbol { ext(.start + ".size.larger.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var sizeLargerZhTraditional: SFSymbol { ext(.start + ".size.larger.zh.traditional") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var sizeSmaller: SFSymbol { ext(.start + ".size.smaller") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var sizeSmallerAr: SFSymbol { ext(.start + ".size.smaller.ar") }
@@ -85,9 +87,13 @@ extension SFSymbol {
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var sizeSmallerZh: SFSymbol { ext(.start + ".size.smaller.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var sizeSmallerZhTraditional: SFSymbol { ext(.start + ".size.smaller.zh.traditional") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var sizeTh: SFSymbol { ext(.start + ".size.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var sizeZh: SFSymbol { ext(.start + ".size.zh") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var sizeZhTraditional: SFSymbol { ext(.start + ".size.zh.traditional") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var `subscript`: SFSymbol { ext(.start + ".subscript") }
@@ -105,6 +111,8 @@ extension SFSymbol {
 		open var subscriptTh: SFSymbol { ext(.start + ".subscript.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var subscriptZh: SFSymbol { ext(.start + ".subscript.zh") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var subscriptZhTraditional: SFSymbol { ext(.start + ".subscript.zh.traditional") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var superscript: SFSymbol { ext(.start + ".superscript") }
@@ -122,5 +130,7 @@ extension SFSymbol {
 		open var superscriptTh: SFSymbol { ext(.start + ".superscript.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
 		open var superscriptZh: SFSymbol { ext(.start + ".superscript.zh") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var superscriptZhTraditional: SFSymbol { ext(.start + ".superscript.zh.traditional") }
 	}
 }

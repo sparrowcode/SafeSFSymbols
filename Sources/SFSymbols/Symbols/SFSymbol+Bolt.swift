@@ -25,6 +25,11 @@ extension SFSymbol {
 
 	open class Bolt: SFSymbol {
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgeA: SFSymbol { ext(.start + ".badge.a") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgeAFill: SFSymbol { ext(.start + ".badge.a".fill) }
+
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var batteryblock: SFSymbol { ext(.start + ".batteryblock") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -64,6 +69,9 @@ extension SFSymbol {
 		open var horizontalIcloud: SFSymbol { ext(.start + ".horizontal.icloud") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var horizontalIcloudFill: SFSymbol { ext(.start + ".horizontal.icloud".fill) }
+
+		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
+		open var ringClosed: SFSymbol { ext(.start + ".ring.closed") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var shield: SFSymbol { ext(.start + ".shield") }

@@ -37,6 +37,10 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var _3GroupFill: SFSymbol { ext(.start + ".3.group".fill) }
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var andArrowUpRightAndArrowDownLeft: SFSymbol { ext(.start + ".and.arrow.up.right.and.arrow.down.left") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var andArrowUpRightAndArrowDownLeftSlash: SFSymbol { ext(.start + ".and.arrow.up.right.and.arrow.down.left".slash) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var andHandPointUpLeft: SFSymbol { ext(.start + ".and.hand.point.up.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -49,6 +53,15 @@ extension SFSymbol {
 		open var andPencilAndEllipsis: SFSymbol { ext(.start + ".and.pencil.and.ellipsis") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var andPencilAndEllipsisRtl: SFSymbol { ext(.start + ".and.pencil.and.ellipsis.rtl") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var andTextMagnifyingglass: SFSymbol { ext(.start + ".and.text.magnifyingglass") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var andTextMagnifyingglassRtl: SFSymbol { ext(.start + ".and.text.magnifyingglass.rtl") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var arrowtriangle_2Inward: SFSymbol { ext(.start + ".arrowtriangle.2.inward") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var arrowtriangle_2Outward: SFSymbol { ext(.start + ".arrowtriangle.2.outward") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var badgeCheckmark: SFSymbol { ext(.start + ".badge.checkmark") }
@@ -74,12 +87,21 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var centerInsetFilledBadgePlus: SFSymbol { ext(.start + ".center.inset.filled.badge.plus") }
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var compressVertical: SFSymbol { ext(.start + ".compress.vertical") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var connectedToLineBelow: SFSymbol { ext(.start + ".connected.to.line.below") }
+
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var dashed: SFSymbol { ext(.start + ".dashed") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var dashedAndPaperclip: SFSymbol { ext(.start + ".dashed.and.paperclip") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var dashedBadgeRecord: SFSymbol { ext(.start + ".dashed.badge.record") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var expandVertical: SFSymbol { ext(.start + ".expand.vertical") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var fill: SFSymbol { ext(.start.fill) }
@@ -94,10 +116,25 @@ extension SFSymbol {
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var fillBadgeXmark: SFSymbol { ext(.start.fill + ".badge.xmark") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var fillOnRectangleAngledFill: SFSymbol { ext(.start.fill + ".on".rectangle + ".angled".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var fillOnRectangleFill: SFSymbol { ext(.start.fill + ".on".rectangle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var filledAndHandPointUpLeft: SFSymbol { ext(.start + ".filled.and.hand.point.up.left") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_1x2: SFSymbol { ext(.start + ".grid.1x2") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_1x2Fill: SFSymbol { ext(.start + ".grid.1x2".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_2x2: SFSymbol { ext(.start + ".grid.2x2") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_2x2Fill: SFSymbol { ext(.start + ".grid.2x2".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_3x2: SFSymbol { ext(.start + ".grid.3x2") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var grid_3x2Fill: SFSymbol { ext(.start + ".grid.3x2".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var insetBottomleadingFilled: SFSymbol { ext(.start + ".inset.bottomleading.filled") }
@@ -122,6 +159,8 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var insetToptrailingFilled: SFSymbol { ext(.start + ".inset.toptrailing.filled") }
 
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var leadinghalfFilled: SFSymbol { ext(.start + ".leadinghalf.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var leadinghalfInsetFilled: SFSymbol { ext(.start + ".leadinghalf.inset.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -142,10 +181,14 @@ extension SFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var onRectangle: SFSymbol { ext(.start + ".on".rectangle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var onRectangleAngled: SFSymbol { ext(.start + ".on".rectangle + ".angled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var onRectangleCircle: SFSymbol { ext(.start + ".on".rectangle.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var onRectangleCircleFill: SFSymbol { ext(.start + ".on".rectangle.circle.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var onRectangleSlash: SFSymbol { ext(.start + ".on".rectangle.slash) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var onRectangleSlashCircle: SFSymbol { ext(.start + ".on".rectangle.slash.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -163,6 +206,10 @@ extension SFSymbol {
 		open var portraitAndArrowRight: SFSymbol { ext(.start + ".portrait.and.arrow.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var portraitAndArrowRightFill: SFSymbol { ext(.start + ".portrait.and.arrow.right".fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var portraitArrowtriangle_2Inward: SFSymbol { ext(.start + ".portrait.arrowtriangle.2.inward") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var portraitArrowtriangle_2Outward: SFSymbol { ext(.start + ".portrait.arrowtriangle.2.outward") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var portraitBottomhalfFilled: SFSymbol { ext(.start + ".portrait.bottomhalf.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
@@ -258,11 +305,38 @@ extension SFSymbol {
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var roundedtopFill: SFSymbol { ext(.start + ".roundedtop".fill) }
 
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var slash: SFSymbol { ext(.start.slash) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var split_1x2: SFSymbol { ext(.start + ".split.1x2") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var split_1x2Fill: SFSymbol { ext(.start + ".split.1x2".fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var split_2x1: SFSymbol { ext(.start + ".split.2x1") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var split_2x1Fill: SFSymbol { ext(.start + ".split.2x1".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var split_2x1Slash: SFSymbol { ext(.start + ".split.2x1".slash) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var split_2x1SlashFill: SFSymbol { ext(.start + ".split.2x1".slash.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var split_2x2: SFSymbol { ext(.start + ".split.2x2") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var split_2x2Fill: SFSymbol { ext(.start + ".split.2x2".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var split_3x1: SFSymbol { ext(.start + ".split.3x1") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var split_3x1Fill: SFSymbol { ext(.start + ".split.3x1".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var split_3x3: SFSymbol { ext(.start + ".split.3x3") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var split_3x3Fill: SFSymbol { ext(.start + ".split.3x3".fill) }
 
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var stack: SFSymbol { ext(.start + ".stack") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var stackBadgeMinus: SFSymbol { ext(.start + ".stack.badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
@@ -276,6 +350,8 @@ extension SFSymbol {
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var stackBadgePlus: SFSymbol { ext(.start + ".stack.badge.plus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var stackFill: SFSymbol { ext(.start + ".stack".fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var stackFillBadgeMinus: SFSymbol { ext(.start + ".stack".fill + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var stackFillBadgePlus: SFSymbol { ext(.start + ".stack".fill + ".badge.plus") }
@@ -288,6 +364,8 @@ extension SFSymbol {
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var topthirdInsetFilled: SFSymbol { ext(.start + ".topthird.inset.filled") }
 
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		open var trailinghalfFilled: SFSymbol { ext(.start + ".trailinghalf.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var trailinghalfInsetFilled: SFSymbol { ext(.start + ".trailinghalf.inset.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
