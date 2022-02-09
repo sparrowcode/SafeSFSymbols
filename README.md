@@ -1,6 +1,15 @@
 # SPSafeSymbols
 
-Wrapper of `SFSymbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of iOS/macOS/tvOS, the compiler will show a warning. Processed all symbols by script.
+Wrapper of `SFSymbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of `iOS/macOS/tvOS`, the compiler will show a warning. Processed all symbols by script.
+
+- [Installation](#installation)
+    - [Swift Package Manager](#swift-package-manager)
+    - [CocoaPods](#cocoapods)
+    - [Manually](#manually)
+- [Usage](#usage)
+    - [UIKit](#uikit)
+    - [SwiftUI](#swiftui)
+    - [AppKit](#appkit)
 
 ## Installation
 
@@ -18,9 +27,17 @@ dependencies: [
 ]
 ```
 
+### CocoaPods:
+
+[CocoaPods](https://cocoapods.org) is a dependency manager. For usage and installation instructions, visit their website. To integrate using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'SPSafeSymbols'
+```
+
 ### Manually
 
-If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/SFSymbols` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
+If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/SPSafeSymbols` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
 
 ## Usage
 
