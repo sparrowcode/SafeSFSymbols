@@ -1,4 +1,4 @@
-# SFSymbols
+# SPSafeSymbols
 
 Wrapper of `SFSymbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of iOS/macOS/tvOS, the compiler will show a warning. Processed all symbols by script.
 
@@ -14,7 +14,7 @@ Once you have your Swift package set up, adding as a dependency is as easy as ad
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/ivanvorobei/SFSymbols", .upToNextMajor(from: "1.0.1"))
+    .package(url: "https://github.com/sparrowcode/SPSafeSymbols", .upToNextMajor(from: "1.0.1"))
 ]
 ```
 
