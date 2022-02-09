@@ -66,12 +66,3 @@ If need with specific font, use this:
 ```swift
 let image = NSImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
 ```
-
-## Russian Community
-
-Я веду [телеграм-канал](https://sparrowcode.io/telegram), там публикую новости и туториалы.<br>
-С проблемой помогут [в чате](https://sparrowcode.io/telegram/chat).
-
-Видео-туториалы выклыдываю на [YouTube](https://ivanvorobei.by/youtube):
-
-[![Tutorials on YouTube](https://cdn.ivanvorobei.by/github/readme/youtube-preview.jpg)](https://ivanvorobei.by/youtube)
