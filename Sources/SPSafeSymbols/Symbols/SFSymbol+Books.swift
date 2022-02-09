@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var books: Books { .init(name: "books") }
 
-	open class Books: SFSymbol {
+	open class Books: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var vertical: SFSymbol { ext(.start + ".vertical") }
+		open var vertical: SPSafeSymbol { ext(.start + ".vertical") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalCircle: SFSymbol { ext(.start + ".vertical".circle) }
+		open var verticalCircle: SPSafeSymbol { ext(.start + ".vertical".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalCircleFill: SFSymbol { ext(.start + ".vertical".circle.fill) }
+		open var verticalCircleFill: SPSafeSymbol { ext(.start + ".vertical".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var verticalFill: SFSymbol { ext(.start + ".vertical".fill) }
+		open var verticalFill: SPSafeSymbol { ext(.start + ".vertical".fill) }
 	}
 }

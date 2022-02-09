@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var _4k: Fourk { .init(name: "4k") }
 
-	open class Fourk: SFSymbol {
+	open class Fourk: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var tv: SFSymbol { ext(.start + ".tv") }
+		open var tv: SPSafeSymbol { ext(.start + ".tv") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var tvFill: SFSymbol { ext(.start + ".tv".fill) }
+		open var tvFill: SPSafeSymbol { ext(.start + ".tv".fill) }
 	}
 }

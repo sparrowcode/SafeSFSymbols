@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var timer: Timer { .init(name: "timer") }
 
-	open class Timer: SFSymbol {
+	open class Timer: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 	}
 }

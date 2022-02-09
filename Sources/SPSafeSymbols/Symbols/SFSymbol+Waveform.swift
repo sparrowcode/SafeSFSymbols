@@ -19,40 +19,40 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var waveform: Waveform { .init(name: "waveform") }
 
-	open class Waveform: SFSymbol {
+	open class Waveform: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andMagnifyingglass: SFSymbol { ext(.start + ".and.magnifyingglass") }
+		open var andMagnifyingglass: SPSafeSymbol { ext(.start + ".and.magnifyingglass") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andMic: SFSymbol { ext(.start + ".and.mic") }
+		open var andMic: SPSafeSymbol { ext(.start + ".and.mic") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeExclamationmark: SFSymbol { ext(.start + ".badge.exclamationmark") }
+		open var badgeExclamationmark: SPSafeSymbol { ext(.start + ".badge.exclamationmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeMinus: SFSymbol { ext(.start + ".badge.minus") }
+		open var badgeMinus: SPSafeSymbol { ext(.start + ".badge.minus") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
+		open var badgePlus: SPSafeSymbol { ext(.start + ".badge.plus") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var path: SFSymbol { ext(.start + ".path") }
+		open var path: SPSafeSymbol { ext(.start + ".path") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var pathBadgeMinus: SFSymbol { ext(.start + ".path.badge.minus") }
+		open var pathBadgeMinus: SPSafeSymbol { ext(.start + ".path.badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var pathBadgePlus: SFSymbol { ext(.start + ".path.badge.plus") }
+		open var pathBadgePlus: SPSafeSymbol { ext(.start + ".path.badge.plus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var pathEcg: SFSymbol { ext(.start + ".path.ecg") }
+		open var pathEcg: SPSafeSymbol { ext(.start + ".path.ecg") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var pathEcgRectangle: SFSymbol { ext(.start + ".path.ecg".rectangle) }
+		open var pathEcgRectangle: SPSafeSymbol { ext(.start + ".path.ecg".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var pathEcgRectangleFill: SFSymbol { ext(.start + ".path.ecg".rectangle.fill) }
+		open var pathEcgRectangleFill: SPSafeSymbol { ext(.start + ".path.ecg".rectangle.fill) }
 	}
 }

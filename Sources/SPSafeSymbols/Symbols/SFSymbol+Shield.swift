@@ -19,26 +19,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var shield: Shield { .init(name: "shield") }
 
-	open class Shield: SFSymbol {
+	open class Shield: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lefthalfFilled: SFSymbol { ext(.start + ".lefthalf.filled") }
+		open var lefthalfFilled: SPSafeSymbol { ext(.start + ".lefthalf.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lefthalfFilledSlash: SFSymbol { ext(.start + ".lefthalf.filled".slash) }
+		open var lefthalfFilledSlash: SPSafeSymbol { ext(.start + ".lefthalf.filled".slash) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var righthalfFilled: SFSymbol { ext(.start + ".righthalf.filled") }
+		open var righthalfFilled: SPSafeSymbol { ext(.start + ".righthalf.filled") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+		open var slashFill: SPSafeSymbol { ext(.start.slash.fill) }
 	}
 }

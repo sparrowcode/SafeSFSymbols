@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var mail: Mail { .init(name: "mail") }
 
-	open class Mail: SFSymbol {
+	open class Mail: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andTextMagnifyingglass: SFSymbol { ext(.start + ".and.text.magnifyingglass") }
+		open var andTextMagnifyingglass: SPSafeSymbol { ext(.start + ".and.text.magnifyingglass") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andTextMagnifyingglassRtl: SFSymbol { ext(.start + ".and.text.magnifyingglass.rtl") }
+		open var andTextMagnifyingglassRtl: SPSafeSymbol { ext(.start + ".and.text.magnifyingglass.rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var stack: SFSymbol { ext(.start + ".stack") }
+		open var stack: SPSafeSymbol { ext(.start + ".stack") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var stackFill: SFSymbol { ext(.start + ".stack".fill) }
+		open var stackFill: SPSafeSymbol { ext(.start + ".stack".fill) }
 	}
 }

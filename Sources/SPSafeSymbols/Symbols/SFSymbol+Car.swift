@@ -19,28 +19,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var car: Car { .init(name: "car") }
 
-	open class Car: SFSymbol {
+	open class Car: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+		open var _2Fill: SPSafeSymbol { ext(.start + ".2".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var ferry: SFSymbol { ext(.start + ".ferry") }
+		open var ferry: SPSafeSymbol { ext(.start + ".ferry") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var ferryFill: SFSymbol { ext(.start + ".ferry".fill) }
+		open var ferryFill: SPSafeSymbol { ext(.start + ".ferry".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

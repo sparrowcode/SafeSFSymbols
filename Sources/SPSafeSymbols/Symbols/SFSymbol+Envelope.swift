@@ -19,37 +19,37 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var envelope: Envelope { .init(name: "envelope") }
 
-	open class Envelope: SFSymbol {
+	open class Envelope: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowTriangleBranch: SFSymbol { ext(.start + ".arrow.triangle.branch") }
+		open var arrowTriangleBranch: SPSafeSymbol { ext(.start + ".arrow.triangle.branch") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowTriangleBranchFill: SFSymbol { ext(.start + ".arrow.triangle.branch".fill) }
+		open var arrowTriangleBranchFill: SPSafeSymbol { ext(.start + ".arrow.triangle.branch".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badge: SFSymbol { ext(.start + ".badge") }
+		open var badge: SPSafeSymbol { ext(.start + ".badge") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeFill: SFSymbol { ext(.start + ".badge".fill) }
+		open var badgeFill: SPSafeSymbol { ext(.start + ".badge".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeShieldHalfFilled: SFSymbol { ext(.start + ".badge.shield.half.filled") }
+		open var badgeShieldHalfFilled: SPSafeSymbol { ext(.start + ".badge.shield.half.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeShieldHalfFilledFill: SFSymbol { ext(.start + ".badge.shield.half.filled".fill) }
+		open var badgeShieldHalfFilledFill: SPSafeSymbol { ext(.start + ".badge.shield.half.filled".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var open: SFSymbol { ext(.start + ".open") }
+		open var open: SPSafeSymbol { ext(.start + ".open") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var openFill: SFSymbol { ext(.start + ".open".fill) }
+		open var openFill: SPSafeSymbol { ext(.start + ".open".fill) }
 	}
 }

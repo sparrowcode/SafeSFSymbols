@@ -19,30 +19,30 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var suit: Suit { .init(name: "suit") }
 
-	open class Suit: SFSymbol {
+	open class Suit: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var club: SFSymbol { ext(.start + ".club") }
+		open var club: SPSafeSymbol { ext(.start + ".club") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var clubFill: SFSymbol { ext(.start + ".club".fill) }
+		open var clubFill: SPSafeSymbol { ext(.start + ".club".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var diamond: SFSymbol { ext(.start + ".diamond") }
+		open var diamond: SPSafeSymbol { ext(.start + ".diamond") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var diamondFill: SFSymbol { ext(.start + ".diamond".fill) }
+		open var diamondFill: SPSafeSymbol { ext(.start + ".diamond".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var heart: SFSymbol { ext(.start + ".heart") }
+		open var heart: SPSafeSymbol { ext(.start + ".heart") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var heartFill: SFSymbol { ext(.start + ".heart".fill) }
+		open var heartFill: SPSafeSymbol { ext(.start + ".heart".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var spade: SFSymbol { ext(.start + ".spade") }
+		open var spade: SPSafeSymbol { ext(.start + ".spade") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var spadeFill: SFSymbol { ext(.start + ".spade".fill) }
+		open var spadeFill: SPSafeSymbol { ext(.start + ".spade".fill) }
 	}
 }

@@ -19,30 +19,30 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var delete: Delete { .init(name: "delete") }
 
-	open class Delete: SFSymbol {
+	open class Delete: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var backward: SFSymbol { ext(.start + ".backward") }
+		open var backward: SPSafeSymbol { ext(.start + ".backward") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var backwardFill: SFSymbol { ext(.start + ".backward".fill) }
+		open var backwardFill: SPSafeSymbol { ext(.start + ".backward".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var forward: SFSymbol { ext(.start + ".forward") }
+		open var forward: SPSafeSymbol { ext(.start + ".forward") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var forwardFill: SFSymbol { ext(.start + ".forward".fill) }
+		open var forwardFill: SPSafeSymbol { ext(.start + ".forward".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var left: SFSymbol { ext(.start + ".left") }
+		open var left: SPSafeSymbol { ext(.start + ".left") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftFill: SFSymbol { ext(.start + ".left".fill) }
+		open var leftFill: SPSafeSymbol { ext(.start + ".left".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var right: SFSymbol { ext(.start + ".right") }
+		open var right: SPSafeSymbol { ext(.start + ".right") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightFill: SFSymbol { ext(.start + ".right".fill) }
+		open var rightFill: SPSafeSymbol { ext(.start + ".right".fill) }
 	}
 }

@@ -19,43 +19,43 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var folder: Folder { .init(name: "folder") }
 
-	open class Folder: SFSymbol {
+	open class Folder: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeGearshape: SFSymbol { ext(.start + ".badge.gearshape") }
+		open var badgeGearshape: SPSafeSymbol { ext(.start + ".badge.gearshape") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeMinus: SFSymbol { ext(.start + ".badge.minus") }
+		open var badgeMinus: SPSafeSymbol { ext(.start + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgePersonCrop: SFSymbol { ext(.start + ".badge.person.crop") }
+		open var badgePersonCrop: SPSafeSymbol { ext(.start + ".badge.person.crop") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
+		open var badgePlus: SPSafeSymbol { ext(.start + ".badge.plus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeQuestionmark: SFSymbol { ext(.start + ".badge.questionmark") }
+		open var badgeQuestionmark: SPSafeSymbol { ext(.start + ".badge.questionmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeQuestionmarkAr: SFSymbol { ext(.start + ".badge.questionmark.ar") }
+		open var badgeQuestionmarkAr: SPSafeSymbol { ext(.start + ".badge.questionmark.ar") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var fillBadgeGearshape: SFSymbol { ext(.start.fill + ".badge.gearshape") }
+		open var fillBadgeGearshape: SPSafeSymbol { ext(.start.fill + ".badge.gearshape") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fillBadgeMinus: SFSymbol { ext(.start.fill + ".badge.minus") }
+		open var fillBadgeMinus: SPSafeSymbol { ext(.start.fill + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fillBadgePersonCrop: SFSymbol { ext(.start.fill + ".badge.person.crop") }
+		open var fillBadgePersonCrop: SPSafeSymbol { ext(.start.fill + ".badge.person.crop") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fillBadgePlus: SFSymbol { ext(.start.fill + ".badge.plus") }
+		open var fillBadgePlus: SPSafeSymbol { ext(.start.fill + ".badge.plus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillBadgeQuestionmark: SFSymbol { ext(.start.fill + ".badge.questionmark") }
+		open var fillBadgeQuestionmark: SPSafeSymbol { ext(.start.fill + ".badge.questionmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillBadgeQuestionmarkAr: SFSymbol { ext(.start.fill + ".badge.questionmark.ar") }
+		open var fillBadgeQuestionmarkAr: SPSafeSymbol { ext(.start.fill + ".badge.questionmark.ar") }
 	}
 }

@@ -19,56 +19,56 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var beats: Beats { .init(name: "beats") }
 
-	open class Beats: SFSymbol {
+	open class Beats: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var earphones: SFSymbol { ext(.start + ".earphones") }
+		open var earphones: SPSafeSymbol { ext(.start + ".earphones") }
 
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var fitPro: SFSymbol { ext(.start + ".fit.pro") }
+		open var fitPro: SPSafeSymbol { ext(.start + ".fit.pro") }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var fitProChargingcase: SFSymbol { ext(.start + ".fit.pro.chargingcase") }
+		open var fitProChargingcase: SPSafeSymbol { ext(.start + ".fit.pro.chargingcase") }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var fitProChargingcaseFill: SFSymbol { ext(.start + ".fit.pro.chargingcase".fill) }
+		open var fitProChargingcaseFill: SPSafeSymbol { ext(.start + ".fit.pro.chargingcase".fill) }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var fitProLeft: SFSymbol { ext(.start + ".fit.pro.left") }
+		open var fitProLeft: SPSafeSymbol { ext(.start + ".fit.pro.left") }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var fitProRight: SFSymbol { ext(.start + ".fit.pro.right") }
+		open var fitProRight: SPSafeSymbol { ext(.start + ".fit.pro.right") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var headphones: SFSymbol { ext(.start + ".headphones") }
+		open var headphones: SPSafeSymbol { ext(.start + ".headphones") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeats: SFSymbol { ext(.start + ".powerbeats") }
+		open var powerbeats: SPSafeSymbol { ext(.start + ".powerbeats") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeats3: SFSymbol { ext(.start + ".powerbeats3") }
+		open var powerbeats3: SPSafeSymbol { ext(.start + ".powerbeats3") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeatspro: SFSymbol { ext(.start + ".powerbeatspro") }
+		open var powerbeatspro: SPSafeSymbol { ext(.start + ".powerbeatspro") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeatsproChargingcase: SFSymbol { ext(.start + ".powerbeatspro.chargingcase") }
+		open var powerbeatsproChargingcase: SPSafeSymbol { ext(.start + ".powerbeatspro.chargingcase") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeatsproChargingcaseFill: SFSymbol { ext(.start + ".powerbeatspro.chargingcase".fill) }
+		open var powerbeatsproChargingcaseFill: SPSafeSymbol { ext(.start + ".powerbeatspro.chargingcase".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeatsproLeft: SFSymbol { ext(.start + ".powerbeatspro.left") }
+		open var powerbeatsproLeft: SPSafeSymbol { ext(.start + ".powerbeatspro.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var powerbeatsproRight: SFSymbol { ext(.start + ".powerbeatspro.right") }
+		open var powerbeatsproRight: SPSafeSymbol { ext(.start + ".powerbeatspro.right") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var studiobudLeft: SFSymbol { ext(.start + ".studiobud.left") }
+		open var studiobudLeft: SPSafeSymbol { ext(.start + ".studiobud.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var studiobudRight: SFSymbol { ext(.start + ".studiobud.right") }
+		open var studiobudRight: SPSafeSymbol { ext(.start + ".studiobud.right") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var studiobuds: SFSymbol { ext(.start + ".studiobuds") }
+		open var studiobuds: SPSafeSymbol { ext(.start + ".studiobuds") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var studiobudsChargingcase: SFSymbol { ext(.start + ".studiobuds.chargingcase") }
+		open var studiobudsChargingcase: SPSafeSymbol { ext(.start + ".studiobuds.chargingcase") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var studiobudsChargingcaseFill: SFSymbol { ext(.start + ".studiobuds.chargingcase".fill) }
+		open var studiobudsChargingcaseFill: SPSafeSymbol { ext(.start + ".studiobuds.chargingcase".fill) }
 	}
 }

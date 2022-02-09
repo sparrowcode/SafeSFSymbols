@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var watchface: Watchface { .init(name: "watchface") }
 
-	open class Watchface: SFSymbol {
+	open class Watchface: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var applewatchCase: SFSymbol { ext(.start + ".applewatch.case") }
+		open var applewatchCase: SPSafeSymbol { ext(.start + ".applewatch.case") }
 	}
 }

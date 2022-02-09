@@ -19,16 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var decrease: Decrease { .init(name: "decrease") }
 
-	open class Decrease: SFSymbol {
+	open class Decrease: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var indent: SFSymbol { ext(.start + ".indent") }
+		open var indent: SPSafeSymbol { ext(.start + ".indent") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var quotelevel: SFSymbol { ext(.start + ".quotelevel") }
+		open var quotelevel: SPSafeSymbol { ext(.start + ".quotelevel") }
 	}
 }

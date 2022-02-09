@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var antenna: Antenna { .init(name: "antenna") }
 
-	open class Antenna: SFSymbol {
+	open class Antenna: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var radiowavesLeftAndRight: SFSymbol { ext(.start + ".radiowaves.left.and.right") }
+		open var radiowavesLeftAndRight: SPSafeSymbol { ext(.start + ".radiowaves.left.and.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesLeftAndRightCircle: SFSymbol { ext(.start + ".radiowaves.left.and.right".circle) }
+		open var radiowavesLeftAndRightCircle: SPSafeSymbol { ext(.start + ".radiowaves.left.and.right".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesLeftAndRightCircleFill: SFSymbol { ext(.start + ".radiowaves.left.and.right".circle.fill) }
+		open var radiowavesLeftAndRightCircleFill: SPSafeSymbol { ext(.start + ".radiowaves.left.and.right".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesLeftAndRightSlash: SFSymbol { ext(.start + ".radiowaves.left.and.right".slash) }
+		open var radiowavesLeftAndRightSlash: SPSafeSymbol { ext(.start + ".radiowaves.left.and.right".slash) }
 	}
 }

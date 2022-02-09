@@ -19,17 +19,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var train: Train { .init(name: "train") }
 
-	open class Train: SFSymbol {
+	open class Train: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var sideFrontCar: SFSymbol { ext(.start + ".side.front.car") }
+		open var sideFrontCar: SPSafeSymbol { ext(.start + ".side.front.car") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var sideMiddleCar: SFSymbol { ext(.start + ".side.middle.car") }
+		open var sideMiddleCar: SPSafeSymbol { ext(.start + ".side.middle.car") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var sideRearCar: SFSymbol { ext(.start + ".side.rear.car") }
+		open var sideRearCar: SPSafeSymbol { ext(.start + ".side.rear.car") }
 	}
 }

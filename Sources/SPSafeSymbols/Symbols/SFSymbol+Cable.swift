@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var cable: Cable { .init(name: "cable") }
 
-	open class Cable: SFSymbol {
+	open class Cable: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var connector: SFSymbol { ext(.start + ".connector") }
+		open var connector: SPSafeSymbol { ext(.start + ".connector") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var connectorHorizontal: SFSymbol { ext(.start + ".connector.horizontal") }
+		open var connectorHorizontal: SPSafeSymbol { ext(.start + ".connector.horizontal") }
 	}
 }

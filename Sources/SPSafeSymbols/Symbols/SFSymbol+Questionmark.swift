@@ -19,75 +19,75 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var questionmark: Questionmark { .init(name: "questionmark") }
 
-	open class Questionmark: SFSymbol {
+	open class Questionmark: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var app: SFSymbol { ext(.start.app) }
+		open var app: SPSafeSymbol { ext(.start.app) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var appAr: SFSymbol { ext(.start.app + ".ar") }
+		open var appAr: SPSafeSymbol { ext(.start.app + ".ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var appDashed: SFSymbol { ext(.start.app + ".dashed") }
+		open var appDashed: SPSafeSymbol { ext(.start.app + ".dashed") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var appDashedAr: SFSymbol { ext(.start.app + ".dashed.ar") }
+		open var appDashedAr: SPSafeSymbol { ext(.start.app + ".dashed.ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var appFill: SFSymbol { ext(.start.app.fill) }
+		open var appFill: SPSafeSymbol { ext(.start.app.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var appFillAr: SFSymbol { ext(.start.app.fill + ".ar") }
+		open var appFillAr: SPSafeSymbol { ext(.start.app.fill + ".ar") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var ar: SFSymbol { ext(.start + ".ar") }
+		open var ar: SPSafeSymbol { ext(.start + ".ar") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleAr: SFSymbol { ext(.start.circle + ".ar") }
+		open var circleAr: SPSafeSymbol { ext(.start.circle + ".ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleFillAr: SFSymbol { ext(.start.circle.fill + ".ar") }
+		open var circleFillAr: SPSafeSymbol { ext(.start.circle.fill + ".ar") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var diamond: SFSymbol { ext(.start + ".diamond") }
+		open var diamond: SPSafeSymbol { ext(.start + ".diamond") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var diamondAr: SFSymbol { ext(.start + ".diamond.ar") }
+		open var diamondAr: SPSafeSymbol { ext(.start + ".diamond.ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var diamondFill: SFSymbol { ext(.start + ".diamond".fill) }
+		open var diamondFill: SPSafeSymbol { ext(.start + ".diamond".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var diamondFillAr: SFSymbol { ext(.start + ".diamond".fill + ".ar") }
+		open var diamondFillAr: SPSafeSymbol { ext(.start + ".diamond".fill + ".ar") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var folder: SFSymbol { ext(.start + ".folder") }
+		open var folder: SPSafeSymbol { ext(.start + ".folder") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var folderAr: SFSymbol { ext(.start + ".folder.ar") }
+		open var folderAr: SPSafeSymbol { ext(.start + ".folder.ar") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var folderFill: SFSymbol { ext(.start + ".folder".fill) }
+		open var folderFill: SPSafeSymbol { ext(.start + ".folder".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var folderFillAr: SFSymbol { ext(.start + ".folder".fill + ".ar") }
+		open var folderFillAr: SPSafeSymbol { ext(.start + ".folder".fill + ".ar") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareAr: SFSymbol { ext(.start.square + ".ar") }
+		open var squareAr: SPSafeSymbol { ext(.start.square + ".ar") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareDashed: SFSymbol { ext(.start.square + ".dashed") }
+		open var squareDashed: SPSafeSymbol { ext(.start.square + ".dashed") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareDashedAr: SFSymbol { ext(.start.square + ".dashed.ar") }
+		open var squareDashedAr: SPSafeSymbol { ext(.start.square + ".dashed.ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareFillAr: SFSymbol { ext(.start.square.fill + ".ar") }
+		open var squareFillAr: SPSafeSymbol { ext(.start.square.fill + ".ar") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var video: SFSymbol { ext(.start + ".video") }
+		open var video: SPSafeSymbol { ext(.start + ".video") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var videoAr: SFSymbol { ext(.start + ".video.ar") }
+		open var videoAr: SPSafeSymbol { ext(.start + ".video.ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var videoFill: SFSymbol { ext(.start + ".video".fill) }
+		open var videoFill: SPSafeSymbol { ext(.start + ".video".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var videoFillAr: SFSymbol { ext(.start + ".video".fill + ".ar") }
+		open var videoFillAr: SPSafeSymbol { ext(.start + ".video".fill + ".ar") }
 	}
 }

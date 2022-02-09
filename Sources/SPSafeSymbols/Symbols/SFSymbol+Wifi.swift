@@ -19,26 +19,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var wifi: Wifi { .init(name: "wifi") }
 
-	open class Wifi: SFSymbol {
+	open class Wifi: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var exclamationmark: SFSymbol { ext(.start + ".exclamationmark") }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var exclamationmark: SPSafeSymbol { ext(.start + ".exclamationmark") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 	}
 }

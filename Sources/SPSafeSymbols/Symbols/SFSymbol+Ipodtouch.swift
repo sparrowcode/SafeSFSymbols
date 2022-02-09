@@ -19,16 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var ipodtouch: Ipodtouch { .init(name: "ipodtouch") }
 
-	open class Ipodtouch: SFSymbol {
+	open class Ipodtouch: SPSafeSymbol {
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var landscape: SFSymbol { ext(.start + ".landscape") }
+		open var landscape: SPSafeSymbol { ext(.start + ".landscape") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 	}
 }

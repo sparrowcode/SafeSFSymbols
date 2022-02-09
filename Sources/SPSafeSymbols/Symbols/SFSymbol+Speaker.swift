@@ -19,66 +19,66 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var speaker: Speaker { .init(name: "speaker") }
 
-	open class Speaker: SFSymbol {
+	open class Speaker: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeExclamationmark: SFSymbol { ext(.start + ".badge.exclamationmark") }
+		open var badgeExclamationmark: SPSafeSymbol { ext(.start + ".badge.exclamationmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeExclamationmarkFill: SFSymbol { ext(.start + ".badge.exclamationmark".fill) }
+		open var badgeExclamationmarkFill: SPSafeSymbol { ext(.start + ".badge.exclamationmark".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slashCircle: SFSymbol { ext(.start.slash.circle) }
+		open var slashCircle: SPSafeSymbol { ext(.start.slash.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slashCircleFill: SFSymbol { ext(.start.slash.circle.fill) }
+		open var slashCircleFill: SPSafeSymbol { ext(.start.slash.circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slashCircleFillRtl: SFSymbol { ext(.start.slash.circle.fill + ".rtl") }
+		open var slashCircleFillRtl: SPSafeSymbol { ext(.start.slash.circle.fill + ".rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slashCircleRtl: SFSymbol { ext(.start.slash.circle + ".rtl") }
+		open var slashCircleRtl: SPSafeSymbol { ext(.start.slash.circle + ".rtl") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+		open var slashFill: SPSafeSymbol { ext(.start.slash.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFillRtl: SFSymbol { ext(.start.slash.fill + ".rtl") }
+		open var slashFillRtl: SPSafeSymbol { ext(.start.slash.fill + ".rtl") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashRtl: SFSymbol { ext(.start.slash + ".rtl") }
+		open var slashRtl: SPSafeSymbol { ext(.start.slash + ".rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_1: SFSymbol { ext(.start + ".wave.1") }
+		open var wave_1: SPSafeSymbol { ext(.start + ".wave.1") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_1Fill: SFSymbol { ext(.start + ".wave.1".fill) }
+		open var wave_1Fill: SPSafeSymbol { ext(.start + ".wave.1".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_2: SFSymbol { ext(.start + ".wave.2") }
+		open var wave_2: SPSafeSymbol { ext(.start + ".wave.2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_2Circle: SFSymbol { ext(.start + ".wave.2".circle) }
+		open var wave_2Circle: SPSafeSymbol { ext(.start + ".wave.2".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_2CircleFill: SFSymbol { ext(.start + ".wave.2".circle.fill) }
+		open var wave_2CircleFill: SPSafeSymbol { ext(.start + ".wave.2".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_2Fill: SFSymbol { ext(.start + ".wave.2".fill) }
+		open var wave_2Fill: SPSafeSymbol { ext(.start + ".wave.2".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_3: SFSymbol { ext(.start + ".wave.3") }
+		open var wave_3: SPSafeSymbol { ext(.start + ".wave.3") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave_3Fill: SFSymbol { ext(.start + ".wave.3".fill) }
+		open var wave_3Fill: SPSafeSymbol { ext(.start + ".wave.3".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var zzz: SFSymbol { ext(.start + ".zzz") }
+		open var zzz: SPSafeSymbol { ext(.start + ".zzz") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var zzzFill: SFSymbol { ext(.start + ".zzz".fill) }
+		open var zzzFill: SPSafeSymbol { ext(.start + ".zzz".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var zzzFillRtl: SFSymbol { ext(.start + ".zzz".fill + ".rtl") }
+		open var zzzFillRtl: SPSafeSymbol { ext(.start + ".zzz".fill + ".rtl") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var zzzRtl: SFSymbol { ext(.start + ".zzz.rtl") }
+		open var zzzRtl: SPSafeSymbol { ext(.start + ".zzz.rtl") }
 	}
 }

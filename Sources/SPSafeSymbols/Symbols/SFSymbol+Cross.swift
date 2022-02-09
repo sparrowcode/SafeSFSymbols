@@ -19,28 +19,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var cross: Cross { .init(name: "cross") }
 
-	open class Cross: SFSymbol {
+	open class Cross: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var `case`: SFSymbol { ext(.start + ".case") }
+		open var `case`: SPSafeSymbol { ext(.start + ".case") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var caseFill: SFSymbol { ext(.start + ".case".fill) }
+		open var caseFill: SPSafeSymbol { ext(.start + ".case".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var vial: SFSymbol { ext(.start + ".vial") }
+		open var vial: SPSafeSymbol { ext(.start + ".vial") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var vialFill: SFSymbol { ext(.start + ".vial".fill) }
+		open var vialFill: SPSafeSymbol { ext(.start + ".vial".fill) }
 	}
 }

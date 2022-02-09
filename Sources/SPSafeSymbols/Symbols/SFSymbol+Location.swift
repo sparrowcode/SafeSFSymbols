@@ -19,49 +19,49 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var location: Location { .init(name: "location") }
 
-	open class Location: SFSymbol {
+	open class Location: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillViewfinder: SFSymbol { ext(.start.fill + ".viewfinder") }
+		open var fillViewfinder: SPSafeSymbol { ext(.start.fill + ".viewfinder") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var magnifyingglass: SFSymbol { ext(.start + ".magnifyingglass") }
+		open var magnifyingglass: SPSafeSymbol { ext(.start + ".magnifyingglass") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var north: SFSymbol { ext(.start + ".north") }
+		open var north: SPSafeSymbol { ext(.start + ".north") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var northCircle: SFSymbol { ext(.start + ".north".circle) }
+		open var northCircle: SPSafeSymbol { ext(.start + ".north".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var northCircleFill: SFSymbol { ext(.start + ".north".circle.fill) }
+		open var northCircleFill: SPSafeSymbol { ext(.start + ".north".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var northFill: SFSymbol { ext(.start + ".north".fill) }
+		open var northFill: SPSafeSymbol { ext(.start + ".north".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var northLine: SFSymbol { ext(.start + ".north.line") }
+		open var northLine: SPSafeSymbol { ext(.start + ".north.line") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var northLineFill: SFSymbol { ext(.start + ".north.line".fill) }
+		open var northLineFill: SPSafeSymbol { ext(.start + ".north.line".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+		open var slashFill: SPSafeSymbol { ext(.start.slash.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
+		open var viewfinder: SPSafeSymbol { ext(.start + ".viewfinder") }
 	}
 }

@@ -19,25 +19,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var quote: Quote { .init(name: "quote") }
 
-	open class Quote: SFSymbol {
+	open class Quote: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bubble: SFSymbol { ext(.start + ".bubble") }
+		open var bubble: SPSafeSymbol { ext(.start + ".bubble") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
+		open var bubbleFill: SPSafeSymbol { ext(.start + ".bubble".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bubbleFillRtl: SFSymbol { ext(.start + ".bubble".fill + ".rtl") }
+		open var bubbleFillRtl: SPSafeSymbol { ext(.start + ".bubble".fill + ".rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bubbleRtl: SFSymbol { ext(.start + ".bubble.rtl") }
+		open var bubbleRtl: SPSafeSymbol { ext(.start + ".bubble.rtl") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var closing: SFSymbol { ext(.start + ".closing") }
+		open var closing: SPSafeSymbol { ext(.start + ".closing") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var opening: SFSymbol { ext(.start + ".opening") }
+		open var opening: SPSafeSymbol { ext(.start + ".opening") }
 	}
 }

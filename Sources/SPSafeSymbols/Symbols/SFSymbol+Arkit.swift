@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var arkit: Arkit { .init(name: "arkit") }
 
-	open class Arkit: SFSymbol {
+	open class Arkit: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeXmark: SFSymbol { ext(.start + ".badge.xmark") }
+		open var badgeXmark: SPSafeSymbol { ext(.start + ".badge.xmark") }
 	}
 }

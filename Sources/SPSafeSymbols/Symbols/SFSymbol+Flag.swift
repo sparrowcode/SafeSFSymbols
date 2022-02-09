@@ -19,48 +19,48 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var flag: Flag { .init(name: "flag") }
 
-	open class Flag: SFSymbol {
+	open class Flag: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2Crossed: SFSymbol { ext(.start + ".2.crossed") }
+		open var _2Crossed: SPSafeSymbol { ext(.start + ".2.crossed") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2CrossedFill: SFSymbol { ext(.start + ".2.crossed".fill) }
+		open var _2CrossedFill: SPSafeSymbol { ext(.start + ".2.crossed".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andFlagFilledCrossed: SFSymbol { ext(.start + ".and.flag.filled.crossed") }
+		open var andFlagFilledCrossed: SPSafeSymbol { ext(.start + ".and.flag.filled.crossed") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
+		open var badgeEllipsis: SPSafeSymbol { ext(.start + ".badge.ellipsis") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeEllipsisFill: SFSymbol { ext(.start + ".badge.ellipsis".fill) }
+		open var badgeEllipsisFill: SPSafeSymbol { ext(.start + ".badge.ellipsis".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var filledAndFlagCrossed: SFSymbol { ext(.start + ".filled.and.flag.crossed") }
+		open var filledAndFlagCrossed: SPSafeSymbol { ext(.start + ".filled.and.flag.crossed") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slashCircle: SFSymbol { ext(.start.slash.circle) }
+		open var slashCircle: SPSafeSymbol { ext(.start.slash.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slashCircleFill: SFSymbol { ext(.start.slash.circle.fill) }
+		open var slashCircleFill: SPSafeSymbol { ext(.start.slash.circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+		open var slashFill: SPSafeSymbol { ext(.start.slash.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 	}
 }

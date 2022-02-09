@@ -19,22 +19,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var slider: Slider { .init(name: "slider") }
 
-	open class Slider: SFSymbol {
+	open class Slider: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontal_2RectangleAndArrowTriangle_2Circlepath: SFSymbol { ext(.start + ".horizontal.2".rectangle + ".and.arrow.triangle.2.circlepath") }
+		open var horizontal_2RectangleAndArrowTriangle_2Circlepath: SPSafeSymbol { ext(.start + ".horizontal.2".rectangle + ".and.arrow.triangle.2.circlepath") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var horizontal_3: SFSymbol { ext(.start + ".horizontal.3") }
+		open var horizontal_3: SPSafeSymbol { ext(.start + ".horizontal.3") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var horizontalBelowRectangle: SFSymbol { ext(.start + ".horizontal.below".rectangle) }
+		open var horizontalBelowRectangle: SPSafeSymbol { ext(.start + ".horizontal.below".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalBelowSquareFilledAndSquare: SFSymbol { ext(.start + ".horizontal.below".square + ".filled.and".square) }
+		open var horizontalBelowSquareFilledAndSquare: SPSafeSymbol { ext(.start + ".horizontal.below".square + ".filled.and".square) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var vertical_3: SFSymbol { ext(.start + ".vertical.3") }
+		open var vertical_3: SPSafeSymbol { ext(.start + ".vertical.3") }
 	}
 }

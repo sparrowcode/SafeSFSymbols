@@ -19,20 +19,20 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var dial: Dial { .init(name: "dial") }
 
-	open class Dial: SFSymbol {
+	open class Dial: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var max: SFSymbol { ext(.start + ".max") }
+		open var max: SPSafeSymbol { ext(.start + ".max") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var maxFill: SFSymbol { ext(.start + ".max".fill) }
+		open var maxFill: SPSafeSymbol { ext(.start + ".max".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var min: SFSymbol { ext(.start + ".min") }
+		open var min: SPSafeSymbol { ext(.start + ".min") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var minFill: SFSymbol { ext(.start + ".min".fill) }
+		open var minFill: SPSafeSymbol { ext(.start + ".min".fill) }
 	}
 }

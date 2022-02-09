@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var sparkle: Sparkle { .init(name: "sparkle") }
 
-	open class Sparkle: SFSymbol {
+	open class Sparkle: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var magnifyingglass: SFSymbol { ext(.start + ".magnifyingglass") }
+		open var magnifyingglass: SPSafeSymbol { ext(.start + ".magnifyingglass") }
 	}
 }

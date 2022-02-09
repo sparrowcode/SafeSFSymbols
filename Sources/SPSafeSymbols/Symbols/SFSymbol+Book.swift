@@ -19,27 +19,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var book: Book { .init(name: "book") }
 
-	open class Book: SFSymbol {
+	open class Book: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var closed: SFSymbol { ext(.start + ".closed") }
+		open var closed: SPSafeSymbol { ext(.start + ".closed") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var closedCircle: SFSymbol { ext(.start + ".closed".circle) }
+		open var closedCircle: SPSafeSymbol { ext(.start + ".closed".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var closedCircleFill: SFSymbol { ext(.start + ".closed".circle.fill) }
+		open var closedCircleFill: SPSafeSymbol { ext(.start + ".closed".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var closedFill: SFSymbol { ext(.start + ".closed".fill) }
+		open var closedFill: SPSafeSymbol { ext(.start + ".closed".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

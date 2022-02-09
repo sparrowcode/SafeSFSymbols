@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var sensor: Sensor { .init(name: "sensor") }
 
-	open class Sensor: SFSymbol {
+	open class Sensor: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tagRadiowavesForward: SFSymbol { ext(.start + ".tag.radiowaves.forward") }
+		open var tagRadiowavesForward: SPSafeSymbol { ext(.start + ".tag.radiowaves.forward") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tagRadiowavesForwardFill: SFSymbol { ext(.start + ".tag.radiowaves.forward".fill) }
+		open var tagRadiowavesForwardFill: SPSafeSymbol { ext(.start + ".tag.radiowaves.forward".fill) }
 	}
 }

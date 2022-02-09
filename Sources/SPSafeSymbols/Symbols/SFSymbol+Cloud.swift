@@ -19,83 +19,83 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var cloud: Cloud { .init(name: "cloud") }
 
-	open class Cloud: SFSymbol {
+	open class Cloud: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bolt: SFSymbol { ext(.start + ".bolt") }
+		open var bolt: SPSafeSymbol { ext(.start + ".bolt") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var boltFill: SFSymbol { ext(.start + ".bolt".fill) }
+		open var boltFill: SPSafeSymbol { ext(.start + ".bolt".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var boltRain: SFSymbol { ext(.start + ".bolt.rain") }
+		open var boltRain: SPSafeSymbol { ext(.start + ".bolt.rain") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var boltRainFill: SFSymbol { ext(.start + ".bolt.rain".fill) }
+		open var boltRainFill: SPSafeSymbol { ext(.start + ".bolt.rain".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var drizzle: SFSymbol { ext(.start + ".drizzle") }
+		open var drizzle: SPSafeSymbol { ext(.start + ".drizzle") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var drizzleFill: SFSymbol { ext(.start + ".drizzle".fill) }
+		open var drizzleFill: SPSafeSymbol { ext(.start + ".drizzle".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fog: SFSymbol { ext(.start + ".fog") }
+		open var fog: SPSafeSymbol { ext(.start + ".fog") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fogFill: SFSymbol { ext(.start + ".fog".fill) }
+		open var fogFill: SPSafeSymbol { ext(.start + ".fog".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var hail: SFSymbol { ext(.start + ".hail") }
+		open var hail: SPSafeSymbol { ext(.start + ".hail") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var hailFill: SFSymbol { ext(.start + ".hail".fill) }
+		open var hailFill: SPSafeSymbol { ext(.start + ".hail".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var heavyrain: SFSymbol { ext(.start + ".heavyrain") }
+		open var heavyrain: SPSafeSymbol { ext(.start + ".heavyrain") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var heavyrainFill: SFSymbol { ext(.start + ".heavyrain".fill) }
+		open var heavyrainFill: SPSafeSymbol { ext(.start + ".heavyrain".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var moon: SFSymbol { ext(.start + ".moon") }
+		open var moon: SPSafeSymbol { ext(.start + ".moon") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var moonBolt: SFSymbol { ext(.start + ".moon.bolt") }
+		open var moonBolt: SPSafeSymbol { ext(.start + ".moon.bolt") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var moonBoltFill: SFSymbol { ext(.start + ".moon.bolt".fill) }
+		open var moonBoltFill: SPSafeSymbol { ext(.start + ".moon.bolt".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var moonFill: SFSymbol { ext(.start + ".moon".fill) }
+		open var moonFill: SPSafeSymbol { ext(.start + ".moon".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var moonRain: SFSymbol { ext(.start + ".moon.rain") }
+		open var moonRain: SPSafeSymbol { ext(.start + ".moon.rain") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var moonRainFill: SFSymbol { ext(.start + ".moon.rain".fill) }
+		open var moonRainFill: SPSafeSymbol { ext(.start + ".moon.rain".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rain: SFSymbol { ext(.start + ".rain") }
+		open var rain: SPSafeSymbol { ext(.start + ".rain") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rainFill: SFSymbol { ext(.start + ".rain".fill) }
+		open var rainFill: SPSafeSymbol { ext(.start + ".rain".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sleet: SFSymbol { ext(.start + ".sleet") }
+		open var sleet: SPSafeSymbol { ext(.start + ".sleet") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sleetFill: SFSymbol { ext(.start + ".sleet".fill) }
+		open var sleetFill: SPSafeSymbol { ext(.start + ".sleet".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var snow: SFSymbol { ext(.start + ".snow") }
+		open var snow: SPSafeSymbol { ext(.start + ".snow") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var snowFill: SFSymbol { ext(.start + ".snow".fill) }
+		open var snowFill: SPSafeSymbol { ext(.start + ".snow".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sun: SFSymbol { ext(.start + ".sun") }
+		open var sun: SPSafeSymbol { ext(.start + ".sun") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sunBolt: SFSymbol { ext(.start + ".sun.bolt") }
+		open var sunBolt: SPSafeSymbol { ext(.start + ".sun.bolt") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sunBoltFill: SFSymbol { ext(.start + ".sun.bolt".fill) }
+		open var sunBoltFill: SPSafeSymbol { ext(.start + ".sun.bolt".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sunFill: SFSymbol { ext(.start + ".sun".fill) }
+		open var sunFill: SPSafeSymbol { ext(.start + ".sun".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sunRain: SFSymbol { ext(.start + ".sun.rain") }
+		open var sunRain: SPSafeSymbol { ext(.start + ".sun.rain") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var sunRainFill: SFSymbol { ext(.start + ".sun.rain".fill) }
+		open var sunRainFill: SPSafeSymbol { ext(.start + ".sun.rain".fill) }
 	}
 }

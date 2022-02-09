@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var printer: Printer { .init(name: "printer") }
 
-	open class Printer: SFSymbol {
+	open class Printer: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dotmatrix: SFSymbol { ext(.start + ".dotmatrix") }
+		open var dotmatrix: SPSafeSymbol { ext(.start + ".dotmatrix") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dotmatrixFill: SFSymbol { ext(.start + ".dotmatrix".fill) }
+		open var dotmatrixFill: SPSafeSymbol { ext(.start + ".dotmatrix".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dotmatrixFilledAndPaper: SFSymbol { ext(.start + ".dotmatrix.filled.and.paper") }
+		open var dotmatrixFilledAndPaper: SPSafeSymbol { ext(.start + ".dotmatrix.filled.and.paper") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var filledAndPaper: SFSymbol { ext(.start + ".filled.and.paper") }
+		open var filledAndPaper: SPSafeSymbol { ext(.start + ".filled.and.paper") }
 	}
 }

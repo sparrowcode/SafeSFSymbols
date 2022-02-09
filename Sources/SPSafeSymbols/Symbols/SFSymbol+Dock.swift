@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var dock: Dock { .init(name: "dock") }
 
-	open class Dock: SFSymbol {
+	open class Dock: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowDownRectangle: SFSymbol { ext(.start + ".arrow.down".rectangle) }
+		open var arrowDownRectangle: SPSafeSymbol { ext(.start + ".arrow.down".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowUpRectangle: SFSymbol { ext(.start + ".arrow.up".rectangle) }
+		open var arrowUpRectangle: SPSafeSymbol { ext(.start + ".arrow.up".rectangle) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 	}
 }

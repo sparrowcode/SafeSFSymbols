@@ -19,36 +19,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var align: Align { .init(name: "align") }
 
-	open class Align: SFSymbol {
+	open class Align: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalCenter: SFSymbol { ext(.start + ".horizontal.center") }
+		open var horizontalCenter: SPSafeSymbol { ext(.start + ".horizontal.center") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalCenterFill: SFSymbol { ext(.start + ".horizontal.center".fill) }
+		open var horizontalCenterFill: SPSafeSymbol { ext(.start + ".horizontal.center".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalLeft: SFSymbol { ext(.start + ".horizontal.left") }
+		open var horizontalLeft: SPSafeSymbol { ext(.start + ".horizontal.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalLeftFill: SFSymbol { ext(.start + ".horizontal.left".fill) }
+		open var horizontalLeftFill: SPSafeSymbol { ext(.start + ".horizontal.left".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalRight: SFSymbol { ext(.start + ".horizontal.right") }
+		open var horizontalRight: SPSafeSymbol { ext(.start + ".horizontal.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalRightFill: SFSymbol { ext(.start + ".horizontal.right".fill) }
+		open var horizontalRightFill: SPSafeSymbol { ext(.start + ".horizontal.right".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalBottom: SFSymbol { ext(.start + ".vertical.bottom") }
+		open var verticalBottom: SPSafeSymbol { ext(.start + ".vertical.bottom") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalBottomFill: SFSymbol { ext(.start + ".vertical.bottom".fill) }
+		open var verticalBottomFill: SPSafeSymbol { ext(.start + ".vertical.bottom".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalCenter: SFSymbol { ext(.start + ".vertical.center") }
+		open var verticalCenter: SPSafeSymbol { ext(.start + ".vertical.center") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalCenterFill: SFSymbol { ext(.start + ".vertical.center".fill) }
+		open var verticalCenterFill: SPSafeSymbol { ext(.start + ".vertical.center".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalTop: SFSymbol { ext(.start + ".vertical.top") }
+		open var verticalTop: SPSafeSymbol { ext(.start + ".vertical.top") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalTopFill: SFSymbol { ext(.start + ".vertical.top".fill) }
+		open var verticalTopFill: SPSafeSymbol { ext(.start + ".vertical.top".fill) }
 	}
 }

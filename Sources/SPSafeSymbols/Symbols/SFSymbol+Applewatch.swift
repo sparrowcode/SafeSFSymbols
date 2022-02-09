@@ -19,25 +19,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var applewatch: Applewatch { .init(name: "applewatch") }
 
-	open class Applewatch: SFSymbol {
+	open class Applewatch: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var caseInsetFilled: SFSymbol { ext(.start + ".case.inset.filled") }
+		open var caseInsetFilled: SPSafeSymbol { ext(.start + ".case.inset.filled") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var radiowavesLeftAndRight: SFSymbol { ext(.start + ".radiowaves.left.and.right") }
+		open var radiowavesLeftAndRight: SPSafeSymbol { ext(.start + ".radiowaves.left.and.right") }
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var sideRight: SFSymbol { ext(.start + ".side.right") }
+		open var sideRight: SPSafeSymbol { ext(.start + ".side.right") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var watchface: SFSymbol { ext(.start + ".watchface") }
+		open var watchface: SPSafeSymbol { ext(.start + ".watchface") }
 	}
 }

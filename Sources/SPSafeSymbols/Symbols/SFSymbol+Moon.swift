@@ -19,28 +19,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var moon: Moon { .init(name: "moon") }
 
-	open class Moon: SFSymbol {
+	open class Moon: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var stars: SFSymbol { ext(.start + ".stars") }
+		open var stars: SPSafeSymbol { ext(.start + ".stars") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var starsFill: SFSymbol { ext(.start + ".stars".fill) }
+		open var starsFill: SPSafeSymbol { ext(.start + ".stars".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var zzz: SFSymbol { ext(.start + ".zzz") }
+		open var zzz: SPSafeSymbol { ext(.start + ".zzz") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var zzzFill: SFSymbol { ext(.start + ".zzz".fill) }
+		open var zzzFill: SPSafeSymbol { ext(.start + ".zzz".fill) }
 	}
 }

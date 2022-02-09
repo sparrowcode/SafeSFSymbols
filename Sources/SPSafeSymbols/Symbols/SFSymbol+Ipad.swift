@@ -19,35 +19,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var ipad: Ipad { .init(name: "ipad") }
 
-	open class Ipad: SFSymbol {
+	open class Ipad: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andArrowForward: SFSymbol { ext(.start + ".and.arrow.forward") }
+		open var andArrowForward: SPSafeSymbol { ext(.start + ".and.arrow.forward") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andIphone: SFSymbol { ext(.start + ".and.iphone") }
+		open var andIphone: SPSafeSymbol { ext(.start + ".and.iphone") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var badgePlay: SFSymbol { ext(.start + ".badge.play") }
+		open var badgePlay: SPSafeSymbol { ext(.start + ".badge.play") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var homebutton: SFSymbol { ext(.start + ".homebutton") }
+		open var homebutton: SPSafeSymbol { ext(.start + ".homebutton") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var homebuttonBadgePlay: SFSymbol { ext(.start + ".homebutton.badge.play") }
+		open var homebuttonBadgePlay: SPSafeSymbol { ext(.start + ".homebutton.badge.play") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var homebuttonLandscape: SFSymbol { ext(.start + ".homebutton.landscape") }
+		open var homebuttonLandscape: SPSafeSymbol { ext(.start + ".homebutton.landscape") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var homebuttonLandscapeBadgePlay: SFSymbol { ext(.start + ".homebutton.landscape.badge.play") }
+		open var homebuttonLandscapeBadgePlay: SPSafeSymbol { ext(.start + ".homebutton.landscape.badge.play") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var landscape: SFSymbol { ext(.start + ".landscape") }
+		open var landscape: SPSafeSymbol { ext(.start + ".landscape") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var landscapeBadgePlay: SFSymbol { ext(.start + ".landscape.badge.play") }
+		open var landscapeBadgePlay: SPSafeSymbol { ext(.start + ".landscape.badge.play") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rearCamera: SFSymbol { ext(.start + ".rear.camera") }
+		open var rearCamera: SPSafeSymbol { ext(.start + ".rear.camera") }
 	}
 }

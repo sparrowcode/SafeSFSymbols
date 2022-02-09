@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var percent: Percent { .init(name: "percent") }
 
-	open class Percent: SFSymbol {
+	open class Percent: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var ar: SFSymbol { ext(.start + ".ar") }
+		open var ar: SPSafeSymbol { ext(.start + ".ar") }
 	}
 }

@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var wand: Wand { .init(name: "wand") }
 
-	open class Wand: SFSymbol {
+	open class Wand: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andRays: SFSymbol { ext(.start + ".and.rays") }
+		open var andRays: SPSafeSymbol { ext(.start + ".and.rays") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andRaysInverse: SFSymbol { ext(.start + ".and.rays.inverse") }
+		open var andRaysInverse: SPSafeSymbol { ext(.start + ".and.rays.inverse") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andStars: SFSymbol { ext(.start + ".and.stars") }
+		open var andStars: SPSafeSymbol { ext(.start + ".and.stars") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andStarsInverse: SFSymbol { ext(.start + ".and.stars.inverse") }
+		open var andStarsInverse: SPSafeSymbol { ext(.start + ".and.stars.inverse") }
 	}
 }

@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var hearingdevice: Hearingdevice { .init(name: "hearingdevice") }
 
-	open class Hearingdevice: SFSymbol {
+	open class Hearingdevice: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var ear: SFSymbol { ext(.start + ".ear") }
+		open var ear: SPSafeSymbol { ext(.start + ".ear") }
 	}
 }

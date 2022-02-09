@@ -19,25 +19,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var point: Point { .init(name: "point") }
 
-	open class Point: SFSymbol {
+	open class Point: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3ConnectedTrianglepathDotted: SFSymbol { ext(.start + ".3.connected.trianglepath.dotted") }
+		open var _3ConnectedTrianglepathDotted: SPSafeSymbol { ext(.start + ".3.connected.trianglepath.dotted") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3FilledConnectedTrianglepathDotted: SFSymbol { ext(.start + ".3.filled.connected.trianglepath.dotted") }
+		open var _3FilledConnectedTrianglepathDotted: SPSafeSymbol { ext(.start + ".3.filled.connected.trianglepath.dotted") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var filledTopleftDownCurvedtoPointBottomrightUp: SFSymbol { ext(.start + ".filled.topleft.down.curvedto.point.bottomright.up") }
+		open var filledTopleftDownCurvedtoPointBottomrightUp: SPSafeSymbol { ext(.start + ".filled.topleft.down.curvedto.point.bottomright.up") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var topleftDownCurvedtoPointBottomrightUp: SFSymbol { ext(.start + ".topleft.down.curvedto.point.bottomright.up") }
+		open var topleftDownCurvedtoPointBottomrightUp: SPSafeSymbol { ext(.start + ".topleft.down.curvedto.point.bottomright.up") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var topleftDownCurvedtoPointBottomrightUpFill: SFSymbol { ext(.start + ".topleft.down.curvedto.point.bottomright.up".fill) }
+		open var topleftDownCurvedtoPointBottomrightUpFill: SPSafeSymbol { ext(.start + ".topleft.down.curvedto.point.bottomright.up".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var topleftDownCurvedtoPointFilledBottomrightUp: SFSymbol { ext(.start + ".topleft.down.curvedto.point.filled.bottomright.up") }
+		open var topleftDownCurvedtoPointFilledBottomrightUp: SPSafeSymbol { ext(.start + ".topleft.down.curvedto.point.filled.bottomright.up") }
 	}
 }

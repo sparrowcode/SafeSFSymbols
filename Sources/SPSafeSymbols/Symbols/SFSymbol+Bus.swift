@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var bus: Bus { .init(name: "bus") }
 
-	open class Bus: SFSymbol {
+	open class Bus: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var doubledecker: SFSymbol { ext(.start + ".doubledecker") }
+		open var doubledecker: SPSafeSymbol { ext(.start + ".doubledecker") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var doubledeckerFill: SFSymbol { ext(.start + ".doubledecker".fill) }
+		open var doubledeckerFill: SPSafeSymbol { ext(.start + ".doubledecker".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

@@ -19,43 +19,43 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var capsule: Capsule { .init(name: "capsule") }
 
-	open class Capsule: SFSymbol {
+	open class Capsule: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bottomhalfFilled: SFSymbol { ext(.start + ".bottomhalf.filled") }
+		open var bottomhalfFilled: SPSafeSymbol { ext(.start + ".bottomhalf.filled") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var insetFilled: SFSymbol { ext(.start + ".inset.filled") }
+		open var insetFilled: SPSafeSymbol { ext(.start + ".inset.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lefthalfFilled: SFSymbol { ext(.start + ".lefthalf.filled") }
+		open var lefthalfFilled: SPSafeSymbol { ext(.start + ".lefthalf.filled") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var portrait: SFSymbol { ext(.start + ".portrait") }
+		open var portrait: SPSafeSymbol { ext(.start + ".portrait") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var portraitBottomhalfFilled: SFSymbol { ext(.start + ".portrait.bottomhalf.filled") }
+		open var portraitBottomhalfFilled: SPSafeSymbol { ext(.start + ".portrait.bottomhalf.filled") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var portraitFill: SFSymbol { ext(.start + ".portrait".fill) }
+		open var portraitFill: SPSafeSymbol { ext(.start + ".portrait".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var portraitInsetFilled: SFSymbol { ext(.start + ".portrait.inset.filled") }
+		open var portraitInsetFilled: SPSafeSymbol { ext(.start + ".portrait.inset.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var portraitLefthalfFilled: SFSymbol { ext(.start + ".portrait.lefthalf.filled") }
+		open var portraitLefthalfFilled: SPSafeSymbol { ext(.start + ".portrait.lefthalf.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var portraitRighthalfFilled: SFSymbol { ext(.start + ".portrait.righthalf.filled") }
+		open var portraitRighthalfFilled: SPSafeSymbol { ext(.start + ".portrait.righthalf.filled") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var portraitTophalfFilled: SFSymbol { ext(.start + ".portrait.tophalf.filled") }
+		open var portraitTophalfFilled: SPSafeSymbol { ext(.start + ".portrait.tophalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var righthalfFilled: SFSymbol { ext(.start + ".righthalf.filled") }
+		open var righthalfFilled: SPSafeSymbol { ext(.start + ".righthalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tophalfFilled: SFSymbol { ext(.start + ".tophalf.filled") }
+		open var tophalfFilled: SPSafeSymbol { ext(.start + ".tophalf.filled") }
 	}
 }

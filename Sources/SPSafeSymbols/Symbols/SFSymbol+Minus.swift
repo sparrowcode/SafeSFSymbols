@@ -19,45 +19,45 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var minus: Minus { .init(name: "minus") }
 
-	open class Minus: SFSymbol {
+	open class Minus: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var diamond: SFSymbol { ext(.start + ".diamond") }
+		open var diamond: SPSafeSymbol { ext(.start + ".diamond") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var diamondFill: SFSymbol { ext(.start + ".diamond".fill) }
+		open var diamondFill: SPSafeSymbol { ext(.start + ".diamond".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var forwardslashPlus: SFSymbol { ext(.start + ".forwardslash.plus") }
+		open var forwardslashPlus: SPSafeSymbol { ext(.start + ".forwardslash.plus") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var magnifyingglass: SFSymbol { ext(.start + ".magnifyingglass") }
+		open var magnifyingglass: SPSafeSymbol { ext(.start + ".magnifyingglass") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var plusBatteryblock: SFSymbol { ext(.start + ".plus.batteryblock") }
+		open var plusBatteryblock: SPSafeSymbol { ext(.start + ".plus.batteryblock") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var plusBatteryblockFill: SFSymbol { ext(.start + ".plus.batteryblock".fill) }
+		open var plusBatteryblockFill: SPSafeSymbol { ext(.start + ".plus.batteryblock".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		open var rectangleFill: SPSafeSymbol { ext(.start.rectangle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectanglePortrait: SFSymbol { ext(.start.rectangle + ".portrait") }
+		open var rectanglePortrait: SPSafeSymbol { ext(.start.rectangle + ".portrait") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectanglePortraitFill: SFSymbol { ext(.start.rectangle + ".portrait".fill) }
+		open var rectanglePortraitFill: SPSafeSymbol { ext(.start.rectangle + ".portrait".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 	}
 }

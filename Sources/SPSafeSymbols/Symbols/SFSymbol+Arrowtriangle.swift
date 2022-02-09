@@ -19,96 +19,96 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var arrowtriangle: Arrowtriangle { .init(name: "arrowtriangle") }
 
-	open class Arrowtriangle: SFSymbol {
+	open class Arrowtriangle: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var backward: SFSymbol { ext(.start + ".backward") }
+		open var backward: SPSafeSymbol { ext(.start + ".backward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var backwardCircle: SFSymbol { ext(.start + ".backward".circle) }
+		open var backwardCircle: SPSafeSymbol { ext(.start + ".backward".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var backwardCircleFill: SFSymbol { ext(.start + ".backward".circle.fill) }
+		open var backwardCircleFill: SPSafeSymbol { ext(.start + ".backward".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var backwardFill: SFSymbol { ext(.start + ".backward".fill) }
+		open var backwardFill: SPSafeSymbol { ext(.start + ".backward".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var backwardSquare: SFSymbol { ext(.start + ".backward".square) }
+		open var backwardSquare: SPSafeSymbol { ext(.start + ".backward".square) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var backwardSquareFill: SFSymbol { ext(.start + ".backward".square.fill) }
+		open var backwardSquareFill: SPSafeSymbol { ext(.start + ".backward".square.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var down: SFSymbol { ext(.start + ".down") }
+		open var down: SPSafeSymbol { ext(.start + ".down") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var downCircle: SFSymbol { ext(.start + ".down".circle) }
+		open var downCircle: SPSafeSymbol { ext(.start + ".down".circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var downCircleFill: SFSymbol { ext(.start + ".down".circle.fill) }
+		open var downCircleFill: SPSafeSymbol { ext(.start + ".down".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var downFill: SFSymbol { ext(.start + ".down".fill) }
+		open var downFill: SPSafeSymbol { ext(.start + ".down".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var downSquare: SFSymbol { ext(.start + ".down".square) }
+		open var downSquare: SPSafeSymbol { ext(.start + ".down".square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var downSquareFill: SFSymbol { ext(.start + ".down".square.fill) }
+		open var downSquareFill: SPSafeSymbol { ext(.start + ".down".square.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var forward: SFSymbol { ext(.start + ".forward") }
+		open var forward: SPSafeSymbol { ext(.start + ".forward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var forwardCircle: SFSymbol { ext(.start + ".forward".circle) }
+		open var forwardCircle: SPSafeSymbol { ext(.start + ".forward".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var forwardCircleFill: SFSymbol { ext(.start + ".forward".circle.fill) }
+		open var forwardCircleFill: SPSafeSymbol { ext(.start + ".forward".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var forwardFill: SFSymbol { ext(.start + ".forward".fill) }
+		open var forwardFill: SPSafeSymbol { ext(.start + ".forward".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var forwardSquare: SFSymbol { ext(.start + ".forward".square) }
+		open var forwardSquare: SPSafeSymbol { ext(.start + ".forward".square) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var forwardSquareFill: SFSymbol { ext(.start + ".forward".square.fill) }
+		open var forwardSquareFill: SPSafeSymbol { ext(.start + ".forward".square.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var left: SFSymbol { ext(.start + ".left") }
+		open var left: SPSafeSymbol { ext(.start + ".left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var leftAndLineVerticalAndArrowtriangleRight: SFSymbol { ext(.start + ".left.and.line.vertical.and.arrowtriangle.right") }
+		open var leftAndLineVerticalAndArrowtriangleRight: SPSafeSymbol { ext(.start + ".left.and.line.vertical.and.arrowtriangle.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var leftAndLineVerticalAndArrowtriangleRightFill: SFSymbol { ext(.start + ".left.and.line.vertical.and.arrowtriangle.right".fill) }
+		open var leftAndLineVerticalAndArrowtriangleRightFill: SPSafeSymbol { ext(.start + ".left.and.line.vertical.and.arrowtriangle.right".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftCircle: SFSymbol { ext(.start + ".left".circle) }
+		open var leftCircle: SPSafeSymbol { ext(.start + ".left".circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftCircleFill: SFSymbol { ext(.start + ".left".circle.fill) }
+		open var leftCircleFill: SPSafeSymbol { ext(.start + ".left".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftFill: SFSymbol { ext(.start + ".left".fill) }
+		open var leftFill: SPSafeSymbol { ext(.start + ".left".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftSquare: SFSymbol { ext(.start + ".left".square) }
+		open var leftSquare: SPSafeSymbol { ext(.start + ".left".square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftSquareFill: SFSymbol { ext(.start + ".left".square.fill) }
+		open var leftSquareFill: SPSafeSymbol { ext(.start + ".left".square.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var right: SFSymbol { ext(.start + ".right") }
+		open var right: SPSafeSymbol { ext(.start + ".right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rightAndLineVerticalAndArrowtriangleLeft: SFSymbol { ext(.start + ".right.and.line.vertical.and.arrowtriangle.left") }
+		open var rightAndLineVerticalAndArrowtriangleLeft: SPSafeSymbol { ext(.start + ".right.and.line.vertical.and.arrowtriangle.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rightAndLineVerticalAndArrowtriangleLeftFill: SFSymbol { ext(.start + ".right.and.line.vertical.and.arrowtriangle.left".fill) }
+		open var rightAndLineVerticalAndArrowtriangleLeftFill: SPSafeSymbol { ext(.start + ".right.and.line.vertical.and.arrowtriangle.left".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightCircle: SFSymbol { ext(.start + ".right".circle) }
+		open var rightCircle: SPSafeSymbol { ext(.start + ".right".circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightCircleFill: SFSymbol { ext(.start + ".right".circle.fill) }
+		open var rightCircleFill: SPSafeSymbol { ext(.start + ".right".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightFill: SFSymbol { ext(.start + ".right".fill) }
+		open var rightFill: SPSafeSymbol { ext(.start + ".right".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightSquare: SFSymbol { ext(.start + ".right".square) }
+		open var rightSquare: SPSafeSymbol { ext(.start + ".right".square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightSquareFill: SFSymbol { ext(.start + ".right".square.fill) }
+		open var rightSquareFill: SPSafeSymbol { ext(.start + ".right".square.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var up: SFSymbol { ext(.start + ".up") }
+		open var up: SPSafeSymbol { ext(.start + ".up") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var upCircle: SFSymbol { ext(.start + ".up".circle) }
+		open var upCircle: SPSafeSymbol { ext(.start + ".up".circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var upCircleFill: SFSymbol { ext(.start + ".up".circle.fill) }
+		open var upCircleFill: SPSafeSymbol { ext(.start + ".up".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var upFill: SFSymbol { ext(.start + ".up".fill) }
+		open var upFill: SPSafeSymbol { ext(.start + ".up".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var upSquare: SFSymbol { ext(.start + ".up".square) }
+		open var upSquare: SPSafeSymbol { ext(.start + ".up".square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var upSquareFill: SFSymbol { ext(.start + ".up".square.fill) }
+		open var upSquareFill: SPSafeSymbol { ext(.start + ".up".square.fill) }
 	}
 }

@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var wallet: Wallet { .init(name: "wallet") }
 
-	open class Wallet: SFSymbol {
+	open class Wallet: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var pass: SFSymbol { ext(.start + ".pass") }
+		open var pass: SPSafeSymbol { ext(.start + ".pass") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var passFill: SFSymbol { ext(.start + ".pass".fill) }
+		open var passFill: SPSafeSymbol { ext(.start + ".pass".fill) }
 	}
 }

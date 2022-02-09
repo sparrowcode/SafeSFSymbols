@@ -19,26 +19,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var airpods: Airpods { .init(name: "airpods") }
 
-	open class Airpods: SFSymbol {
+	open class Airpods: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var chargingcase: SFSymbol { ext(.start + ".chargingcase") }
+		open var chargingcase: SPSafeSymbol { ext(.start + ".chargingcase") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var chargingcaseFill: SFSymbol { ext(.start + ".chargingcase".fill) }
+		open var chargingcaseFill: SPSafeSymbol { ext(.start + ".chargingcase".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var chargingcaseWireless: SFSymbol { ext(.start + ".chargingcase.wireless") }
+		open var chargingcaseWireless: SPSafeSymbol { ext(.start + ".chargingcase.wireless") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var chargingcaseWirelessFill: SFSymbol { ext(.start + ".chargingcase.wireless".fill) }
+		open var chargingcaseWirelessFill: SPSafeSymbol { ext(.start + ".chargingcase.wireless".fill) }
 
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var gen3: SFSymbol { ext(.start + ".gen3") }
+		open var gen3: SPSafeSymbol { ext(.start + ".gen3") }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var gen3ChargingcaseWireless: SFSymbol { ext(.start + ".gen3.chargingcase.wireless") }
+		open var gen3ChargingcaseWireless: SPSafeSymbol { ext(.start + ".gen3.chargingcase.wireless") }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var gen3ChargingcaseWirelessFill: SFSymbol { ext(.start + ".gen3.chargingcase.wireless".fill) }
+		open var gen3ChargingcaseWirelessFill: SPSafeSymbol { ext(.start + ".gen3.chargingcase.wireless".fill) }
 	}
 }

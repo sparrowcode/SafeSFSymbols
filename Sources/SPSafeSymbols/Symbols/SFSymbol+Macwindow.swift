@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var macwindow: Macwindow { .init(name: "macwindow") }
 
-	open class Macwindow: SFSymbol {
+	open class Macwindow: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
+		open var badgePlus: SPSafeSymbol { ext(.start + ".badge.plus") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var onRectangle: SFSymbol { ext(.start + ".on".rectangle) }
+		open var onRectangle: SPSafeSymbol { ext(.start + ".on".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var onRectangleRtl: SFSymbol { ext(.start + ".on".rectangle + ".rtl") }
+		open var onRectangleRtl: SPSafeSymbol { ext(.start + ".on".rectangle + ".rtl") }
 	}
 }

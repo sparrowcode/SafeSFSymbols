@@ -19,35 +19,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var calendar: Calendar { .init(name: "calendar") }
 
-	open class Calendar: SFSymbol {
+	open class Calendar: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeClock: SFSymbol { ext(.start + ".badge.clock") }
+		open var badgeClock: SPSafeSymbol { ext(.start + ".badge.clock") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeClockRtl: SFSymbol { ext(.start + ".badge.clock.rtl") }
+		open var badgeClockRtl: SPSafeSymbol { ext(.start + ".badge.clock.rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeExclamationmark: SFSymbol { ext(.start + ".badge.exclamationmark") }
+		open var badgeExclamationmark: SPSafeSymbol { ext(.start + ".badge.exclamationmark") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeMinus: SFSymbol { ext(.start + ".badge.minus") }
+		open var badgeMinus: SPSafeSymbol { ext(.start + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
+		open var badgePlus: SPSafeSymbol { ext(.start + ".badge.plus") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dayTimelineLeading: SFSymbol { ext(.start + ".day.timeline.leading") }
+		open var dayTimelineLeading: SPSafeSymbol { ext(.start + ".day.timeline.leading") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dayTimelineLeft: SFSymbol { ext(.start + ".day.timeline.left") }
+		open var dayTimelineLeft: SPSafeSymbol { ext(.start + ".day.timeline.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dayTimelineRight: SFSymbol { ext(.start + ".day.timeline.right") }
+		open var dayTimelineRight: SPSafeSymbol { ext(.start + ".day.timeline.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dayTimelineTrailing: SFSymbol { ext(.start + ".day.timeline.trailing") }
+		open var dayTimelineTrailing: SPSafeSymbol { ext(.start + ".day.timeline.trailing") }
 	}
 }

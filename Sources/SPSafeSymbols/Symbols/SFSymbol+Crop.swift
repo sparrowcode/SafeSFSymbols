@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var crop: Crop { .init(name: "crop") }
 
-	open class Crop: SFSymbol {
+	open class Crop: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rotate: SFSymbol { ext(.start + ".rotate") }
+		open var rotate: SPSafeSymbol { ext(.start + ".rotate") }
 	}
 }

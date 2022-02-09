@@ -19,16 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var light: Light { .init(name: "light") }
 
-	open class Light: SFSymbol {
+	open class Light: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var max: SFSymbol { ext(.start + ".max") }
+		open var max: SPSafeSymbol { ext(.start + ".max") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var min: SFSymbol { ext(.start + ".min") }
+		open var min: SPSafeSymbol { ext(.start + ".min") }
 	}
 }

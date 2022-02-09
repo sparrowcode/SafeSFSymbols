@@ -19,91 +19,91 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var text: Text { .init(name: "text") }
 
-	open class Text: SFSymbol {
+	open class Text: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var aligncenter: SFSymbol { ext(.start + ".aligncenter") }
+		open var aligncenter: SPSafeSymbol { ext(.start + ".aligncenter") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var alignleft: SFSymbol { ext(.start + ".alignleft") }
+		open var alignleft: SPSafeSymbol { ext(.start + ".alignleft") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var alignright: SFSymbol { ext(.start + ".alignright") }
-
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andCommandMacwindow: SFSymbol { ext(.start + ".and.command.macwindow") }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var append: SFSymbol { ext(.start + ".append") }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeCheckmark: SFSymbol { ext(.start + ".badge.checkmark") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeCheckmarkRtl: SFSymbol { ext(.start + ".badge.checkmark.rtl") }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeMinus: SFSymbol { ext(.start + ".badge.minus") }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeStar: SFSymbol { ext(.start + ".badge.star") }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeXmark: SFSymbol { ext(.start + ".badge.xmark") }
+		open var alignright: SPSafeSymbol { ext(.start + ".alignright") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var belowPhoto: SFSymbol { ext(.start + ".below.photo") }
+		open var andCommandMacwindow: SPSafeSymbol { ext(.start + ".and.command.macwindow") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var append: SPSafeSymbol { ext(.start + ".append") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgeCheckmark: SPSafeSymbol { ext(.start + ".badge.checkmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var belowPhotoFill: SFSymbol { ext(.start + ".below.photo".fill) }
+		open var badgeCheckmarkRtl: SPSafeSymbol { ext(.start + ".badge.checkmark.rtl") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgeMinus: SPSafeSymbol { ext(.start + ".badge.minus") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgePlus: SPSafeSymbol { ext(.start + ".badge.plus") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgeStar: SPSafeSymbol { ext(.start + ".badge.star") }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var badgeXmark: SPSafeSymbol { ext(.start + ".badge.xmark") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var belowPhoto: SPSafeSymbol { ext(.start + ".below.photo") }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var belowPhotoFill: SPSafeSymbol { ext(.start + ".below.photo".fill) }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var belowPhotoFillRtl: SFSymbol { ext(.start + ".below.photo".fill + ".rtl") }
+		open var belowPhotoFillRtl: SPSafeSymbol { ext(.start + ".below.photo".fill + ".rtl") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var belowPhotoRtl: SFSymbol { ext(.start + ".below.photo.rtl") }
+		open var belowPhotoRtl: SPSafeSymbol { ext(.start + ".below.photo.rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bookClosed: SFSymbol { ext(.start + ".book.closed") }
+		open var bookClosed: SPSafeSymbol { ext(.start + ".book.closed") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bookClosedFill: SFSymbol { ext(.start + ".book.closed".fill) }
+		open var bookClosedFill: SPSafeSymbol { ext(.start + ".book.closed".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bubble: SFSymbol { ext(.start + ".bubble") }
+		open var bubble: SPSafeSymbol { ext(.start + ".bubble") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
+		open var bubbleFill: SPSafeSymbol { ext(.start + ".bubble".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bubbleFillRtl: SFSymbol { ext(.start + ".bubble".fill + ".rtl") }
+		open var bubbleFillRtl: SPSafeSymbol { ext(.start + ".bubble".fill + ".rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bubbleRtl: SFSymbol { ext(.start + ".bubble.rtl") }
+		open var bubbleRtl: SPSafeSymbol { ext(.start + ".bubble.rtl") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var insert: SFSymbol { ext(.start + ".insert") }
+		open var insert: SPSafeSymbol { ext(.start + ".insert") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var justify: SFSymbol { ext(.start + ".justify") }
+		open var justify: SPSafeSymbol { ext(.start + ".justify") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var justifyLeading: SFSymbol { ext(.start + ".justify.leading") }
+		open var justifyLeading: SPSafeSymbol { ext(.start + ".justify.leading") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var justifyLeft: SFSymbol { ext(.start + ".justify.left") }
+		open var justifyLeft: SPSafeSymbol { ext(.start + ".justify.left") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var justifyRight: SFSymbol { ext(.start + ".justify.right") }
+		open var justifyRight: SPSafeSymbol { ext(.start + ".justify.right") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var justifyTrailing: SFSymbol { ext(.start + ".justify.trailing") }
+		open var justifyTrailing: SPSafeSymbol { ext(.start + ".justify.trailing") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var magnifyingglass: SFSymbol { ext(.start + ".magnifyingglass") }
+		open var magnifyingglass: SPSafeSymbol { ext(.start + ".magnifyingglass") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var magnifyingglassRtl: SFSymbol { ext(.start + ".magnifyingglass.rtl") }
+		open var magnifyingglassRtl: SPSafeSymbol { ext(.start + ".magnifyingglass.rtl") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var quote: SFSymbol { ext(.start + ".quote") }
+		open var quote: SPSafeSymbol { ext(.start + ".quote") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var quoteRtl: SFSymbol { ext(.start + ".quote.rtl") }
+		open var quoteRtl: SPSafeSymbol { ext(.start + ".quote.rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var redaction: SFSymbol { ext(.start + ".redaction") }
+		open var redaction: SPSafeSymbol { ext(.start + ".redaction") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
+		open var viewfinder: SPSafeSymbol { ext(.start + ".viewfinder") }
 	}
 }

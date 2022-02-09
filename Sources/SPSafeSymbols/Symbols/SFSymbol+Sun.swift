@@ -19,39 +19,39 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var sun: Sun { .init(name: "sun") }
 
-	open class Sun: SFSymbol {
+	open class Sun: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andHorizon: SFSymbol { ext(.start + ".and.horizon") }
+		open var andHorizon: SPSafeSymbol { ext(.start + ".and.horizon") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andHorizonFill: SFSymbol { ext(.start + ".and.horizon".fill) }
+		open var andHorizonFill: SPSafeSymbol { ext(.start + ".and.horizon".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var dust: SFSymbol { ext(.start + ".dust") }
+		open var dust: SPSafeSymbol { ext(.start + ".dust") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var dustFill: SFSymbol { ext(.start + ".dust".fill) }
+		open var dustFill: SPSafeSymbol { ext(.start + ".dust".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var haze: SFSymbol { ext(.start + ".haze") }
+		open var haze: SPSafeSymbol { ext(.start + ".haze") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var hazeFill: SFSymbol { ext(.start + ".haze".fill) }
+		open var hazeFill: SPSafeSymbol { ext(.start + ".haze".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var max: SFSymbol { ext(.start + ".max") }
+		open var max: SPSafeSymbol { ext(.start + ".max") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var maxCircle: SFSymbol { ext(.start + ".max".circle) }
+		open var maxCircle: SPSafeSymbol { ext(.start + ".max".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var maxCircleFill: SFSymbol { ext(.start + ".max".circle.fill) }
+		open var maxCircleFill: SPSafeSymbol { ext(.start + ".max".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var maxFill: SFSymbol { ext(.start + ".max".fill) }
+		open var maxFill: SPSafeSymbol { ext(.start + ".max".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var min: SFSymbol { ext(.start + ".min") }
+		open var min: SPSafeSymbol { ext(.start + ".min") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var minFill: SFSymbol { ext(.start + ".min".fill) }
+		open var minFill: SPSafeSymbol { ext(.start + ".min".fill) }
 	}
 }

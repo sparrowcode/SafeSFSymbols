@@ -19,17 +19,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var filemenu: Filemenu { .init(name: "filemenu") }
 
-	open class Filemenu: SFSymbol {
+	open class Filemenu: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andCursorarrow: SFSymbol { ext(.start + ".and.cursorarrow") }
+		open var andCursorarrow: SPSafeSymbol { ext(.start + ".and.cursorarrow") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andCursorarrowRtl: SFSymbol { ext(.start + ".and.cursorarrow.rtl") }
+		open var andCursorarrowRtl: SPSafeSymbol { ext(.start + ".and.cursorarrow.rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andSelection: SFSymbol { ext(.start + ".and.selection") }
+		open var andSelection: SPSafeSymbol { ext(.start + ".and.selection") }
 	}
 }

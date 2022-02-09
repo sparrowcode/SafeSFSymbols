@@ -19,100 +19,100 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var lock: Lock { .init(name: "lock") }
 
-	open class Lock: SFSymbol {
+	open class Lock: SPSafeSymbol {
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var applewatch: SFSymbol { ext(.start + ".applewatch") }
+		open var applewatch: SPSafeSymbol { ext(.start + ".applewatch") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var desktopcomputer: SFSymbol { ext(.start + ".desktopcomputer") }
+		open var desktopcomputer: SPSafeSymbol { ext(.start + ".desktopcomputer") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var display: SFSymbol { ext(.start + ".display") }
+		open var display: SPSafeSymbol { ext(.start + ".display") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var doc: SFSymbol { ext(.start + ".doc") }
+		open var doc: SPSafeSymbol { ext(.start + ".doc") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var docFill: SFSymbol { ext(.start + ".doc".fill) }
+		open var docFill: SPSafeSymbol { ext(.start + ".doc".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var icloud: SFSymbol { ext(.start + ".icloud") }
+		open var icloud: SPSafeSymbol { ext(.start + ".icloud") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var icloudFill: SFSymbol { ext(.start + ".icloud".fill) }
+		open var icloudFill: SPSafeSymbol { ext(.start + ".icloud".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var ipad: SFSymbol { ext(.start + ".ipad") }
+		open var ipad: SPSafeSymbol { ext(.start + ".ipad") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var iphone: SFSymbol { ext(.start + ".iphone") }
+		open var iphone: SPSafeSymbol { ext(.start + ".iphone") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var laptopcomputer: SFSymbol { ext(.start + ".laptopcomputer") }
+		open var laptopcomputer: SPSafeSymbol { ext(.start + ".laptopcomputer") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var open: SFSymbol { ext(.start + ".open") }
+		open var open: SPSafeSymbol { ext(.start + ".open") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var openApplewatch: SFSymbol { ext(.start + ".open.applewatch") }
+		open var openApplewatch: SPSafeSymbol { ext(.start + ".open.applewatch") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var openDesktopcomputer: SFSymbol { ext(.start + ".open.desktopcomputer") }
+		open var openDesktopcomputer: SPSafeSymbol { ext(.start + ".open.desktopcomputer") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var openDisplay: SFSymbol { ext(.start + ".open.display") }
+		open var openDisplay: SPSafeSymbol { ext(.start + ".open.display") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var openFill: SFSymbol { ext(.start + ".open".fill) }
+		open var openFill: SPSafeSymbol { ext(.start + ".open".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var openIpad: SFSymbol { ext(.start + ".open.ipad") }
+		open var openIpad: SPSafeSymbol { ext(.start + ".open.ipad") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var openIphone: SFSymbol { ext(.start + ".open.iphone") }
+		open var openIphone: SPSafeSymbol { ext(.start + ".open.iphone") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var openLaptopcomputer: SFSymbol { ext(.start + ".open.laptopcomputer") }
+		open var openLaptopcomputer: SPSafeSymbol { ext(.start + ".open.laptopcomputer") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		open var rectangleFill: SPSafeSymbol { ext(.start.rectangle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleOnRectangle: SFSymbol { ext(.start.rectangle + ".on".rectangle) }
+		open var rectangleOnRectangle: SPSafeSymbol { ext(.start.rectangle + ".on".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleOnRectangleFill: SFSymbol { ext(.start.rectangle + ".on".rectangle.fill) }
+		open var rectangleOnRectangleFill: SPSafeSymbol { ext(.start.rectangle + ".on".rectangle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleStack: SFSymbol { ext(.start.rectangle + ".stack") }
+		open var rectangleStack: SPSafeSymbol { ext(.start.rectangle + ".stack") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleStackFill: SFSymbol { ext(.start.rectangle + ".stack".fill) }
+		open var rectangleStackFill: SPSafeSymbol { ext(.start.rectangle + ".stack".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rotation: SFSymbol { ext(.start + ".rotation") }
+		open var rotation: SPSafeSymbol { ext(.start + ".rotation") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rotationOpen: SFSymbol { ext(.start + ".rotation.open") }
+		open var rotationOpen: SPSafeSymbol { ext(.start + ".rotation.open") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var shield: SFSymbol { ext(.start + ".shield") }
+		open var shield: SPSafeSymbol { ext(.start + ".shield") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var shieldFill: SFSymbol { ext(.start + ".shield".fill) }
+		open var shieldFill: SPSafeSymbol { ext(.start + ".shield".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+		open var slashFill: SPSafeSymbol { ext(.start.slash.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareStack: SFSymbol { ext(.start.square + ".stack") }
+		open var squareStack: SPSafeSymbol { ext(.start.square + ".stack") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareStackFill: SFSymbol { ext(.start.square + ".stack".fill) }
+		open var squareStackFill: SPSafeSymbol { ext(.start.square + ".stack".fill) }
 	}
 }

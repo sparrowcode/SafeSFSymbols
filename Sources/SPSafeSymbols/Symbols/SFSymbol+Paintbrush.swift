@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var paintbrush: Paintbrush { .init(name: "paintbrush") }
 
-	open class Paintbrush: SFSymbol {
+	open class Paintbrush: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var pointed: SFSymbol { ext(.start + ".pointed") }
+		open var pointed: SPSafeSymbol { ext(.start + ".pointed") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var pointedFill: SFSymbol { ext(.start + ".pointed".fill) }
+		open var pointedFill: SPSafeSymbol { ext(.start + ".pointed".fill) }
 	}
 }

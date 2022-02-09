@@ -19,33 +19,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var app: App { .init(name: "app") }
 
-	open class App: SFSymbol {
+	open class App: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badge: SFSymbol { ext(.start + ".badge") }
+		open var badge: SPSafeSymbol { ext(.start + ".badge") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeCheckmark: SFSymbol { ext(.start + ".badge.checkmark") }
+		open var badgeCheckmark: SPSafeSymbol { ext(.start + ".badge.checkmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeCheckmarkFill: SFSymbol { ext(.start + ".badge.checkmark".fill) }
+		open var badgeCheckmarkFill: SPSafeSymbol { ext(.start + ".badge.checkmark".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeFill: SFSymbol { ext(.start + ".badge".fill) }
-
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var connectedToAppBelowFill: SFSymbol { ext(.start + ".connected.to".app + ".below".fill) }
+		open var badgeFill: SPSafeSymbol { ext(.start + ".badge".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dashed: SFSymbol { ext(.start + ".dashed") }
+		open var connectedToAppBelowFill: SPSafeSymbol { ext(.start + ".connected.to".app + ".below".fill) }
+
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var dashed: SPSafeSymbol { ext(.start + ".dashed") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var gift: SFSymbol { ext(.start + ".gift") }
+		open var gift: SPSafeSymbol { ext(.start + ".gift") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var giftFill: SFSymbol { ext(.start + ".gift".fill) }
+		open var giftFill: SPSafeSymbol { ext(.start + ".gift".fill) }
 	}
 }

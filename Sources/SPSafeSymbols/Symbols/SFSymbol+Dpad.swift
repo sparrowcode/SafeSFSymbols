@@ -19,25 +19,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var dpad: Dpad { .init(name: "dpad") }
 
-	open class Dpad: SFSymbol {
+	open class Dpad: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var downFilled: SFSymbol { ext(.start + ".down.filled") }
+		open var downFilled: SPSafeSymbol { ext(.start + ".down.filled") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var leftFilled: SFSymbol { ext(.start + ".left.filled") }
+		open var leftFilled: SPSafeSymbol { ext(.start + ".left.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rightFilled: SFSymbol { ext(.start + ".right.filled") }
+		open var rightFilled: SPSafeSymbol { ext(.start + ".right.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var upFilled: SFSymbol { ext(.start + ".up.filled") }
+		open var upFilled: SPSafeSymbol { ext(.start + ".up.filled") }
 	}
 }

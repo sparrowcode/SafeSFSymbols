@@ -19,27 +19,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var macpro: Macpro { .init(name: "macpro") }
 
-	open class Macpro: SFSymbol {
+	open class Macpro: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen1: SFSymbol { ext(.start + ".gen1") }
+		open var gen1: SPSafeSymbol { ext(.start + ".gen1") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var gen1Fill: SFSymbol { ext(.start + ".gen1".fill) }
+		open var gen1Fill: SPSafeSymbol { ext(.start + ".gen1".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen2: SFSymbol { ext(.start + ".gen2") }
+		open var gen2: SPSafeSymbol { ext(.start + ".gen2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen2Fill: SFSymbol { ext(.start + ".gen2".fill) }
+		open var gen2Fill: SPSafeSymbol { ext(.start + ".gen2".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen3: SFSymbol { ext(.start + ".gen3") }
+		open var gen3: SPSafeSymbol { ext(.start + ".gen3") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var gen3Fill: SFSymbol { ext(.start + ".gen3".fill) }
+		open var gen3Fill: SPSafeSymbol { ext(.start + ".gen3".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen3Server: SFSymbol { ext(.start + ".gen3.server") }
+		open var gen3Server: SPSafeSymbol { ext(.start + ".gen3.server") }
 	}
 }

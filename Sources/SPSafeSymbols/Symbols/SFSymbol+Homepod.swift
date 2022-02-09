@@ -19,27 +19,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var homepod: Homepod { .init(name: "homepod") }
 
-	open class Homepod: SFSymbol {
+	open class Homepod: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+		open var _2Fill: SPSafeSymbol { ext(.start + ".2".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andAppletv: SFSymbol { ext(.start + ".and.appletv") }
+		open var andAppletv: SPSafeSymbol { ext(.start + ".and.appletv") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andAppletvFill: SFSymbol { ext(.start + ".and.appletv".fill) }
+		open var andAppletvFill: SPSafeSymbol { ext(.start + ".and.appletv".fill) }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var andHomepodmini: SFSymbol { ext(.start + ".and.homepodmini") }
+		open var andHomepodmini: SPSafeSymbol { ext(.start + ".and.homepodmini") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var andHomepodminiFill: SFSymbol { ext(.start + ".and.homepodmini".fill) }
+		open var andHomepodminiFill: SPSafeSymbol { ext(.start + ".and.homepodmini".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

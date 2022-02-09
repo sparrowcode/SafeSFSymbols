@@ -19,20 +19,20 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var face: Face { .init(name: "face") }
 
-	open class Face: SFSymbol {
+	open class Face: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dashed: SFSymbol { ext(.start + ".dashed") }
+		open var dashed: SPSafeSymbol { ext(.start + ".dashed") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dashedFill: SFSymbol { ext(.start + ".dashed".fill) }
+		open var dashedFill: SPSafeSymbol { ext(.start + ".dashed".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var smiling: SFSymbol { ext(.start + ".smiling") }
+		open var smiling: SPSafeSymbol { ext(.start + ".smiling") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var smilingFill: SFSymbol { ext(.start + ".smiling".fill) }
+		open var smilingFill: SPSafeSymbol { ext(.start + ".smiling".fill) }
 	}
 }

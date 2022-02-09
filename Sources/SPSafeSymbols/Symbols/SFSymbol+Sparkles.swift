@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var sparkles: Sparkles { .init(name: "sparkles") }
 
-	open class Sparkles: SFSymbol {
+	open class Sparkles: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleStack: SFSymbol { ext(.start.rectangle + ".stack") }
+		open var rectangleStack: SPSafeSymbol { ext(.start.rectangle + ".stack") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleStackFill: SFSymbol { ext(.start.rectangle + ".stack".fill) }
+		open var rectangleStackFill: SPSafeSymbol { ext(.start.rectangle + ".stack".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var squareFilledOnSquare: SFSymbol { ext(.start.square + ".filled.on".square) }
+		open var squareFilledOnSquare: SPSafeSymbol { ext(.start.square + ".filled.on".square) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tv: SFSymbol { ext(.start + ".tv") }
+		open var tv: SPSafeSymbol { ext(.start + ".tv") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tvFill: SFSymbol { ext(.start + ".tv".fill) }
+		open var tvFill: SPSafeSymbol { ext(.start + ".tv".fill) }
 	}
 }

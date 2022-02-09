@@ -19,52 +19,52 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var list: List { .init(name: "list") }
 
-	open class List: SFSymbol {
+	open class List: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andFilm: SFSymbol { ext(.start + ".and.film") }
+		open var andFilm: SPSafeSymbol { ext(.start + ".and.film") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bullet: SFSymbol { ext(.start + ".bullet") }
+		open var bullet: SPSafeSymbol { ext(.start + ".bullet") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bulletBelowRectangle: SFSymbol { ext(.start + ".bullet.below".rectangle) }
+		open var bulletBelowRectangle: SPSafeSymbol { ext(.start + ".bullet.below".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bulletCircle: SFSymbol { ext(.start + ".bullet".circle) }
+		open var bulletCircle: SPSafeSymbol { ext(.start + ".bullet".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bulletCircleFill: SFSymbol { ext(.start + ".bullet".circle.fill) }
+		open var bulletCircleFill: SPSafeSymbol { ext(.start + ".bullet".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bulletIndent: SFSymbol { ext(.start + ".bullet.indent") }
+		open var bulletIndent: SPSafeSymbol { ext(.start + ".bullet.indent") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bulletRectangle: SFSymbol { ext(.start + ".bullet".rectangle) }
+		open var bulletRectangle: SPSafeSymbol { ext(.start + ".bullet".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bulletRectangleFill: SFSymbol { ext(.start + ".bullet".rectangle.fill) }
+		open var bulletRectangleFill: SPSafeSymbol { ext(.start + ".bullet".rectangle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bulletRectanglePortrait: SFSymbol { ext(.start + ".bullet".rectangle + ".portrait") }
+		open var bulletRectanglePortrait: SPSafeSymbol { ext(.start + ".bullet".rectangle + ".portrait") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bulletRectanglePortraitFill: SFSymbol { ext(.start + ".bullet".rectangle + ".portrait".fill) }
+		open var bulletRectanglePortraitFill: SPSafeSymbol { ext(.start + ".bullet".rectangle + ".portrait".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var dash: SFSymbol { ext(.start + ".dash") }
+		open var dash: SPSafeSymbol { ext(.start + ".dash") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var dashHeaderRectangle: SFSymbol { ext(.start + ".dash.header".rectangle) }
+		open var dashHeaderRectangle: SPSafeSymbol { ext(.start + ".dash.header".rectangle) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var number: SFSymbol { ext(.start + ".number") }
+		open var number: SPSafeSymbol { ext(.start + ".number") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var numberAr: SFSymbol { ext(.start + ".number.ar") }
+		open var numberAr: SPSafeSymbol { ext(.start + ".number.ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var numberHi: SFSymbol { ext(.start + ".number.hi") }
+		open var numberHi: SPSafeSymbol { ext(.start + ".number.hi") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var numberRtl: SFSymbol { ext(.start + ".number.rtl") }
-
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var star: SFSymbol { ext(.start + ".star") }
+		open var numberRtl: SPSafeSymbol { ext(.start + ".number.rtl") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var triangle: SFSymbol { ext(.start + ".triangle") }
+		open var star: SPSafeSymbol { ext(.start + ".star") }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		open var triangle: SPSafeSymbol { ext(.start + ".triangle") }
 	}
 }

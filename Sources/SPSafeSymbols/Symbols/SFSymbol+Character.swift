@@ -19,145 +19,145 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var character: Character { .init(name: "character") }
 
-	open class Character: SFSymbol {
+	open class Character: SPSafeSymbol {
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var ar: SFSymbol { ext(.start + ".ar") }
+		open var ar: SPSafeSymbol { ext(.start + ".ar") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosed: SFSymbol { ext(.start + ".book.closed") }
+		open var bookClosed: SPSafeSymbol { ext(.start + ".book.closed") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedAr: SFSymbol { ext(.start + ".book.closed.ar") }
+		open var bookClosedAr: SPSafeSymbol { ext(.start + ".book.closed.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFill: SFSymbol { ext(.start + ".book.closed".fill) }
+		open var bookClosedFill: SPSafeSymbol { ext(.start + ".book.closed".fill) }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillAr: SFSymbol { ext(.start + ".book.closed".fill + ".ar") }
+		open var bookClosedFillAr: SPSafeSymbol { ext(.start + ".book.closed".fill + ".ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillHe: SFSymbol { ext(.start + ".book.closed".fill + ".he") }
+		open var bookClosedFillHe: SPSafeSymbol { ext(.start + ".book.closed".fill + ".he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillHi: SFSymbol { ext(.start + ".book.closed".fill + ".hi") }
+		open var bookClosedFillHi: SPSafeSymbol { ext(.start + ".book.closed".fill + ".hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillJa: SFSymbol { ext(.start + ".book.closed".fill + ".ja") }
+		open var bookClosedFillJa: SPSafeSymbol { ext(.start + ".book.closed".fill + ".ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillKo: SFSymbol { ext(.start + ".book.closed".fill + ".ko") }
+		open var bookClosedFillKo: SPSafeSymbol { ext(.start + ".book.closed".fill + ".ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillTh: SFSymbol { ext(.start + ".book.closed".fill + ".th") }
+		open var bookClosedFillTh: SPSafeSymbol { ext(.start + ".book.closed".fill + ".th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillZh: SFSymbol { ext(.start + ".book.closed".fill + ".zh") }
+		open var bookClosedFillZh: SPSafeSymbol { ext(.start + ".book.closed".fill + ".zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedFillZhTraditional: SFSymbol { ext(.start + ".book.closed".fill + ".zh.traditional") }
+		open var bookClosedFillZhTraditional: SPSafeSymbol { ext(.start + ".book.closed".fill + ".zh.traditional") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedHe: SFSymbol { ext(.start + ".book.closed.he") }
+		open var bookClosedHe: SPSafeSymbol { ext(.start + ".book.closed.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedHi: SFSymbol { ext(.start + ".book.closed.hi") }
+		open var bookClosedHi: SPSafeSymbol { ext(.start + ".book.closed.hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedJa: SFSymbol { ext(.start + ".book.closed.ja") }
+		open var bookClosedJa: SPSafeSymbol { ext(.start + ".book.closed.ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedKo: SFSymbol { ext(.start + ".book.closed.ko") }
+		open var bookClosedKo: SPSafeSymbol { ext(.start + ".book.closed.ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedTh: SFSymbol { ext(.start + ".book.closed.th") }
+		open var bookClosedTh: SPSafeSymbol { ext(.start + ".book.closed.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedZh: SFSymbol { ext(.start + ".book.closed.zh") }
+		open var bookClosedZh: SPSafeSymbol { ext(.start + ".book.closed.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var bookClosedZhTraditional: SFSymbol { ext(.start + ".book.closed.zh.traditional") }
+		open var bookClosedZhTraditional: SPSafeSymbol { ext(.start + ".book.closed.zh.traditional") }
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var bubble: SFSymbol { ext(.start + ".bubble") }
+		open var bubble: SPSafeSymbol { ext(.start + ".bubble") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var bubbleAr: SFSymbol { ext(.start + ".bubble.ar") }
+		open var bubbleAr: SPSafeSymbol { ext(.start + ".bubble.ar") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
+		open var bubbleFill: SPSafeSymbol { ext(.start + ".bubble".fill) }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var bubbleFillAr: SFSymbol { ext(.start + ".bubble".fill + ".ar") }
+		open var bubbleFillAr: SPSafeSymbol { ext(.start + ".bubble".fill + ".ar") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var bubbleFillHe: SFSymbol { ext(.start + ".bubble".fill + ".he") }
+		open var bubbleFillHe: SPSafeSymbol { ext(.start + ".bubble".fill + ".he") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleFillHi: SFSymbol { ext(.start + ".bubble".fill + ".hi") }
+		open var bubbleFillHi: SPSafeSymbol { ext(.start + ".bubble".fill + ".hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleFillJa: SFSymbol { ext(.start + ".bubble".fill + ".ja") }
+		open var bubbleFillJa: SPSafeSymbol { ext(.start + ".bubble".fill + ".ja") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleFillKo: SFSymbol { ext(.start + ".bubble".fill + ".ko") }
+		open var bubbleFillKo: SPSafeSymbol { ext(.start + ".bubble".fill + ".ko") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleFillTh: SFSymbol { ext(.start + ".bubble".fill + ".th") }
+		open var bubbleFillTh: SPSafeSymbol { ext(.start + ".bubble".fill + ".th") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleFillZh: SFSymbol { ext(.start + ".bubble".fill + ".zh") }
+		open var bubbleFillZh: SPSafeSymbol { ext(.start + ".bubble".fill + ".zh") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleFillZhTraditional: SFSymbol { ext(.start + ".bubble".fill + ".zh.traditional") }
+		open var bubbleFillZhTraditional: SPSafeSymbol { ext(.start + ".bubble".fill + ".zh.traditional") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var bubbleHe: SFSymbol { ext(.start + ".bubble.he") }
+		open var bubbleHe: SPSafeSymbol { ext(.start + ".bubble.he") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleHi: SFSymbol { ext(.start + ".bubble.hi") }
+		open var bubbleHi: SPSafeSymbol { ext(.start + ".bubble.hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleJa: SFSymbol { ext(.start + ".bubble.ja") }
+		open var bubbleJa: SPSafeSymbol { ext(.start + ".bubble.ja") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleKo: SFSymbol { ext(.start + ".bubble.ko") }
+		open var bubbleKo: SPSafeSymbol { ext(.start + ".bubble.ko") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleTh: SFSymbol { ext(.start + ".bubble.th") }
+		open var bubbleTh: SPSafeSymbol { ext(.start + ".bubble.th") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleZh: SFSymbol { ext(.start + ".bubble.zh") }
+		open var bubbleZh: SPSafeSymbol { ext(.start + ".bubble.zh") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bubbleZhTraditional: SFSymbol { ext(.start + ".bubble.zh.traditional") }
+		open var bubbleZhTraditional: SPSafeSymbol { ext(.start + ".bubble.zh.traditional") }
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeam: SFSymbol { ext(.start + ".cursor.ibeam") }
+		open var cursorIbeam: SPSafeSymbol { ext(.start + ".cursor.ibeam") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamAr: SFSymbol { ext(.start + ".cursor.ibeam.ar") }
+		open var cursorIbeamAr: SPSafeSymbol { ext(.start + ".cursor.ibeam.ar") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamHe: SFSymbol { ext(.start + ".cursor.ibeam.he") }
+		open var cursorIbeamHe: SPSafeSymbol { ext(.start + ".cursor.ibeam.he") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamHi: SFSymbol { ext(.start + ".cursor.ibeam.hi") }
+		open var cursorIbeamHi: SPSafeSymbol { ext(.start + ".cursor.ibeam.hi") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamJa: SFSymbol { ext(.start + ".cursor.ibeam.ja") }
+		open var cursorIbeamJa: SPSafeSymbol { ext(.start + ".cursor.ibeam.ja") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamKo: SFSymbol { ext(.start + ".cursor.ibeam.ko") }
+		open var cursorIbeamKo: SPSafeSymbol { ext(.start + ".cursor.ibeam.ko") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamTh: SFSymbol { ext(.start + ".cursor.ibeam.th") }
+		open var cursorIbeamTh: SPSafeSymbol { ext(.start + ".cursor.ibeam.th") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamZh: SFSymbol { ext(.start + ".cursor.ibeam.zh") }
+		open var cursorIbeamZh: SPSafeSymbol { ext(.start + ".cursor.ibeam.zh") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var cursorIbeamZhTraditional: SFSymbol { ext(.start + ".cursor.ibeam.zh.traditional") }
-
-		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var he: SFSymbol { ext(.start + ".he") }
+		open var cursorIbeamZhTraditional: SPSafeSymbol { ext(.start + ".cursor.ibeam.zh.traditional") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var hi: SFSymbol { ext(.start + ".hi") }
+		open var he: SPSafeSymbol { ext(.start + ".he") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var ja: SFSymbol { ext(.start + ".ja") }
+		open var hi: SPSafeSymbol { ext(.start + ".hi") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var ko: SFSymbol { ext(.start + ".ko") }
-
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textbox: SFSymbol { ext(.start + ".textbox") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxAr: SFSymbol { ext(.start + ".textbox.ar") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxHe: SFSymbol { ext(.start + ".textbox.he") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxHi: SFSymbol { ext(.start + ".textbox.hi") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxJa: SFSymbol { ext(.start + ".textbox.ja") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxKo: SFSymbol { ext(.start + ".textbox.ko") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxTh: SFSymbol { ext(.start + ".textbox.th") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxZh: SFSymbol { ext(.start + ".textbox.zh") }
-		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var textboxZhTraditional: SFSymbol { ext(.start + ".textbox.zh.traditional") }
+		open var ja: SPSafeSymbol { ext(.start + ".ja") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var th: SFSymbol { ext(.start + ".th") }
+		open var ko: SPSafeSymbol { ext(.start + ".ko") }
+
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textbox: SPSafeSymbol { ext(.start + ".textbox") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxAr: SPSafeSymbol { ext(.start + ".textbox.ar") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxHe: SPSafeSymbol { ext(.start + ".textbox.he") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxHi: SPSafeSymbol { ext(.start + ".textbox.hi") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxJa: SPSafeSymbol { ext(.start + ".textbox.ja") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxKo: SPSafeSymbol { ext(.start + ".textbox.ko") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxTh: SPSafeSymbol { ext(.start + ".textbox.th") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxZh: SPSafeSymbol { ext(.start + ".textbox.zh") }
+		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
+		open var textboxZhTraditional: SPSafeSymbol { ext(.start + ".textbox.zh.traditional") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var zh: SFSymbol { ext(.start + ".zh") }
+		open var th: SPSafeSymbol { ext(.start + ".th") }
+
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var zhTraditional: SFSymbol { ext(.start + ".zh.traditional") }
+		open var zh: SPSafeSymbol { ext(.start + ".zh") }
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		open var zhTraditional: SPSafeSymbol { ext(.start + ".zh.traditional") }
 	}
 }

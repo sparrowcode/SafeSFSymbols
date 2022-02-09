@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var display: Display { .init(name: "display") }
 
-	open class Display: SFSymbol {
+	open class Display: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andArrowDown: SFSymbol { ext(.start + ".and.arrow.down") }
+		open var andArrowDown: SPSafeSymbol { ext(.start + ".and.arrow.down") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var trianglebadgeExclamationmark: SFSymbol { ext(.start + ".trianglebadge.exclamationmark") }
+		open var trianglebadgeExclamationmark: SPSafeSymbol { ext(.start + ".trianglebadge.exclamationmark") }
 	}
 }

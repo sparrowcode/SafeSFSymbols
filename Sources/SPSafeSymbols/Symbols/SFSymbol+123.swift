@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var _123: OneTwoThree { .init(name: "123") }
 
-	open class OneTwoThree: SFSymbol {
+	open class OneTwoThree: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangleAr: SFSymbol { ext(.start.rectangle + ".ar") }
+		open var rectangleAr: SPSafeSymbol { ext(.start.rectangle + ".ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		open var rectangleFill: SPSafeSymbol { ext(.start.rectangle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangleFillAr: SFSymbol { ext(.start.rectangle.fill + ".ar") }
+		open var rectangleFillAr: SPSafeSymbol { ext(.start.rectangle.fill + ".ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangleFillHi: SFSymbol { ext(.start.rectangle.fill + ".hi") }
+		open var rectangleFillHi: SPSafeSymbol { ext(.start.rectangle.fill + ".hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangleHi: SFSymbol { ext(.start.rectangle + ".hi") }
+		open var rectangleHi: SPSafeSymbol { ext(.start.rectangle + ".hi") }
 	}
 }

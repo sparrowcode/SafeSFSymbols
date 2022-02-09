@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var wrench: Wrench { .init(name: "wrench") }
 
-	open class Wrench: SFSymbol {
+	open class Wrench: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andScrewdriver: SFSymbol { ext(.start + ".and.screwdriver") }
+		open var andScrewdriver: SPSafeSymbol { ext(.start + ".and.screwdriver") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andScrewdriverFill: SFSymbol { ext(.start + ".and.screwdriver".fill) }
+		open var andScrewdriverFill: SPSafeSymbol { ext(.start + ".and.screwdriver".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

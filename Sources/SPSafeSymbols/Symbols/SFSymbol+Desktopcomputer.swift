@@ -19,16 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var desktopcomputer: Desktopcomputer { .init(name: "desktopcomputer") }
 
-	open class Desktopcomputer: SFSymbol {
+	open class Desktopcomputer: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andArrowDown: SFSymbol { ext(.start + ".and.arrow.down") }
+		open var andArrowDown: SPSafeSymbol { ext(.start + ".and.arrow.down") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var trianglebadgeExclamationmark: SFSymbol { ext(.start + ".trianglebadge.exclamationmark") }
+		open var trianglebadgeExclamationmark: SPSafeSymbol { ext(.start + ".trianglebadge.exclamationmark") }
 	}
 }

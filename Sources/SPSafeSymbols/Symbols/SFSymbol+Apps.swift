@@ -19,24 +19,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var apps: Apps { .init(name: "apps") }
 
-	open class Apps: SFSymbol {
+	open class Apps: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var ipad: SFSymbol { ext(.start + ".ipad") }
+		open var ipad: SPSafeSymbol { ext(.start + ".ipad") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var ipadLandscape: SFSymbol { ext(.start + ".ipad.landscape") }
+		open var ipadLandscape: SPSafeSymbol { ext(.start + ".ipad.landscape") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var iphone: SFSymbol { ext(.start + ".iphone") }
+		open var iphone: SPSafeSymbol { ext(.start + ".iphone") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var iphoneBadgePlus: SFSymbol { ext(.start + ".iphone.badge.plus") }
+		open var iphoneBadgePlus: SPSafeSymbol { ext(.start + ".iphone.badge.plus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var iphoneLandscape: SFSymbol { ext(.start + ".iphone.landscape") }
+		open var iphoneLandscape: SPSafeSymbol { ext(.start + ".iphone.landscape") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var iphoneLandscapeRtl: SFSymbol { ext(.start + ".iphone.landscape.rtl") }
+		open var iphoneLandscapeRtl: SPSafeSymbol { ext(.start + ".iphone.landscape.rtl") }
 	}
 }

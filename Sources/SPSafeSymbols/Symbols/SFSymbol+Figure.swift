@@ -19,36 +19,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var figure: Figure { .init(name: "figure") }
 
-	open class Figure: SFSymbol {
+	open class Figure: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var roll: SFSymbol { ext(.start + ".roll") }
+		open var roll: SPSafeSymbol { ext(.start + ".roll") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var stand: SFSymbol { ext(.start + ".stand") }
+		open var stand: SPSafeSymbol { ext(.start + ".stand") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var standLineDottedFigureStand: SFSymbol { ext(.start + ".stand.line.dotted.figure.stand") }
+		open var standLineDottedFigureStand: SPSafeSymbol { ext(.start + ".stand.line.dotted.figure.stand") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var walk: SFSymbol { ext(.start + ".walk") }
+		open var walk: SPSafeSymbol { ext(.start + ".walk") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var walkCircle: SFSymbol { ext(.start + ".walk".circle) }
+		open var walkCircle: SPSafeSymbol { ext(.start + ".walk".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var walkCircleFill: SFSymbol { ext(.start + ".walk".circle.fill) }
+		open var walkCircleFill: SPSafeSymbol { ext(.start + ".walk".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var walkDiamond: SFSymbol { ext(.start + ".walk.diamond") }
+		open var walkDiamond: SPSafeSymbol { ext(.start + ".walk.diamond") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var walkDiamondFill: SFSymbol { ext(.start + ".walk.diamond".fill) }
+		open var walkDiamondFill: SPSafeSymbol { ext(.start + ".walk.diamond".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var wave: SFSymbol { ext(.start + ".wave") }
+		open var wave: SPSafeSymbol { ext(.start + ".wave") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var waveCircle: SFSymbol { ext(.start + ".wave".circle) }
+		open var waveCircle: SPSafeSymbol { ext(.start + ".wave".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var waveCircleFill: SFSymbol { ext(.start + ".wave".circle.fill) }
+		open var waveCircleFill: SPSafeSymbol { ext(.start + ".wave".circle.fill) }
 	}
 }

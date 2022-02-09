@@ -19,32 +19,32 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var pencil: Pencil { .init(name: "pencil") }
 
-	open class Pencil: SFSymbol {
+	open class Pencil: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andOutline: SFSymbol { ext(.start + ".and.outline") }
+		open var andOutline: SPSafeSymbol { ext(.start + ".and.outline") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var tip: SFSymbol { ext(.start + ".tip") }
+		open var tip: SPSafeSymbol { ext(.start + ".tip") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var tipCropCircle: SFSymbol { ext(.start + ".tip.crop".circle) }
+		open var tipCropCircle: SPSafeSymbol { ext(.start + ".tip.crop".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var tipCropCircleBadgeArrowForward: SFSymbol { ext(.start + ".tip.crop".circle + ".badge.arrow.forward") }
+		open var tipCropCircleBadgeArrowForward: SPSafeSymbol { ext(.start + ".tip.crop".circle + ".badge.arrow.forward") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var tipCropCircleBadgeMinus: SFSymbol { ext(.start + ".tip.crop".circle + ".badge.minus") }
+		open var tipCropCircleBadgeMinus: SPSafeSymbol { ext(.start + ".tip.crop".circle + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var tipCropCircleBadgePlus: SFSymbol { ext(.start + ".tip.crop".circle + ".badge.plus") }
+		open var tipCropCircleBadgePlus: SPSafeSymbol { ext(.start + ".tip.crop".circle + ".badge.plus") }
 	}
 }

@@ -19,16 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var eyedropper: Eyedropper { .init(name: "eyedropper") }
 
-	open class Eyedropper: SFSymbol {
+	open class Eyedropper: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var full: SFSymbol { ext(.start + ".full") }
+		open var full: SPSafeSymbol { ext(.start + ".full") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var halffull: SFSymbol { ext(.start + ".halffull") }
+		open var halffull: SPSafeSymbol { ext(.start + ".halffull") }
 	}
 }

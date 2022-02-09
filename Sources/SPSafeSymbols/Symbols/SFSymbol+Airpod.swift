@@ -19,21 +19,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var airpod: Airpod { .init(name: "airpod") }
 
-	open class Airpod: SFSymbol {
+	open class Airpod: SPSafeSymbol {
 
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var gen3Left: SFSymbol { ext(.start + ".gen3.left") }
+		open var gen3Left: SPSafeSymbol { ext(.start + ".gen3.left") }
 		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
-		open var gen3Right: SFSymbol { ext(.start + ".gen3.right") }
+		open var gen3Right: SPSafeSymbol { ext(.start + ".gen3.right") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var left: SFSymbol { ext(.start + ".left") }
+		open var left: SPSafeSymbol { ext(.start + ".left") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var right: SFSymbol { ext(.start + ".right") }
+		open var right: SPSafeSymbol { ext(.start + ".right") }
 	}
 }

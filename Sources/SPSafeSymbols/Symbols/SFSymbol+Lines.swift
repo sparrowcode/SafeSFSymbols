@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var lines: Lines { .init(name: "lines") }
 
-	open class Lines: SFSymbol {
+	open class Lines: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var measurementHorizontal: SFSymbol { ext(.start + ".measurement.horizontal") }
+		open var measurementHorizontal: SPSafeSymbol { ext(.start + ".measurement.horizontal") }
 	}
 }

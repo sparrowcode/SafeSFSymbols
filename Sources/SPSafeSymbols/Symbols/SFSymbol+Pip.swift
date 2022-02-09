@@ -19,25 +19,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var pip: Pip { .init(name: "pip") }
 
-	open class Pip: SFSymbol {
+	open class Pip: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var enter: SFSymbol { ext(.start + ".enter") }
+		open var enter: SPSafeSymbol { ext(.start + ".enter") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var exit: SFSymbol { ext(.start + ".exit") }
+		open var exit: SPSafeSymbol { ext(.start + ".exit") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var remove: SFSymbol { ext(.start + ".remove") }
+		open var remove: SPSafeSymbol { ext(.start + ".remove") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var swap: SFSymbol { ext(.start + ".swap") }
+		open var swap: SPSafeSymbol { ext(.start + ".swap") }
 	}
 }

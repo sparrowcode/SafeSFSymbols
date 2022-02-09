@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var zl: Zl { .init(name: "zl") }
 
-	open class Zl: SFSymbol {
+	open class Zl: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedtop: SFSymbol { ext(.start.rectangle + ".roundedtop") }
+		open var rectangleRoundedtop: SPSafeSymbol { ext(.start.rectangle + ".roundedtop") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedtopFill: SFSymbol { ext(.start.rectangle + ".roundedtop".fill) }
+		open var rectangleRoundedtopFill: SPSafeSymbol { ext(.start.rectangle + ".roundedtop".fill) }
 	}
 }

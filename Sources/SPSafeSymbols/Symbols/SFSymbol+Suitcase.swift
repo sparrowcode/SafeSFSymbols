@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var suitcase: Suitcase { .init(name: "suitcase") }
 
-	open class Suitcase: SFSymbol {
+	open class Suitcase: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cart: SFSymbol { ext(.start + ".cart") }
+		open var cart: SPSafeSymbol { ext(.start + ".cart") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cartFill: SFSymbol { ext(.start + ".cart".fill) }
+		open var cartFill: SPSafeSymbol { ext(.start + ".cart".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

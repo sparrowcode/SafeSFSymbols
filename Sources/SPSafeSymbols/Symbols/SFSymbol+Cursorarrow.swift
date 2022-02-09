@@ -19,31 +19,31 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var cursorarrow: Cursorarrow { .init(name: "cursorarrow") }
 
-	open class Cursorarrow: SFSymbol {
+	open class Cursorarrow: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andSquareOnSquareDashed: SFSymbol { ext(.start + ".and".square + ".on".square + ".dashed") }
+		open var andSquareOnSquareDashed: SPSafeSymbol { ext(.start + ".and".square + ".on".square + ".dashed") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var click: SFSymbol { ext(.start + ".click") }
+		open var click: SPSafeSymbol { ext(.start + ".click") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var click_2: SFSymbol { ext(.start + ".click.2") }
+		open var click_2: SPSafeSymbol { ext(.start + ".click.2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var clickBadgeClock: SFSymbol { ext(.start + ".click.badge.clock") }
+		open var clickBadgeClock: SPSafeSymbol { ext(.start + ".click.badge.clock") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var motionlines: SFSymbol { ext(.start + ".motionlines") }
+		open var motionlines: SPSafeSymbol { ext(.start + ".motionlines") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var motionlinesClick: SFSymbol { ext(.start + ".motionlines.click") }
+		open var motionlinesClick: SPSafeSymbol { ext(.start + ".motionlines.click") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rays: SFSymbol { ext(.start + ".rays") }
+		open var rays: SPSafeSymbol { ext(.start + ".rays") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 	}
 }

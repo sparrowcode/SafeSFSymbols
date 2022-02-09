@@ -19,29 +19,29 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var battery: Battery { .init(name: "battery") }
 
-	open class Battery: SFSymbol {
+	open class Battery: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _0: SFSymbol { ext(.start + ".0") }
+		open var _0: SPSafeSymbol { ext(.start + ".0") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _100: SFSymbol { ext(.start + ".100") }
+		open var _100: SPSafeSymbol { ext(.start + ".100") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _100Bolt: SFSymbol { ext(.start + ".100.bolt") }
+		open var _100Bolt: SPSafeSymbol { ext(.start + ".100.bolt") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _100BoltRtl: SFSymbol { ext(.start + ".100.bolt.rtl") }
+		open var _100BoltRtl: SPSafeSymbol { ext(.start + ".100.bolt.rtl") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _25: SFSymbol { ext(.start + ".25") }
+		open var _25: SPSafeSymbol { ext(.start + ".25") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _50: SFSymbol { ext(.start + ".50") }
+		open var _50: SPSafeSymbol { ext(.start + ".50") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _75: SFSymbol { ext(.start + ".75") }
+		open var _75: SPSafeSymbol { ext(.start + ".75") }
 	}
 }

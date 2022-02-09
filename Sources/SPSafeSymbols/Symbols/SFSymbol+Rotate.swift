@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var rotate: Rotate { .init(name: "rotate") }
 
-	open class Rotate: SFSymbol {
+	open class Rotate: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3d: SFSymbol { ext(.start + ".3d") }
+		open var _3d: SPSafeSymbol { ext(.start + ".3d") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var left: SFSymbol { ext(.start + ".left") }
+		open var left: SPSafeSymbol { ext(.start + ".left") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftFill: SFSymbol { ext(.start + ".left".fill) }
+		open var leftFill: SPSafeSymbol { ext(.start + ".left".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var right: SFSymbol { ext(.start + ".right") }
+		open var right: SPSafeSymbol { ext(.start + ".right") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightFill: SFSymbol { ext(.start + ".right".fill) }
+		open var rightFill: SPSafeSymbol { ext(.start + ".right".fill) }
 	}
 }

@@ -19,22 +19,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var ipodshuffle: Ipodshuffle { .init(name: "ipodshuffle") }
 
-	open class Ipodshuffle: SFSymbol {
+	open class Ipodshuffle: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen1: SFSymbol { ext(.start + ".gen1") }
+		open var gen1: SPSafeSymbol { ext(.start + ".gen1") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen2: SFSymbol { ext(.start + ".gen2") }
+		open var gen2: SPSafeSymbol { ext(.start + ".gen2") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen3: SFSymbol { ext(.start + ".gen3") }
+		open var gen3: SPSafeSymbol { ext(.start + ".gen3") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var gen4: SFSymbol { ext(.start + ".gen4") }
+		open var gen4: SPSafeSymbol { ext(.start + ".gen4") }
 	}
 }

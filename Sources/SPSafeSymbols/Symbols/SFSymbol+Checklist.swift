@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var checklist: Checklist { .init(name: "checklist") }
 
-	open class Checklist: SFSymbol {
+	open class Checklist: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rtl: SFSymbol { ext(.start + ".rtl") }
+		open var rtl: SPSafeSymbol { ext(.start + ".rtl") }
 	}
 }

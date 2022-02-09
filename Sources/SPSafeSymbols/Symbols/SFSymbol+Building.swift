@@ -19,31 +19,31 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var building: Building { .init(name: "building") }
 
-	open class Building: SFSymbol {
+	open class Building: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2CropCircle: SFSymbol { ext(.start + ".2.crop".circle) }
+		open var _2CropCircle: SPSafeSymbol { ext(.start + ".2.crop".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2CropCircleFill: SFSymbol { ext(.start + ".2.crop".circle.fill) }
+		open var _2CropCircleFill: SPSafeSymbol { ext(.start + ".2.crop".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+		open var _2Fill: SPSafeSymbol { ext(.start + ".2".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var columns: SFSymbol { ext(.start + ".columns") }
+		open var columns: SPSafeSymbol { ext(.start + ".columns") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var columnsCircle: SFSymbol { ext(.start + ".columns".circle) }
+		open var columnsCircle: SPSafeSymbol { ext(.start + ".columns".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var columnsCircleFill: SFSymbol { ext(.start + ".columns".circle.fill) }
+		open var columnsCircleFill: SPSafeSymbol { ext(.start + ".columns".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var columnsFill: SFSymbol { ext(.start + ".columns".fill) }
+		open var columnsFill: SPSafeSymbol { ext(.start + ".columns".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

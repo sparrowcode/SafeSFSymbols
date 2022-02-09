@@ -19,22 +19,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var gear: Gear { .init(name: "gear") }
 
-	open class Gear: SFSymbol {
+	open class Gear: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeCheckmark: SFSymbol { ext(.start + ".badge.checkmark") }
+		open var badgeCheckmark: SPSafeSymbol { ext(.start + ".badge.checkmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeQuestionmark: SFSymbol { ext(.start + ".badge.questionmark") }
+		open var badgeQuestionmark: SPSafeSymbol { ext(.start + ".badge.questionmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeXmark: SFSymbol { ext(.start + ".badge.xmark") }
+		open var badgeXmark: SPSafeSymbol { ext(.start + ".badge.xmark") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 	}
 }

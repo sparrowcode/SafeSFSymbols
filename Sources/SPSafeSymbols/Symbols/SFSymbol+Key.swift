@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var key: Key { .init(name: "key") }
 
-	open class Key: SFSymbol {
+	open class Key: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var icloud: SFSymbol { ext(.start + ".icloud") }
+		open var icloud: SPSafeSymbol { ext(.start + ".icloud") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var icloudFill: SFSymbol { ext(.start + ".icloud".fill) }
+		open var icloudFill: SPSafeSymbol { ext(.start + ".icloud".fill) }
 	}
 }

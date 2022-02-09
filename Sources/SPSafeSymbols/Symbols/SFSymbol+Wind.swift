@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var wind: Wind { .init(name: "wind") }
 
-	open class Wind: SFSymbol {
+	open class Wind: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var snow: SFSymbol { ext(.start + ".snow") }
+		open var snow: SPSafeSymbol { ext(.start + ".snow") }
 	}
 }

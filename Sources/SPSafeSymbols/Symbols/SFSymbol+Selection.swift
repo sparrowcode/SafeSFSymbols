@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var selection: Selection { .init(name: "selection") }
 
-	open class Selection: SFSymbol {
+	open class Selection: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var pinInOut: SFSymbol { ext(.start + ".pin.in.out") }
+		open var pinInOut: SPSafeSymbol { ext(.start + ".pin.in.out") }
 	}
 }

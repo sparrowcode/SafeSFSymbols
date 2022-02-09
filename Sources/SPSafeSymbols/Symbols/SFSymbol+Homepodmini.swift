@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var homepodmini: Homepodmini { .init(name: "homepodmini") }
 
-	open class Homepodmini: SFSymbol {
+	open class Homepodmini: SPSafeSymbol {
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+		open var _2Fill: SPSafeSymbol { ext(.start + ".2".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andAppletv: SFSymbol { ext(.start + ".and.appletv") }
+		open var andAppletv: SPSafeSymbol { ext(.start + ".and.appletv") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andAppletvFill: SFSymbol { ext(.start + ".and.appletv".fill) }
+		open var andAppletvFill: SPSafeSymbol { ext(.start + ".and.appletv".fill) }
 
 		@available(iOS 14.5, macOS 11.3, tvOS 14.5, watchOS 7.4, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 	}
 }

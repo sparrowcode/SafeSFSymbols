@@ -19,162 +19,162 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var person: Person { .init(name: "person") }
 
-	open class Person: SFSymbol {
+	open class Person: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2Circle: SFSymbol { ext(.start + ".2".circle) }
+		open var _2Circle: SPSafeSymbol { ext(.start + ".2".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _2CircleFill: SFSymbol { ext(.start + ".2".circle.fill) }
+		open var _2CircleFill: SPSafeSymbol { ext(.start + ".2".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2CropSquareStack: SFSymbol { ext(.start + ".2.crop".square + ".stack") }
+		open var _2CropSquareStack: SPSafeSymbol { ext(.start + ".2.crop".square + ".stack") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2CropSquareStackFill: SFSymbol { ext(.start + ".2.crop".square + ".stack".fill) }
+		open var _2CropSquareStackFill: SPSafeSymbol { ext(.start + ".2.crop".square + ".stack".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+		open var _2Fill: SPSafeSymbol { ext(.start + ".2".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2Wave_2: SFSymbol { ext(.start + ".2.wave.2") }
+		open var _2Wave_2: SPSafeSymbol { ext(.start + ".2.wave.2") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2Wave_2Fill: SFSymbol { ext(.start + ".2.wave.2".fill) }
+		open var _2Wave_2Fill: SPSafeSymbol { ext(.start + ".2.wave.2".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _3: SFSymbol { ext(.start + ".3") }
+		open var _3: SPSafeSymbol { ext(.start + ".3") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _3Fill: SFSymbol { ext(.start + ".3".fill) }
+		open var _3Fill: SPSafeSymbol { ext(.start + ".3".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3Sequence: SFSymbol { ext(.start + ".3.sequence") }
+		open var _3Sequence: SPSafeSymbol { ext(.start + ".3.sequence") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3SequenceFill: SFSymbol { ext(.start + ".3.sequence".fill) }
+		open var _3SequenceFill: SPSafeSymbol { ext(.start + ".3.sequence".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var andArrowLeftAndArrowRight: SFSymbol { ext(.start + ".and.arrow.left.and.arrow.right") }
+		open var andArrowLeftAndArrowRight: SPSafeSymbol { ext(.start + ".and.arrow.left.and.arrow.right") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeClock: SFSymbol { ext(.start + ".badge.clock") }
+		open var badgeClock: SPSafeSymbol { ext(.start + ".badge.clock") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeClockFill: SFSymbol { ext(.start + ".badge.clock".fill) }
+		open var badgeClockFill: SPSafeSymbol { ext(.start + ".badge.clock".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgeMinus: SFSymbol { ext(.start + ".badge.minus") }
+		open var badgeMinus: SPSafeSymbol { ext(.start + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var badgePlus: SFSymbol { ext(.start + ".badge.plus") }
+		open var badgePlus: SPSafeSymbol { ext(.start + ".badge.plus") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropArtframe: SFSymbol { ext(.start + ".crop.artframe") }
+		open var cropArtframe: SPSafeSymbol { ext(.start + ".crop.artframe") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircle: SFSymbol { ext(.start + ".crop".circle) }
+		open var cropCircle: SPSafeSymbol { ext(.start + ".crop".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadge: SFSymbol { ext(.start + ".crop".circle + ".badge") }
+		open var cropCircleBadge: SPSafeSymbol { ext(.start + ".crop".circle + ".badge") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleBadgeCheckmark: SFSymbol { ext(.start + ".crop".circle + ".badge.checkmark") }
+		open var cropCircleBadgeCheckmark: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.checkmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeClock: SFSymbol { ext(.start + ".crop".circle + ".badge.clock") }
+		open var cropCircleBadgeClock: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.clock") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeClockFill: SFSymbol { ext(.start + ".crop".circle + ".badge.clock".fill) }
+		open var cropCircleBadgeClockFill: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.clock".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var cropCircleBadgeExclamationmark: SFSymbol { ext(.start + ".crop".circle + ".badge.exclamationmark") }
+		open var cropCircleBadgeExclamationmark: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.exclamationmark") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeExclamationmarkFill: SFSymbol { ext(.start + ".crop".circle + ".badge.exclamationmark".fill) }
+		open var cropCircleBadgeExclamationmarkFill: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.exclamationmark".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeFill: SFSymbol { ext(.start + ".crop".circle + ".badge".fill) }
+		open var cropCircleBadgeFill: SPSafeSymbol { ext(.start + ".crop".circle + ".badge".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleBadgeMinus: SFSymbol { ext(.start + ".crop".circle + ".badge.minus") }
+		open var cropCircleBadgeMinus: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.minus") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeMoon: SFSymbol { ext(.start + ".crop".circle + ".badge.moon") }
+		open var cropCircleBadgeMoon: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.moon") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeMoonFill: SFSymbol { ext(.start + ".crop".circle + ".badge.moon".fill) }
+		open var cropCircleBadgeMoonFill: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.moon".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleBadgePlus: SFSymbol { ext(.start + ".crop".circle + ".badge.plus") }
+		open var cropCircleBadgePlus: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.plus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var cropCircleBadgeQuestionmark: SFSymbol { ext(.start + ".crop".circle + ".badge.questionmark") }
+		open var cropCircleBadgeQuestionmark: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.questionmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var cropCircleBadgeQuestionmarkAr: SFSymbol { ext(.start + ".crop".circle + ".badge.questionmark.ar") }
+		open var cropCircleBadgeQuestionmarkAr: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.questionmark.ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeQuestionmarkFill: SFSymbol { ext(.start + ".crop".circle + ".badge.questionmark".fill) }
+		open var cropCircleBadgeQuestionmarkFill: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.questionmark".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropCircleBadgeQuestionmarkFillAr: SFSymbol { ext(.start + ".crop".circle + ".badge.questionmark".fill + ".ar") }
+		open var cropCircleBadgeQuestionmarkFillAr: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.questionmark".fill + ".ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleBadgeXmark: SFSymbol { ext(.start + ".crop".circle + ".badge.xmark") }
+		open var cropCircleBadgeXmark: SPSafeSymbol { ext(.start + ".crop".circle + ".badge.xmark") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleFill: SFSymbol { ext(.start + ".crop".circle.fill) }
+		open var cropCircleFill: SPSafeSymbol { ext(.start + ".crop".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleFillBadgeCheckmark: SFSymbol { ext(.start + ".crop".circle.fill + ".badge.checkmark") }
+		open var cropCircleFillBadgeCheckmark: SPSafeSymbol { ext(.start + ".crop".circle.fill + ".badge.checkmark") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleFillBadgeMinus: SFSymbol { ext(.start + ".crop".circle.fill + ".badge.minus") }
+		open var cropCircleFillBadgeMinus: SPSafeSymbol { ext(.start + ".crop".circle.fill + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleFillBadgePlus: SFSymbol { ext(.start + ".crop".circle.fill + ".badge.plus") }
+		open var cropCircleFillBadgePlus: SPSafeSymbol { ext(.start + ".crop".circle.fill + ".badge.plus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropCircleFillBadgeXmark: SFSymbol { ext(.start + ".crop".circle.fill + ".badge.xmark") }
+		open var cropCircleFillBadgeXmark: SPSafeSymbol { ext(.start + ".crop".circle.fill + ".badge.xmark") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropRectangle: SFSymbol { ext(.start + ".crop".rectangle) }
+		open var cropRectangle: SPSafeSymbol { ext(.start + ".crop".rectangle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropRectangleFill: SFSymbol { ext(.start + ".crop".rectangle.fill) }
+		open var cropRectangleFill: SPSafeSymbol { ext(.start + ".crop".rectangle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropRectangleStack: SFSymbol { ext(.start + ".crop".rectangle + ".stack") }
+		open var cropRectangleStack: SPSafeSymbol { ext(.start + ".crop".rectangle + ".stack") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropRectangleStackFill: SFSymbol { ext(.start + ".crop".rectangle + ".stack".fill) }
+		open var cropRectangleStackFill: SPSafeSymbol { ext(.start + ".crop".rectangle + ".stack".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropSquare: SFSymbol { ext(.start + ".crop".square) }
+		open var cropSquare: SPSafeSymbol { ext(.start + ".crop".square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var cropSquareFill: SFSymbol { ext(.start + ".crop".square.fill) }
+		open var cropSquareFill: SPSafeSymbol { ext(.start + ".crop".square.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropSquareFilledAndAtRectangle: SFSymbol { ext(.start + ".crop".square + ".filled.and.at".rectangle) }
+		open var cropSquareFilledAndAtRectangle: SPSafeSymbol { ext(.start + ".crop".square + ".filled.and.at".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var cropSquareFilledAndAtRectangleFill: SFSymbol { ext(.start + ".crop".square + ".filled.and.at".rectangle.fill) }
+		open var cropSquareFilledAndAtRectangleFill: SPSafeSymbol { ext(.start + ".crop".square + ".filled.and.at".rectangle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillAndArrowLeftAndArrowRight: SFSymbol { ext(.start.fill + ".and.arrow.left.and.arrow.right") }
+		open var fillAndArrowLeftAndArrowRight: SPSafeSymbol { ext(.start.fill + ".and.arrow.left.and.arrow.right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillBadgeMinus: SFSymbol { ext(.start.fill + ".badge.minus") }
+		open var fillBadgeMinus: SPSafeSymbol { ext(.start.fill + ".badge.minus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillBadgePlus: SFSymbol { ext(.start.fill + ".badge.plus") }
+		open var fillBadgePlus: SPSafeSymbol { ext(.start.fill + ".badge.plus") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillCheckmark: SFSymbol { ext(.start.fill + ".checkmark") }
+		open var fillCheckmark: SPSafeSymbol { ext(.start.fill + ".checkmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillCheckmarkRtl: SFSymbol { ext(.start.fill + ".checkmark.rtl") }
+		open var fillCheckmarkRtl: SPSafeSymbol { ext(.start.fill + ".checkmark.rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillQuestionmark: SFSymbol { ext(.start.fill + ".questionmark") }
+		open var fillQuestionmark: SPSafeSymbol { ext(.start.fill + ".questionmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillQuestionmarkAr: SFSymbol { ext(.start.fill + ".questionmark.ar") }
+		open var fillQuestionmarkAr: SPSafeSymbol { ext(.start.fill + ".questionmark.ar") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillQuestionmarkRtl: SFSymbol { ext(.start.fill + ".questionmark.rtl") }
+		open var fillQuestionmarkRtl: SPSafeSymbol { ext(.start.fill + ".questionmark.rtl") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillTurnDown: SFSymbol { ext(.start.fill + ".turn.down") }
+		open var fillTurnDown: SPSafeSymbol { ext(.start.fill + ".turn.down") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillTurnLeft: SFSymbol { ext(.start.fill + ".turn.left") }
+		open var fillTurnLeft: SPSafeSymbol { ext(.start.fill + ".turn.left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillTurnRight: SFSymbol { ext(.start.fill + ".turn.right") }
+		open var fillTurnRight: SPSafeSymbol { ext(.start.fill + ".turn.right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillViewfinder: SFSymbol { ext(.start.fill + ".viewfinder") }
+		open var fillViewfinder: SPSafeSymbol { ext(.start.fill + ".viewfinder") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillXmark: SFSymbol { ext(.start.fill + ".xmark") }
+		open var fillXmark: SPSafeSymbol { ext(.start.fill + ".xmark") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fillXmarkRtl: SFSymbol { ext(.start.fill + ".xmark.rtl") }
+		open var fillXmarkRtl: SPSafeSymbol { ext(.start.fill + ".xmark.rtl") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var icloud: SFSymbol { ext(.start + ".icloud") }
+		open var icloud: SPSafeSymbol { ext(.start + ".icloud") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var icloudFill: SFSymbol { ext(.start + ".icloud".fill) }
+		open var icloudFill: SPSafeSymbol { ext(.start + ".icloud".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var textRectangle: SFSymbol { ext(.start + ".text".rectangle) }
+		open var textRectangle: SPSafeSymbol { ext(.start + ".text".rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var textRectangleFill: SFSymbol { ext(.start + ".text".rectangle.fill) }
+		open var textRectangleFill: SPSafeSymbol { ext(.start + ".text".rectangle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var wave_2: SFSymbol { ext(.start + ".wave.2") }
+		open var wave_2: SPSafeSymbol { ext(.start + ".wave.2") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var wave_2Fill: SFSymbol { ext(.start + ".wave.2".fill) }
+		open var wave_2Fill: SPSafeSymbol { ext(.start + ".wave.2".fill) }
 	}
 }

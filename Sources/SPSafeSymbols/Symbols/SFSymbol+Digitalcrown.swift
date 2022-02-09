@@ -19,37 +19,37 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var digitalcrown: Digitalcrown { .init(name: "digitalcrown") }
 
-	open class Digitalcrown: SFSymbol {
+	open class Digitalcrown: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var arrowClockwise: SFSymbol { ext(.start + ".arrow.clockwise") }
+		open var arrowClockwise: SPSafeSymbol { ext(.start + ".arrow.clockwise") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var arrowClockwiseFill: SFSymbol { ext(.start + ".arrow.clockwise".fill) }
+		open var arrowClockwiseFill: SPSafeSymbol { ext(.start + ".arrow.clockwise".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var arrowCounterclockwise: SFSymbol { ext(.start + ".arrow.counterclockwise") }
+		open var arrowCounterclockwise: SPSafeSymbol { ext(.start + ".arrow.counterclockwise") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var arrowCounterclockwiseFill: SFSymbol { ext(.start + ".arrow.counterclockwise".fill) }
+		open var arrowCounterclockwiseFill: SPSafeSymbol { ext(.start + ".arrow.counterclockwise".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalArrowClockwise: SFSymbol { ext(.start + ".horizontal.arrow.clockwise") }
+		open var horizontalArrowClockwise: SPSafeSymbol { ext(.start + ".horizontal.arrow.clockwise") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalArrowClockwiseFill: SFSymbol { ext(.start + ".horizontal.arrow.clockwise".fill) }
+		open var horizontalArrowClockwiseFill: SPSafeSymbol { ext(.start + ".horizontal.arrow.clockwise".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalArrowCounterclockwise: SFSymbol { ext(.start + ".horizontal.arrow.counterclockwise") }
+		open var horizontalArrowCounterclockwise: SPSafeSymbol { ext(.start + ".horizontal.arrow.counterclockwise") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalArrowCounterclockwiseFill: SFSymbol { ext(.start + ".horizontal.arrow.counterclockwise".fill) }
+		open var horizontalArrowCounterclockwiseFill: SPSafeSymbol { ext(.start + ".horizontal.arrow.counterclockwise".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalPress: SFSymbol { ext(.start + ".horizontal.press") }
+		open var horizontalPress: SPSafeSymbol { ext(.start + ".horizontal.press") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var horizontalPressFill: SFSymbol { ext(.start + ".horizontal.press".fill) }
+		open var horizontalPressFill: SPSafeSymbol { ext(.start + ".horizontal.press".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var press: SFSymbol { ext(.start + ".press") }
+		open var press: SPSafeSymbol { ext(.start + ".press") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var pressFill: SFSymbol { ext(.start + ".press".fill) }
+		open var pressFill: SPSafeSymbol { ext(.start + ".press".fill) }
 	}
 }

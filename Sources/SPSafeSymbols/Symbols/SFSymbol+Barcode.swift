@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var barcode: Barcode { .init(name: "barcode") }
 
-	open class Barcode: SFSymbol {
+	open class Barcode: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
+		open var viewfinder: SPSafeSymbol { ext(.start + ".viewfinder") }
 	}
 }

@@ -19,40 +19,40 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var line: Line { .init(name: "line") }
 
-	open class Line: SFSymbol {
+	open class Line: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2HorizontalDecreaseCircle: SFSymbol { ext(.start + ".2.horizontal.decrease".circle) }
+		open var _2HorizontalDecreaseCircle: SPSafeSymbol { ext(.start + ".2.horizontal.decrease".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2HorizontalDecreaseCircleFill: SFSymbol { ext(.start + ".2.horizontal.decrease".circle.fill) }
+		open var _2HorizontalDecreaseCircleFill: SPSafeSymbol { ext(.start + ".2.horizontal.decrease".circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3CrossedSwirlCircle: SFSymbol { ext(.start + ".3.crossed.swirl".circle) }
+		open var _3CrossedSwirlCircle: SPSafeSymbol { ext(.start + ".3.crossed.swirl".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3CrossedSwirlCircleFill: SFSymbol { ext(.start + ".3.crossed.swirl".circle.fill) }
+		open var _3CrossedSwirlCircleFill: SPSafeSymbol { ext(.start + ".3.crossed.swirl".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3Horizontal: SFSymbol { ext(.start + ".3.horizontal") }
+		open var _3Horizontal: SPSafeSymbol { ext(.start + ".3.horizontal") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3HorizontalCircle: SFSymbol { ext(.start + ".3.horizontal".circle) }
+		open var _3HorizontalCircle: SPSafeSymbol { ext(.start + ".3.horizontal".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3HorizontalCircleFill: SFSymbol { ext(.start + ".3.horizontal".circle.fill) }
+		open var _3HorizontalCircleFill: SPSafeSymbol { ext(.start + ".3.horizontal".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3HorizontalDecrease: SFSymbol { ext(.start + ".3.horizontal.decrease") }
+		open var _3HorizontalDecrease: SPSafeSymbol { ext(.start + ".3.horizontal.decrease") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3HorizontalDecreaseCircle: SFSymbol { ext(.start + ".3.horizontal.decrease".circle) }
+		open var _3HorizontalDecreaseCircle: SPSafeSymbol { ext(.start + ".3.horizontal.decrease".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _3HorizontalDecreaseCircleFill: SFSymbol { ext(.start + ".3.horizontal.decrease".circle.fill) }
+		open var _3HorizontalDecreaseCircleFill: SPSafeSymbol { ext(.start + ".3.horizontal.decrease".circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var diagonal: SFSymbol { ext(.start + ".diagonal") }
+		open var diagonal: SPSafeSymbol { ext(.start + ".diagonal") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var diagonalArrow: SFSymbol { ext(.start + ".diagonal.arrow") }
+		open var diagonalArrow: SPSafeSymbol { ext(.start + ".diagonal.arrow") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var horizontalStarFillLineHorizontal: SFSymbol { ext(.start + ".horizontal.star".fill + ".line.horizontal") }
+		open var horizontalStarFillLineHorizontal: SPSafeSymbol { ext(.start + ".horizontal.star".fill + ".line.horizontal") }
 	}
 }

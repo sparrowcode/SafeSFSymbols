@@ -19,34 +19,34 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var `repeat`: Repeat { .init(name: "repeat") }
 
-	open class Repeat: SFSymbol {
+	open class Repeat: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _1: SFSymbol { ext(.start + ".1") }
+		open var _1: SPSafeSymbol { ext(.start + ".1") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _1Ar: SFSymbol { ext(.start + ".1.ar") }
+		open var _1Ar: SPSafeSymbol { ext(.start + ".1.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var _1Circle: SFSymbol { ext(.start + ".1".circle) }
+		open var _1Circle: SPSafeSymbol { ext(.start + ".1".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _1CircleAr: SFSymbol { ext(.start + ".1".circle + ".ar") }
+		open var _1CircleAr: SPSafeSymbol { ext(.start + ".1".circle + ".ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var _1CircleFill: SFSymbol { ext(.start + ".1".circle.fill) }
+		open var _1CircleFill: SPSafeSymbol { ext(.start + ".1".circle.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _1CircleFillAr: SFSymbol { ext(.start + ".1".circle.fill + ".ar") }
+		open var _1CircleFillAr: SPSafeSymbol { ext(.start + ".1".circle.fill + ".ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _1CircleFillHi: SFSymbol { ext(.start + ".1".circle.fill + ".hi") }
+		open var _1CircleFillHi: SPSafeSymbol { ext(.start + ".1".circle.fill + ".hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _1CircleHi: SFSymbol { ext(.start + ".1".circle + ".hi") }
+		open var _1CircleHi: SPSafeSymbol { ext(.start + ".1".circle + ".hi") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _1Hi: SFSymbol { ext(.start + ".1.hi") }
+		open var _1Hi: SPSafeSymbol { ext(.start + ".1.hi") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 	}
 }

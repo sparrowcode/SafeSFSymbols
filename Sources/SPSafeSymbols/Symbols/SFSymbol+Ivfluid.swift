@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var ivfluid: Ivfluid { .init(name: "ivfluid") }
 
-	open class Ivfluid: SFSymbol {
+	open class Ivfluid: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bag: SFSymbol { ext(.start + ".bag") }
+		open var bag: SPSafeSymbol { ext(.start + ".bag") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bagFill: SFSymbol { ext(.start + ".bag".fill) }
+		open var bagFill: SPSafeSymbol { ext(.start + ".bag".fill) }
 	}
 }

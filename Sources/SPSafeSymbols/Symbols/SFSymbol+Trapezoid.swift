@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var trapezoid: Trapezoid { .init(name: "trapezoid") }
 
-	open class Trapezoid: SFSymbol {
+	open class Trapezoid: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andLineHorizontal: SFSymbol { ext(.start + ".and.line.horizontal") }
+		open var andLineHorizontal: SPSafeSymbol { ext(.start + ".and.line.horizontal") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andLineHorizontalFill: SFSymbol { ext(.start + ".and.line.horizontal".fill) }
+		open var andLineHorizontalFill: SPSafeSymbol { ext(.start + ".and.line.horizontal".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andLineVertical: SFSymbol { ext(.start + ".and.line.vertical") }
+		open var andLineVertical: SPSafeSymbol { ext(.start + ".and.line.vertical") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var andLineVerticalFill: SFSymbol { ext(.start + ".and.line.vertical".fill) }
+		open var andLineVerticalFill: SPSafeSymbol { ext(.start + ".and.line.vertical".fill) }
 	}
 }

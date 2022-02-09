@@ -19,29 +19,29 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var keyboard: Keyboard { .init(name: "keyboard") }
 
-	open class Keyboard: SFSymbol {
+	open class Keyboard: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeEllipsis: SFSymbol { ext(.start + ".badge.ellipsis") }
+		open var badgeEllipsis: SPSafeSymbol { ext(.start + ".badge.ellipsis") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var chevronCompactDown: SFSymbol { ext(.start + ".chevron.compact.down") }
+		open var chevronCompactDown: SPSafeSymbol { ext(.start + ".chevron.compact.down") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var chevronCompactLeft: SFSymbol { ext(.start + ".chevron.compact.left") }
+		open var chevronCompactLeft: SPSafeSymbol { ext(.start + ".chevron.compact.left") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var macwindow: SFSymbol { ext(.start + ".macwindow") }
+		open var macwindow: SPSafeSymbol { ext(.start + ".macwindow") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var onehandedLeft: SFSymbol { ext(.start + ".onehanded.left") }
+		open var onehandedLeft: SPSafeSymbol { ext(.start + ".onehanded.left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var onehandedRight: SFSymbol { ext(.start + ".onehanded.right") }
+		open var onehandedRight: SPSafeSymbol { ext(.start + ".onehanded.right") }
 	}
 }

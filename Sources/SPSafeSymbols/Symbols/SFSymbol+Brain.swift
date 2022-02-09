@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var brain: Brain { .init(name: "brain") }
 
-	open class Brain: SFSymbol {
+	open class Brain: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var headProfile: SFSymbol { ext(.start + ".head.profile") }
+		open var headProfile: SPSafeSymbol { ext(.start + ".head.profile") }
 	}
 }

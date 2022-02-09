@@ -19,27 +19,27 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var signature: Signature { .init(name: "signature") }
 
-	open class Signature: SFSymbol {
+	open class Signature: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var ar: SFSymbol { ext(.start + ".ar") }
+		open var ar: SPSafeSymbol { ext(.start + ".ar") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var he: SFSymbol { ext(.start + ".he") }
+		open var he: SPSafeSymbol { ext(.start + ".he") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var ja: SFSymbol { ext(.start + ".ja") }
+		open var ja: SPSafeSymbol { ext(.start + ".ja") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var th: SFSymbol { ext(.start + ".th") }
+		open var th: SPSafeSymbol { ext(.start + ".th") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var zh: SFSymbol { ext(.start + ".zh") }
+		open var zh: SPSafeSymbol { ext(.start + ".zh") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var zhTraditional: SFSymbol { ext(.start + ".zh.traditional") }
+		open var zhTraditional: SPSafeSymbol { ext(.start + ".zh.traditional") }
 	}
 }

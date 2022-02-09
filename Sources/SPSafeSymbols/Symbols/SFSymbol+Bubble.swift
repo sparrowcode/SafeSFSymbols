@@ -19,45 +19,45 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var bubble: Bubble { .init(name: "bubble") }
 
-	open class Bubble: SFSymbol {
+	open class Bubble: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var left: SFSymbol { ext(.start + ".left") }
+		open var left: SPSafeSymbol { ext(.start + ".left") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftAndBubbleRight: SFSymbol { ext(.start + ".left.and.bubble.right") }
+		open var leftAndBubbleRight: SPSafeSymbol { ext(.start + ".left.and.bubble.right") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftAndBubbleRightFill: SFSymbol { ext(.start + ".left.and.bubble.right".fill) }
+		open var leftAndBubbleRightFill: SPSafeSymbol { ext(.start + ".left.and.bubble.right".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var leftAndExclamationmarkBubbleRight: SFSymbol { ext(.start + ".left.and.exclamationmark.bubble.right") }
+		open var leftAndExclamationmarkBubbleRight: SPSafeSymbol { ext(.start + ".left.and.exclamationmark.bubble.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var leftAndExclamationmarkBubbleRightFill: SFSymbol { ext(.start + ".left.and.exclamationmark.bubble.right".fill) }
+		open var leftAndExclamationmarkBubbleRightFill: SPSafeSymbol { ext(.start + ".left.and.exclamationmark.bubble.right".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var leftCircle: SFSymbol { ext(.start + ".left".circle) }
+		open var leftCircle: SPSafeSymbol { ext(.start + ".left".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var leftCircleFill: SFSymbol { ext(.start + ".left".circle.fill) }
+		open var leftCircleFill: SPSafeSymbol { ext(.start + ".left".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var leftFill: SFSymbol { ext(.start + ".left".fill) }
+		open var leftFill: SPSafeSymbol { ext(.start + ".left".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var middleBottom: SFSymbol { ext(.start + ".middle.bottom") }
+		open var middleBottom: SPSafeSymbol { ext(.start + ".middle.bottom") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var middleBottomFill: SFSymbol { ext(.start + ".middle.bottom".fill) }
+		open var middleBottomFill: SPSafeSymbol { ext(.start + ".middle.bottom".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var middleTop: SFSymbol { ext(.start + ".middle.top") }
+		open var middleTop: SPSafeSymbol { ext(.start + ".middle.top") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var middleTopFill: SFSymbol { ext(.start + ".middle.top".fill) }
+		open var middleTopFill: SPSafeSymbol { ext(.start + ".middle.top".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var right: SFSymbol { ext(.start + ".right") }
+		open var right: SPSafeSymbol { ext(.start + ".right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rightCircle: SFSymbol { ext(.start + ".right".circle) }
+		open var rightCircle: SPSafeSymbol { ext(.start + ".right".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rightCircleFill: SFSymbol { ext(.start + ".right".circle.fill) }
+		open var rightCircleFill: SPSafeSymbol { ext(.start + ".right".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var rightFill: SFSymbol { ext(.start + ".right".fill) }
+		open var rightFill: SPSafeSymbol { ext(.start + ".right".fill) }
 	}
 }

@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var earbuds: Earbuds { .init(name: "earbuds") }
 
-	open class Earbuds: SFSymbol {
+	open class Earbuds: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var `case`: SFSymbol { ext(.start + ".case") }
+		open var `case`: SPSafeSymbol { ext(.start + ".case") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var caseFill: SFSymbol { ext(.start + ".case".fill) }
+		open var caseFill: SPSafeSymbol { ext(.start + ".case".fill) }
 	}
 }

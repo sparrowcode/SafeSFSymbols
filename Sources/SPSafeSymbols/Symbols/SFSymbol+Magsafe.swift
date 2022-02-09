@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var magsafe: Magsafe { .init(name: "magsafe") }
 
-	open class Magsafe: SFSymbol {
+	open class Magsafe: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var batterypack: SFSymbol { ext(.start + ".batterypack") }
+		open var batterypack: SPSafeSymbol { ext(.start + ".batterypack") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var batterypackFill: SFSymbol { ext(.start + ".batterypack".fill) }
+		open var batterypackFill: SPSafeSymbol { ext(.start + ".batterypack".fill) }
 	}
 }

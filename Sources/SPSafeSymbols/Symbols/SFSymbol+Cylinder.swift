@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var cylinder: Cylinder { .init(name: "cylinder") }
 
-	open class Cylinder: SFSymbol {
+	open class Cylinder: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var split_1x2: SFSymbol { ext(.start + ".split.1x2") }
+		open var split_1x2: SPSafeSymbol { ext(.start + ".split.1x2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var split_1x2Fill: SFSymbol { ext(.start + ".split.1x2".fill) }
+		open var split_1x2Fill: SPSafeSymbol { ext(.start + ".split.1x2".fill) }
 	}
 }

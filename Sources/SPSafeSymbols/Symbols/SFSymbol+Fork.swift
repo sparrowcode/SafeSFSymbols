@@ -19,17 +19,17 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var fork: Fork { .init(name: "fork") }
 
-	open class Fork: SFSymbol {
+	open class Fork: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var knife: SFSymbol { ext(.start + ".knife") }
+		open var knife: SPSafeSymbol { ext(.start + ".knife") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var knifeCircle: SFSymbol { ext(.start + ".knife".circle) }
+		open var knifeCircle: SPSafeSymbol { ext(.start + ".knife".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var knifeCircleFill: SFSymbol { ext(.start + ".knife".circle.fill) }
+		open var knifeCircleFill: SPSafeSymbol { ext(.start + ".knife".circle.fill) }
 	}
 }

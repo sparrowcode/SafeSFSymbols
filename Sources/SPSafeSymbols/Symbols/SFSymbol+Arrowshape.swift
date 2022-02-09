@@ -19,77 +19,77 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var arrowshape: Arrowshape { .init(name: "arrowshape") }
 
-	open class Arrowshape: SFSymbol {
+	open class Arrowshape: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bounceForward: SFSymbol { ext(.start + ".bounce.forward") }
+		open var bounceForward: SPSafeSymbol { ext(.start + ".bounce.forward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bounceForwardFill: SFSymbol { ext(.start + ".bounce.forward".fill) }
+		open var bounceForwardFill: SPSafeSymbol { ext(.start + ".bounce.forward".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bounceRight: SFSymbol { ext(.start + ".bounce.right") }
+		open var bounceRight: SPSafeSymbol { ext(.start + ".bounce.right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bounceRightFill: SFSymbol { ext(.start + ".bounce.right".fill) }
+		open var bounceRightFill: SPSafeSymbol { ext(.start + ".bounce.right".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackward: SFSymbol { ext(.start + ".turn.up.backward") }
+		open var turnUpBackward: SPSafeSymbol { ext(.start + ".turn.up.backward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackward_2: SFSymbol { ext(.start + ".turn.up.backward.2") }
+		open var turnUpBackward_2: SPSafeSymbol { ext(.start + ".turn.up.backward.2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackward_2Circle: SFSymbol { ext(.start + ".turn.up.backward.2".circle) }
+		open var turnUpBackward_2Circle: SPSafeSymbol { ext(.start + ".turn.up.backward.2".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackward_2CircleFill: SFSymbol { ext(.start + ".turn.up.backward.2".circle.fill) }
+		open var turnUpBackward_2CircleFill: SPSafeSymbol { ext(.start + ".turn.up.backward.2".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackward_2Fill: SFSymbol { ext(.start + ".turn.up.backward.2".fill) }
+		open var turnUpBackward_2Fill: SPSafeSymbol { ext(.start + ".turn.up.backward.2".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackwardCircle: SFSymbol { ext(.start + ".turn.up.backward".circle) }
+		open var turnUpBackwardCircle: SPSafeSymbol { ext(.start + ".turn.up.backward".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackwardCircleFill: SFSymbol { ext(.start + ".turn.up.backward".circle.fill) }
+		open var turnUpBackwardCircleFill: SPSafeSymbol { ext(.start + ".turn.up.backward".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpBackwardFill: SFSymbol { ext(.start + ".turn.up.backward".fill) }
+		open var turnUpBackwardFill: SPSafeSymbol { ext(.start + ".turn.up.backward".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpForward: SFSymbol { ext(.start + ".turn.up.forward") }
+		open var turnUpForward: SPSafeSymbol { ext(.start + ".turn.up.forward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpForwardCircle: SFSymbol { ext(.start + ".turn.up.forward".circle) }
+		open var turnUpForwardCircle: SPSafeSymbol { ext(.start + ".turn.up.forward".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpForwardCircleFill: SFSymbol { ext(.start + ".turn.up.forward".circle.fill) }
+		open var turnUpForwardCircleFill: SPSafeSymbol { ext(.start + ".turn.up.forward".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpForwardFill: SFSymbol { ext(.start + ".turn.up.forward".fill) }
+		open var turnUpForwardFill: SPSafeSymbol { ext(.start + ".turn.up.forward".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpLeft: SFSymbol { ext(.start + ".turn.up.left") }
+		open var turnUpLeft: SPSafeSymbol { ext(.start + ".turn.up.left") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpLeft_2: SFSymbol { ext(.start + ".turn.up.left.2") }
+		open var turnUpLeft_2: SPSafeSymbol { ext(.start + ".turn.up.left.2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpLeft_2Circle: SFSymbol { ext(.start + ".turn.up.left.2".circle) }
+		open var turnUpLeft_2Circle: SPSafeSymbol { ext(.start + ".turn.up.left.2".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var turnUpLeft_2CircleFill: SFSymbol { ext(.start + ".turn.up.left.2".circle.fill) }
+		open var turnUpLeft_2CircleFill: SPSafeSymbol { ext(.start + ".turn.up.left.2".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpLeft_2Fill: SFSymbol { ext(.start + ".turn.up.left.2".fill) }
+		open var turnUpLeft_2Fill: SPSafeSymbol { ext(.start + ".turn.up.left.2".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpLeftCircle: SFSymbol { ext(.start + ".turn.up.left".circle) }
+		open var turnUpLeftCircle: SPSafeSymbol { ext(.start + ".turn.up.left".circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpLeftCircleFill: SFSymbol { ext(.start + ".turn.up.left".circle.fill) }
+		open var turnUpLeftCircleFill: SPSafeSymbol { ext(.start + ".turn.up.left".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpLeftFill: SFSymbol { ext(.start + ".turn.up.left".fill) }
+		open var turnUpLeftFill: SPSafeSymbol { ext(.start + ".turn.up.left".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpRight: SFSymbol { ext(.start + ".turn.up.right") }
+		open var turnUpRight: SPSafeSymbol { ext(.start + ".turn.up.right") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpRightCircle: SFSymbol { ext(.start + ".turn.up.right".circle) }
+		open var turnUpRightCircle: SPSafeSymbol { ext(.start + ".turn.up.right".circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpRightCircleFill: SFSymbol { ext(.start + ".turn.up.right".circle.fill) }
+		open var turnUpRightCircleFill: SPSafeSymbol { ext(.start + ".turn.up.right".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var turnUpRightFill: SFSymbol { ext(.start + ".turn.up.right".fill) }
+		open var turnUpRightFill: SPSafeSymbol { ext(.start + ".turn.up.right".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var zigzagForward: SFSymbol { ext(.start + ".zigzag.forward") }
+		open var zigzagForward: SPSafeSymbol { ext(.start + ".zigzag.forward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var zigzagForwardFill: SFSymbol { ext(.start + ".zigzag.forward".fill) }
+		open var zigzagForwardFill: SPSafeSymbol { ext(.start + ".zigzag.forward".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var zigzagRight: SFSymbol { ext(.start + ".zigzag.right") }
+		open var zigzagRight: SPSafeSymbol { ext(.start + ".zigzag.right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var zigzagRightFill: SFSymbol { ext(.start + ".zigzag.right".fill) }
+		open var zigzagRightFill: SPSafeSymbol { ext(.start + ".zigzag.right".fill) }
 	}
 }

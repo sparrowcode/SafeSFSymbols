@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var server: Server { .init(name: "server") }
 
-	open class Server: SFSymbol {
+	open class Server: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rack: SFSymbol { ext(.start + ".rack") }
+		open var rack: SPSafeSymbol { ext(.start + ".rack") }
 	}
 }

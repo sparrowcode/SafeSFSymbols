@@ -19,35 +19,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var die: Die { .init(name: "die") }
 
-	open class Die: SFSymbol {
+	open class Die: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_1: SFSymbol { ext(.start + ".face.1") }
+		open var face_1: SPSafeSymbol { ext(.start + ".face.1") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_1Fill: SFSymbol { ext(.start + ".face.1".fill) }
+		open var face_1Fill: SPSafeSymbol { ext(.start + ".face.1".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_2: SFSymbol { ext(.start + ".face.2") }
+		open var face_2: SPSafeSymbol { ext(.start + ".face.2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_2Fill: SFSymbol { ext(.start + ".face.2".fill) }
+		open var face_2Fill: SPSafeSymbol { ext(.start + ".face.2".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_3: SFSymbol { ext(.start + ".face.3") }
+		open var face_3: SPSafeSymbol { ext(.start + ".face.3") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_3Fill: SFSymbol { ext(.start + ".face.3".fill) }
+		open var face_3Fill: SPSafeSymbol { ext(.start + ".face.3".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_4: SFSymbol { ext(.start + ".face.4") }
+		open var face_4: SPSafeSymbol { ext(.start + ".face.4") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_4Fill: SFSymbol { ext(.start + ".face.4".fill) }
+		open var face_4Fill: SPSafeSymbol { ext(.start + ".face.4".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_5: SFSymbol { ext(.start + ".face.5") }
+		open var face_5: SPSafeSymbol { ext(.start + ".face.5") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_5Fill: SFSymbol { ext(.start + ".face.5".fill) }
+		open var face_5Fill: SPSafeSymbol { ext(.start + ".face.5".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_6: SFSymbol { ext(.start + ".face.6") }
+		open var face_6: SPSafeSymbol { ext(.start + ".face.6") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var face_6Fill: SFSymbol { ext(.start + ".face.6".fill) }
+		open var face_6Fill: SPSafeSymbol { ext(.start + ".face.6".fill) }
 	}
 }

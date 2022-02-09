@@ -19,38 +19,38 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var platter: Platter { .init(name: "platter") }
 
-	open class Platter: SFSymbol {
+	open class Platter: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2FilledIpad: SFSymbol { ext(.start + ".2.filled.ipad") }
+		open var _2FilledIpad: SPSafeSymbol { ext(.start + ".2.filled.ipad") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2FilledIpadLandscape: SFSymbol { ext(.start + ".2.filled.ipad.landscape") }
+		open var _2FilledIpadLandscape: SPSafeSymbol { ext(.start + ".2.filled.ipad.landscape") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2FilledIphone: SFSymbol { ext(.start + ".2.filled.iphone") }
+		open var _2FilledIphone: SPSafeSymbol { ext(.start + ".2.filled.iphone") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _2FilledIphoneLandscape: SFSymbol { ext(.start + ".2.filled.iphone.landscape") }
+		open var _2FilledIphoneLandscape: SPSafeSymbol { ext(.start + ".2.filled.iphone.landscape") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bottomApplewatchCase: SFSymbol { ext(.start + ".bottom.applewatch.case") }
+		open var bottomApplewatchCase: SPSafeSymbol { ext(.start + ".bottom.applewatch.case") }
 
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var filledBottomAndArrowDownIphone: SFSymbol { ext(.start + ".filled.bottom.and.arrow.down.iphone") }
+		open var filledBottomAndArrowDownIphone: SPSafeSymbol { ext(.start + ".filled.bottom.and.arrow.down.iphone") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var filledBottomApplewatchCase: SFSymbol { ext(.start + ".filled.bottom.applewatch.case") }
+		open var filledBottomApplewatchCase: SPSafeSymbol { ext(.start + ".filled.bottom.applewatch.case") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var filledBottomIphone: SFSymbol { ext(.start + ".filled.bottom.iphone") }
+		open var filledBottomIphone: SPSafeSymbol { ext(.start + ".filled.bottom.iphone") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var filledTopAndArrowUpIphone: SFSymbol { ext(.start + ".filled.top.and.arrow.up.iphone") }
+		open var filledTopAndArrowUpIphone: SPSafeSymbol { ext(.start + ".filled.top.and.arrow.up.iphone") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var filledTopApplewatchCase: SFSymbol { ext(.start + ".filled.top.applewatch.case") }
+		open var filledTopApplewatchCase: SPSafeSymbol { ext(.start + ".filled.top.applewatch.case") }
 		@available(iOS 15.1, macOS 12.0, tvOS 15.1, watchOS 8.1, *)
-		open var filledTopIphone: SFSymbol { ext(.start + ".filled.top.iphone") }
+		open var filledTopIphone: SPSafeSymbol { ext(.start + ".filled.top.iphone") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var topApplewatchCase: SFSymbol { ext(.start + ".top.applewatch.case") }
+		open var topApplewatchCase: SPSafeSymbol { ext(.start + ".top.applewatch.case") }
 	}
 }

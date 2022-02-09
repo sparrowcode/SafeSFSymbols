@@ -19,31 +19,31 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var sidebar: Sidebar { .init(name: "sidebar") }
 
-	open class Sidebar: SFSymbol {
+	open class Sidebar: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var leading: SFSymbol { ext(.start + ".leading") }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var left: SFSymbol { ext(.start + ".left") }
+		open var leading: SPSafeSymbol { ext(.start + ".leading") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var right: SFSymbol { ext(.start + ".right") }
+		open var left: SPSafeSymbol { ext(.start + ".left") }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var right: SPSafeSymbol { ext(.start + ".right") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squaresLeading: SFSymbol { ext(.start + ".squares.leading") }
+		open var squaresLeading: SPSafeSymbol { ext(.start + ".squares.leading") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squaresLeft: SFSymbol { ext(.start + ".squares.left") }
+		open var squaresLeft: SPSafeSymbol { ext(.start + ".squares.left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squaresRight: SFSymbol { ext(.start + ".squares.right") }
+		open var squaresRight: SPSafeSymbol { ext(.start + ".squares.right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squaresTrailing: SFSymbol { ext(.start + ".squares.trailing") }
+		open var squaresTrailing: SPSafeSymbol { ext(.start + ".squares.trailing") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var trailing: SFSymbol { ext(.start + ".trailing") }
+		open var trailing: SPSafeSymbol { ext(.start + ".trailing") }
 	}
 }

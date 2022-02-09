@@ -19,42 +19,42 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var heart: Heart { .init(name: "heart") }
 
-	open class Heart: SFSymbol {
+	open class Heart: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
-
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashCircle: SFSymbol { ext(.start.slash.circle) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashCircleFill: SFSymbol { ext(.start.slash.circle.fill) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slashFill: SFSymbol { ext(.start.slash.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var rectangleFill: SPSafeSymbol { ext(.start.rectangle.fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slash: SPSafeSymbol { ext(.start.slash) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slashCircle: SPSafeSymbol { ext(.start.slash.circle) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slashCircleFill: SPSafeSymbol { ext(.start.slash.circle.fill) }
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		open var slashFill: SPSafeSymbol { ext(.start.slash.fill) }
+
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var square: SPSafeSymbol { ext(.start.square) }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var textSquare: SFSymbol { ext(.start + ".text".square) }
+		open var textSquare: SPSafeSymbol { ext(.start + ".text".square) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var textSquareFill: SFSymbol { ext(.start + ".text".square.fill) }
+		open var textSquareFill: SPSafeSymbol { ext(.start + ".text".square.fill) }
 	}
 }

@@ -19,118 +19,118 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var textformat: Textformat { .init(name: "textformat") }
 
-	open class Textformat: SFSymbol {
+	open class Textformat: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _123: SFSymbol { ext(.start + ".123") }
+		open var _123: SPSafeSymbol { ext(.start + ".123") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _123Ar: SFSymbol { ext(.start + ".123.ar") }
+		open var _123Ar: SPSafeSymbol { ext(.start + ".123.ar") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _123Hi: SFSymbol { ext(.start + ".123.hi") }
+		open var _123Hi: SPSafeSymbol { ext(.start + ".123.hi") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var abc: SFSymbol { ext(.start + ".abc") }
+		open var abc: SPSafeSymbol { ext(.start + ".abc") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var abcDottedunderline: SFSymbol { ext(.start + ".abc.dottedunderline") }
+		open var abcDottedunderline: SPSafeSymbol { ext(.start + ".abc.dottedunderline") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var alt: SFSymbol { ext(.start + ".alt") }
+		open var alt: SPSafeSymbol { ext(.start + ".alt") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var size: SFSymbol { ext(.start + ".size") }
+		open var size: SPSafeSymbol { ext(.start + ".size") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeAr: SFSymbol { ext(.start + ".size.ar") }
+		open var sizeAr: SPSafeSymbol { ext(.start + ".size.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeHe: SFSymbol { ext(.start + ".size.he") }
+		open var sizeHe: SPSafeSymbol { ext(.start + ".size.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeHi: SFSymbol { ext(.start + ".size.hi") }
+		open var sizeHi: SPSafeSymbol { ext(.start + ".size.hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeJa: SFSymbol { ext(.start + ".size.ja") }
+		open var sizeJa: SPSafeSymbol { ext(.start + ".size.ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeKo: SFSymbol { ext(.start + ".size.ko") }
+		open var sizeKo: SPSafeSymbol { ext(.start + ".size.ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLarger: SFSymbol { ext(.start + ".size.larger") }
+		open var sizeLarger: SPSafeSymbol { ext(.start + ".size.larger") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerAr: SFSymbol { ext(.start + ".size.larger.ar") }
+		open var sizeLargerAr: SPSafeSymbol { ext(.start + ".size.larger.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerHe: SFSymbol { ext(.start + ".size.larger.he") }
+		open var sizeLargerHe: SPSafeSymbol { ext(.start + ".size.larger.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerHi: SFSymbol { ext(.start + ".size.larger.hi") }
+		open var sizeLargerHi: SPSafeSymbol { ext(.start + ".size.larger.hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerJa: SFSymbol { ext(.start + ".size.larger.ja") }
+		open var sizeLargerJa: SPSafeSymbol { ext(.start + ".size.larger.ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerKo: SFSymbol { ext(.start + ".size.larger.ko") }
+		open var sizeLargerKo: SPSafeSymbol { ext(.start + ".size.larger.ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerTh: SFSymbol { ext(.start + ".size.larger.th") }
+		open var sizeLargerTh: SPSafeSymbol { ext(.start + ".size.larger.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerZh: SFSymbol { ext(.start + ".size.larger.zh") }
+		open var sizeLargerZh: SPSafeSymbol { ext(.start + ".size.larger.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeLargerZhTraditional: SFSymbol { ext(.start + ".size.larger.zh.traditional") }
+		open var sizeLargerZhTraditional: SPSafeSymbol { ext(.start + ".size.larger.zh.traditional") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmaller: SFSymbol { ext(.start + ".size.smaller") }
+		open var sizeSmaller: SPSafeSymbol { ext(.start + ".size.smaller") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerAr: SFSymbol { ext(.start + ".size.smaller.ar") }
+		open var sizeSmallerAr: SPSafeSymbol { ext(.start + ".size.smaller.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerHe: SFSymbol { ext(.start + ".size.smaller.he") }
+		open var sizeSmallerHe: SPSafeSymbol { ext(.start + ".size.smaller.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerHi: SFSymbol { ext(.start + ".size.smaller.hi") }
+		open var sizeSmallerHi: SPSafeSymbol { ext(.start + ".size.smaller.hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerJa: SFSymbol { ext(.start + ".size.smaller.ja") }
+		open var sizeSmallerJa: SPSafeSymbol { ext(.start + ".size.smaller.ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerKo: SFSymbol { ext(.start + ".size.smaller.ko") }
+		open var sizeSmallerKo: SPSafeSymbol { ext(.start + ".size.smaller.ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerTh: SFSymbol { ext(.start + ".size.smaller.th") }
+		open var sizeSmallerTh: SPSafeSymbol { ext(.start + ".size.smaller.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerZh: SFSymbol { ext(.start + ".size.smaller.zh") }
+		open var sizeSmallerZh: SPSafeSymbol { ext(.start + ".size.smaller.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeSmallerZhTraditional: SFSymbol { ext(.start + ".size.smaller.zh.traditional") }
+		open var sizeSmallerZhTraditional: SPSafeSymbol { ext(.start + ".size.smaller.zh.traditional") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeTh: SFSymbol { ext(.start + ".size.th") }
+		open var sizeTh: SPSafeSymbol { ext(.start + ".size.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeZh: SFSymbol { ext(.start + ".size.zh") }
+		open var sizeZh: SPSafeSymbol { ext(.start + ".size.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var sizeZhTraditional: SFSymbol { ext(.start + ".size.zh.traditional") }
+		open var sizeZhTraditional: SPSafeSymbol { ext(.start + ".size.zh.traditional") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var `subscript`: SFSymbol { ext(.start + ".subscript") }
+		open var `subscript`: SPSafeSymbol { ext(.start + ".subscript") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptAr: SFSymbol { ext(.start + ".subscript.ar") }
+		open var subscriptAr: SPSafeSymbol { ext(.start + ".subscript.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptHe: SFSymbol { ext(.start + ".subscript.he") }
+		open var subscriptHe: SPSafeSymbol { ext(.start + ".subscript.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptHi: SFSymbol { ext(.start + ".subscript.hi") }
+		open var subscriptHi: SPSafeSymbol { ext(.start + ".subscript.hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptJa: SFSymbol { ext(.start + ".subscript.ja") }
+		open var subscriptJa: SPSafeSymbol { ext(.start + ".subscript.ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptKo: SFSymbol { ext(.start + ".subscript.ko") }
+		open var subscriptKo: SPSafeSymbol { ext(.start + ".subscript.ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptTh: SFSymbol { ext(.start + ".subscript.th") }
+		open var subscriptTh: SPSafeSymbol { ext(.start + ".subscript.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptZh: SFSymbol { ext(.start + ".subscript.zh") }
+		open var subscriptZh: SPSafeSymbol { ext(.start + ".subscript.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var subscriptZhTraditional: SFSymbol { ext(.start + ".subscript.zh.traditional") }
+		open var subscriptZhTraditional: SPSafeSymbol { ext(.start + ".subscript.zh.traditional") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var superscript: SFSymbol { ext(.start + ".superscript") }
+		open var superscript: SPSafeSymbol { ext(.start + ".superscript") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptAr: SFSymbol { ext(.start + ".superscript.ar") }
+		open var superscriptAr: SPSafeSymbol { ext(.start + ".superscript.ar") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptHe: SFSymbol { ext(.start + ".superscript.he") }
+		open var superscriptHe: SPSafeSymbol { ext(.start + ".superscript.he") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptHi: SFSymbol { ext(.start + ".superscript.hi") }
+		open var superscriptHi: SPSafeSymbol { ext(.start + ".superscript.hi") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptJa: SFSymbol { ext(.start + ".superscript.ja") }
+		open var superscriptJa: SPSafeSymbol { ext(.start + ".superscript.ja") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptKo: SFSymbol { ext(.start + ".superscript.ko") }
+		open var superscriptKo: SPSafeSymbol { ext(.start + ".superscript.ko") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptTh: SFSymbol { ext(.start + ".superscript.th") }
+		open var superscriptTh: SPSafeSymbol { ext(.start + ".superscript.th") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptZh: SFSymbol { ext(.start + ".superscript.zh") }
+		open var superscriptZh: SPSafeSymbol { ext(.start + ".superscript.zh") }
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var superscriptZhTraditional: SFSymbol { ext(.start + ".superscript.zh.traditional") }
+		open var superscriptZhTraditional: SPSafeSymbol { ext(.start + ".superscript.zh.traditional") }
 	}
 }

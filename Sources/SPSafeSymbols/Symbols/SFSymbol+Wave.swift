@@ -19,35 +19,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var wave: Wave { .init(name: "wave") }
 
-	open class Wave: SFSymbol {
+	open class Wave: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3Backward: SFSymbol { ext(.start + ".3.backward") }
+		open var _3Backward: SPSafeSymbol { ext(.start + ".3.backward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3BackwardCircle: SFSymbol { ext(.start + ".3.backward".circle) }
+		open var _3BackwardCircle: SPSafeSymbol { ext(.start + ".3.backward".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3BackwardCircleFill: SFSymbol { ext(.start + ".3.backward".circle.fill) }
+		open var _3BackwardCircleFill: SPSafeSymbol { ext(.start + ".3.backward".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3Forward: SFSymbol { ext(.start + ".3.forward") }
+		open var _3Forward: SPSafeSymbol { ext(.start + ".3.forward") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3ForwardCircle: SFSymbol { ext(.start + ".3.forward".circle) }
+		open var _3ForwardCircle: SPSafeSymbol { ext(.start + ".3.forward".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3ForwardCircleFill: SFSymbol { ext(.start + ".3.forward".circle.fill) }
+		open var _3ForwardCircleFill: SPSafeSymbol { ext(.start + ".3.forward".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3Left: SFSymbol { ext(.start + ".3.left") }
+		open var _3Left: SPSafeSymbol { ext(.start + ".3.left") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3LeftCircle: SFSymbol { ext(.start + ".3.left".circle) }
+		open var _3LeftCircle: SPSafeSymbol { ext(.start + ".3.left".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3LeftCircleFill: SFSymbol { ext(.start + ".3.left".circle.fill) }
+		open var _3LeftCircleFill: SPSafeSymbol { ext(.start + ".3.left".circle.fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3Right: SFSymbol { ext(.start + ".3.right") }
+		open var _3Right: SPSafeSymbol { ext(.start + ".3.right") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3RightCircle: SFSymbol { ext(.start + ".3.right".circle) }
+		open var _3RightCircle: SPSafeSymbol { ext(.start + ".3.right".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _3RightCircleFill: SFSymbol { ext(.start + ".3.right".circle.fill) }
+		open var _3RightCircleFill: SPSafeSymbol { ext(.start + ".3.right".circle.fill) }
 	}
 }

@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var aqi: Aqi { .init(name: "aqi") }
 
-	open class Aqi: SFSymbol {
+	open class Aqi: SPSafeSymbol {
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var high: SFSymbol { ext(.start + ".high") }
+		open var high: SPSafeSymbol { ext(.start + ".high") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var low: SFSymbol { ext(.start + ".low") }
+		open var low: SPSafeSymbol { ext(.start + ".low") }
 
 		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
-		open var medium: SFSymbol { ext(.start + ".medium") }
+		open var medium: SPSafeSymbol { ext(.start + ".medium") }
 	}
 }

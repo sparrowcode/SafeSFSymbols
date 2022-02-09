@@ -19,15 +19,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var badge: Badge { .init(name: "badge") }
 
-	open class Badge: SFSymbol {
+	open class Badge: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var plusRadiowavesForward: SFSymbol { ext(.start + ".plus.radiowaves.forward") }
+		open var plusRadiowavesForward: SPSafeSymbol { ext(.start + ".plus.radiowaves.forward") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var plusRadiowavesRight: SFSymbol { ext(.start + ".plus.radiowaves.right") }
+		open var plusRadiowavesRight: SPSafeSymbol { ext(.start + ".plus.radiowaves.right") }
 	}
 }

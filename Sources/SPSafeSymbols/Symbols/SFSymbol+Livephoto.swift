@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var livephoto: Livephoto { .init(name: "livephoto") }
 
-	open class Livephoto: SFSymbol {
+	open class Livephoto: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var badgeA: SFSymbol { ext(.start + ".badge.a") }
+		open var badgeA: SPSafeSymbol { ext(.start + ".badge.a") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var play: SFSymbol { ext(.start + ".play") }
+		open var play: SPSafeSymbol { ext(.start + ".play") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var slash: SFSymbol { ext(.start.slash) }
+		open var slash: SPSafeSymbol { ext(.start.slash) }
 	}
 }

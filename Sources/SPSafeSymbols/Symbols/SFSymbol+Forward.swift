@@ -19,32 +19,32 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var forward: Forward { .init(name: "forward") }
 
-	open class Forward: SFSymbol {
+	open class Forward: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var end: SFSymbol { ext(.start + ".end") }
+		open var end: SPSafeSymbol { ext(.start + ".end") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var endAlt: SFSymbol { ext(.start + ".end.alt") }
+		open var endAlt: SPSafeSymbol { ext(.start + ".end.alt") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var endAltFill: SFSymbol { ext(.start + ".end.alt".fill) }
+		open var endAltFill: SPSafeSymbol { ext(.start + ".end.alt".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var endFill: SFSymbol { ext(.start + ".end".fill) }
+		open var endFill: SPSafeSymbol { ext(.start + ".end".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var frame: SFSymbol { ext(.start + ".frame") }
+		open var frame: SPSafeSymbol { ext(.start + ".frame") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var frameFill: SFSymbol { ext(.start + ".frame".fill) }
+		open var frameFill: SPSafeSymbol { ext(.start + ".frame".fill) }
 	}
 }

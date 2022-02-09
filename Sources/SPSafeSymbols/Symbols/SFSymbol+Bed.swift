@@ -19,19 +19,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var bed: Bed { .init(name: "bed") }
 
-	open class Bed: SFSymbol {
+	open class Bed: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var double: SFSymbol { ext(.start + ".double") }
+		open var double: SPSafeSymbol { ext(.start + ".double") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var doubleCircle: SFSymbol { ext(.start + ".double".circle) }
+		open var doubleCircle: SPSafeSymbol { ext(.start + ".double".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var doubleCircleFill: SFSymbol { ext(.start + ".double".circle.fill) }
+		open var doubleCircleFill: SPSafeSymbol { ext(.start + ".double".circle.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var doubleFill: SFSymbol { ext(.start + ".double".fill) }
+		open var doubleFill: SPSafeSymbol { ext(.start + ".double".fill) }
 	}
 }

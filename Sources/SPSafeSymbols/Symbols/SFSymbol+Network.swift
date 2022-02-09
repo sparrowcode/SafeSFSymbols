@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var network: Network { .init(name: "network") }
 
-	open class Network: SFSymbol {
+	open class Network: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeShieldHalfFilled: SFSymbol { ext(.start + ".badge.shield.half.filled") }
+		open var badgeShieldHalfFilled: SPSafeSymbol { ext(.start + ".badge.shield.half.filled") }
 	}
 }

@@ -19,33 +19,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var music: Music { .init(name: "music") }
 
-	open class Music: SFSymbol {
+	open class Music: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var mic: SFSymbol { ext(.start + ".mic") }
+		open var mic: SPSafeSymbol { ext(.start + ".mic") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var micCircle: SFSymbol { ext(.start + ".mic".circle) }
+		open var micCircle: SPSafeSymbol { ext(.start + ".mic".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var micCircleFill: SFSymbol { ext(.start + ".mic".circle.fill) }
+		open var micCircleFill: SPSafeSymbol { ext(.start + ".mic".circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var note: SFSymbol { ext(.start + ".note") }
+		open var note: SPSafeSymbol { ext(.start + ".note") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var noteHouse: SFSymbol { ext(.start + ".note.house") }
+		open var noteHouse: SPSafeSymbol { ext(.start + ".note.house") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var noteHouseFill: SFSymbol { ext(.start + ".note.house".fill) }
+		open var noteHouseFill: SPSafeSymbol { ext(.start + ".note.house".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var noteList: SFSymbol { ext(.start + ".note.list") }
+		open var noteList: SPSafeSymbol { ext(.start + ".note.list") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var noteTv: SFSymbol { ext(.start + ".note.tv") }
+		open var noteTv: SPSafeSymbol { ext(.start + ".note.tv") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var noteTvFill: SFSymbol { ext(.start + ".note.tv".fill) }
+		open var noteTvFill: SPSafeSymbol { ext(.start + ".note.tv".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var quarternote_3: SFSymbol { ext(.start + ".quarternote.3") }
+		open var quarternote_3: SPSafeSymbol { ext(.start + ".quarternote.3") }
 	}
 }

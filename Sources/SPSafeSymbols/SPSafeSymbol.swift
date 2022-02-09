@@ -19,7 +19,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-open class SFSymbol (SPSafeSymbol) {
+open class SPSafeSymbol {
     
     public let name: String
     
@@ -27,7 +27,7 @@ open class SFSymbol (SPSafeSymbol) {
         self.name = name
     }
     
-    public func ext(_ value: String) -> SFSymbol {
+    public func ext(_ value: String) -> SPSafeSymbol {
         .init(name: self.name + value)
     }
 }

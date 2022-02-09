@@ -19,28 +19,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var globe: Globe { .init(name: "globe") }
 
-	open class Globe: SFSymbol {
+	open class Globe: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var americas: SFSymbol { ext(.start + ".americas") }
+		open var americas: SPSafeSymbol { ext(.start + ".americas") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var americasFill: SFSymbol { ext(.start + ".americas".fill) }
+		open var americasFill: SPSafeSymbol { ext(.start + ".americas".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var asiaAustralia: SFSymbol { ext(.start + ".asia.australia") }
+		open var asiaAustralia: SPSafeSymbol { ext(.start + ".asia.australia") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var asiaAustraliaFill: SFSymbol { ext(.start + ".asia.australia".fill) }
+		open var asiaAustraliaFill: SPSafeSymbol { ext(.start + ".asia.australia".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var badgeChevronBackward: SFSymbol { ext(.start + ".badge.chevron.backward") }
+		open var badgeChevronBackward: SPSafeSymbol { ext(.start + ".badge.chevron.backward") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var europeAfrica: SFSymbol { ext(.start + ".europe.africa") }
+		open var europeAfrica: SPSafeSymbol { ext(.start + ".europe.africa") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var europeAfricaFill: SFSymbol { ext(.start + ".europe.africa".fill) }
+		open var europeAfricaFill: SPSafeSymbol { ext(.start + ".europe.africa".fill) }
 	}
 }

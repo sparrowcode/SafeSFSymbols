@@ -19,36 +19,36 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var chart: Chart { .init(name: "chart") }
 
-	open class Chart: SFSymbol {
+	open class Chart: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var bar: SFSymbol { ext(.start + ".bar") }
+		open var bar: SPSafeSymbol { ext(.start + ".bar") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var barDocHorizontal: SFSymbol { ext(.start + ".bar.doc.horizontal") }
+		open var barDocHorizontal: SPSafeSymbol { ext(.start + ".bar.doc.horizontal") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var barDocHorizontalFill: SFSymbol { ext(.start + ".bar.doc.horizontal".fill) }
+		open var barDocHorizontalFill: SPSafeSymbol { ext(.start + ".bar.doc.horizontal".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var barFill: SFSymbol { ext(.start + ".bar".fill) }
+		open var barFill: SPSafeSymbol { ext(.start + ".bar".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var barXaxis: SFSymbol { ext(.start + ".bar.xaxis") }
+		open var barXaxis: SPSafeSymbol { ext(.start + ".bar.xaxis") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lineUptrendXyaxis: SFSymbol { ext(.start + ".line.uptrend.xyaxis") }
+		open var lineUptrendXyaxis: SPSafeSymbol { ext(.start + ".line.uptrend.xyaxis") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lineUptrendXyaxisCircle: SFSymbol { ext(.start + ".line.uptrend.xyaxis".circle) }
+		open var lineUptrendXyaxisCircle: SPSafeSymbol { ext(.start + ".line.uptrend.xyaxis".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lineUptrendXyaxisCircleFill: SFSymbol { ext(.start + ".line.uptrend.xyaxis".circle.fill) }
+		open var lineUptrendXyaxisCircleFill: SPSafeSymbol { ext(.start + ".line.uptrend.xyaxis".circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var pie: SFSymbol { ext(.start + ".pie") }
+		open var pie: SPSafeSymbol { ext(.start + ".pie") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var pieFill: SFSymbol { ext(.start + ".pie".fill) }
+		open var pieFill: SPSafeSymbol { ext(.start + ".pie".fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var xyaxisLine: SFSymbol { ext(.start + ".xyaxis.line") }
+		open var xyaxisLine: SPSafeSymbol { ext(.start + ".xyaxis.line") }
 	}
 }

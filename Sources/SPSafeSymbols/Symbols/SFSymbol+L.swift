@@ -19,50 +19,50 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var l: L { .init(name: "l") }
 
-	open class L: SFSymbol {
+	open class L: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var joystick: SFSymbol { ext(.start + ".joystick") }
+		open var joystick: SPSafeSymbol { ext(.start + ".joystick") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var joystickFill: SFSymbol { ext(.start + ".joystick".fill) }
+		open var joystickFill: SPSafeSymbol { ext(.start + ".joystick".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickPressDown: SFSymbol { ext(.start + ".joystick.press.down") }
+		open var joystickPressDown: SPSafeSymbol { ext(.start + ".joystick.press.down") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickPressDownFill: SFSymbol { ext(.start + ".joystick.press.down".fill) }
+		open var joystickPressDownFill: SPSafeSymbol { ext(.start + ".joystick.press.down".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltDown: SFSymbol { ext(.start + ".joystick.tilt.down") }
+		open var joystickTiltDown: SPSafeSymbol { ext(.start + ".joystick.tilt.down") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltDownFill: SFSymbol { ext(.start + ".joystick.tilt.down".fill) }
+		open var joystickTiltDownFill: SPSafeSymbol { ext(.start + ".joystick.tilt.down".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltLeft: SFSymbol { ext(.start + ".joystick.tilt.left") }
+		open var joystickTiltLeft: SPSafeSymbol { ext(.start + ".joystick.tilt.left") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltLeftFill: SFSymbol { ext(.start + ".joystick.tilt.left".fill) }
+		open var joystickTiltLeftFill: SPSafeSymbol { ext(.start + ".joystick.tilt.left".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltRight: SFSymbol { ext(.start + ".joystick.tilt.right") }
+		open var joystickTiltRight: SPSafeSymbol { ext(.start + ".joystick.tilt.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltRightFill: SFSymbol { ext(.start + ".joystick.tilt.right".fill) }
+		open var joystickTiltRightFill: SPSafeSymbol { ext(.start + ".joystick.tilt.right".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltUp: SFSymbol { ext(.start + ".joystick.tilt.up") }
+		open var joystickTiltUp: SPSafeSymbol { ext(.start + ".joystick.tilt.up") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var joystickTiltUpFill: SFSymbol { ext(.start + ".joystick.tilt.up".fill) }
+		open var joystickTiltUpFill: SPSafeSymbol { ext(.start + ".joystick.tilt.up".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedbottom: SFSymbol { ext(.start.rectangle + ".roundedbottom") }
+		open var rectangleRoundedbottom: SPSafeSymbol { ext(.start.rectangle + ".roundedbottom") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedbottomFill: SFSymbol { ext(.start.rectangle + ".roundedbottom".fill) }
+		open var rectangleRoundedbottomFill: SPSafeSymbol { ext(.start.rectangle + ".roundedbottom".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 	}
 }

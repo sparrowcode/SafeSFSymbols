@@ -19,29 +19,29 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var squareshape: Squareshape { .init(name: "squareshape") }
 
-	open class Squareshape: SFSymbol {
+	open class Squareshape: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var controlhandlesOnSquareshapeControlhandles: SFSymbol { ext(.start + ".controlhandles.on.squareshape.controlhandles") }
+		open var controlhandlesOnSquareshapeControlhandles: SPSafeSymbol { ext(.start + ".controlhandles.on.squareshape.controlhandles") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dashedSquareshape: SFSymbol { ext(.start + ".dashed.squareshape") }
+		open var dashedSquareshape: SPSafeSymbol { ext(.start + ".dashed.squareshape") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var split_2x2: SFSymbol { ext(.start + ".split.2x2") }
+		open var split_2x2: SPSafeSymbol { ext(.start + ".split.2x2") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var split_2x2Dotted: SFSymbol { ext(.start + ".split.2x2.dotted") }
+		open var split_2x2Dotted: SPSafeSymbol { ext(.start + ".split.2x2.dotted") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var split_3x3: SFSymbol { ext(.start + ".split.3x3") }
+		open var split_3x3: SPSafeSymbol { ext(.start + ".split.3x3") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareshapeDashed: SFSymbol { ext(.start + ".squareshape.dashed") }
+		open var squareshapeDashed: SPSafeSymbol { ext(.start + ".squareshape.dashed") }
 	}
 }

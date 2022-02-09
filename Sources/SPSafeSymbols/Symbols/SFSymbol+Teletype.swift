@@ -19,22 +19,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var teletype: Teletype { .init(name: "teletype") }
 
-	open class Teletype: SFSymbol {
+	open class Teletype: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var answer: SFSymbol { ext(.start + ".answer") }
+		open var answer: SPSafeSymbol { ext(.start + ".answer") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var answerCircle: SFSymbol { ext(.start + ".answer".circle) }
+		open var answerCircle: SPSafeSymbol { ext(.start + ".answer".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var answerCircleFill: SFSymbol { ext(.start + ".answer".circle.fill) }
+		open var answerCircleFill: SPSafeSymbol { ext(.start + ".answer".circle.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 	}
 }

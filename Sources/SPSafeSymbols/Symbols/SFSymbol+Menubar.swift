@@ -19,23 +19,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var menubar: Menubar { .init(name: "menubar") }
 
-	open class Menubar: SFSymbol {
+	open class Menubar: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowDownRectangle: SFSymbol { ext(.start + ".arrow.down".rectangle) }
+		open var arrowDownRectangle: SPSafeSymbol { ext(.start + ".arrow.down".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowUpRectangle: SFSymbol { ext(.start + ".arrow.up".rectangle) }
+		open var arrowUpRectangle: SPSafeSymbol { ext(.start + ".arrow.up".rectangle) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dockRectangle: SFSymbol { ext(.start + ".dock".rectangle) }
+		open var dockRectangle: SPSafeSymbol { ext(.start + ".dock".rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var dockRectangleBadgeRecord: SFSymbol { ext(.start + ".dock".rectangle + ".badge.record") }
+		open var dockRectangleBadgeRecord: SPSafeSymbol { ext(.start + ".dock".rectangle + ".badge.record") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 	}
 }

@@ -19,18 +19,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var airport: Airport { .init(name: "airport") }
 
-	open class Airport: SFSymbol {
+	open class Airport: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var express: SFSymbol { ext(.start + ".express") }
+		open var express: SPSafeSymbol { ext(.start + ".express") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var extreme: SFSymbol { ext(.start + ".extreme") }
+		open var extreme: SPSafeSymbol { ext(.start + ".extreme") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var extremeTower: SFSymbol { ext(.start + ".extreme.tower") }
+		open var extremeTower: SPSafeSymbol { ext(.start + ".extreme.tower") }
 	}
 }

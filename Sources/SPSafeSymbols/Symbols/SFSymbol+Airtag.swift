@@ -19,22 +19,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var airtag: Airtag { .init(name: "airtag") }
 
-	open class Airtag: SFSymbol {
+	open class Airtag: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesForward: SFSymbol { ext(.start + ".radiowaves.forward") }
+		open var radiowavesForward: SPSafeSymbol { ext(.start + ".radiowaves.forward") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesForwardFill: SFSymbol { ext(.start + ".radiowaves.forward".fill) }
+		open var radiowavesForwardFill: SPSafeSymbol { ext(.start + ".radiowaves.forward".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesForwardFillRtl: SFSymbol { ext(.start + ".radiowaves.forward".fill + ".rtl") }
+		open var radiowavesForwardFillRtl: SPSafeSymbol { ext(.start + ".radiowaves.forward".fill + ".rtl") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesForwardRtl: SFSymbol { ext(.start + ".radiowaves.forward.rtl") }
+		open var radiowavesForwardRtl: SPSafeSymbol { ext(.start + ".radiowaves.forward.rtl") }
 	}
 }

@@ -19,33 +19,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var triangle: Triangle { .init(name: "triangle") }
 
-	open class Triangle: SFSymbol {
+	open class Triangle: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bottomhalfFilled: SFSymbol { ext(.start + ".bottomhalf.filled") }
+		open var bottomhalfFilled: SPSafeSymbol { ext(.start + ".bottomhalf.filled") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var insetFilled: SFSymbol { ext(.start + ".inset.filled") }
+		open var insetFilled: SPSafeSymbol { ext(.start + ".inset.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lefthalfFilled: SFSymbol { ext(.start + ".lefthalf.filled") }
+		open var lefthalfFilled: SPSafeSymbol { ext(.start + ".lefthalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var righthalfFilled: SFSymbol { ext(.start + ".righthalf.filled") }
+		open var righthalfFilled: SPSafeSymbol { ext(.start + ".righthalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tophalfFilled: SFSymbol { ext(.start + ".tophalf.filled") }
+		open var tophalfFilled: SPSafeSymbol { ext(.start + ".tophalf.filled") }
 	}
 }

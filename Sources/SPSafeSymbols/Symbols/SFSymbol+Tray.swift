@@ -19,37 +19,37 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var tray: Tray { .init(name: "tray") }
 
-	open class Tray: SFSymbol {
+	open class Tray: SPSafeSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _2: SFSymbol { ext(.start + ".2") }
+		open var _2: SPSafeSymbol { ext(.start + ".2") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _2Fill: SFSymbol { ext(.start + ".2".fill) }
+		open var _2Fill: SPSafeSymbol { ext(.start + ".2".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andArrowDown: SFSymbol { ext(.start + ".and.arrow.down") }
+		open var andArrowDown: SPSafeSymbol { ext(.start + ".and.arrow.down") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andArrowDownFill: SFSymbol { ext(.start + ".and.arrow.down".fill) }
+		open var andArrowDownFill: SPSafeSymbol { ext(.start + ".and.arrow.down".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andArrowUp: SFSymbol { ext(.start + ".and.arrow.up") }
+		open var andArrowUp: SPSafeSymbol { ext(.start + ".and.arrow.up") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var andArrowUpFill: SFSymbol { ext(.start + ".and.arrow.up".fill) }
+		open var andArrowUpFill: SPSafeSymbol { ext(.start + ".and.arrow.up".fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var full: SFSymbol { ext(.start + ".full") }
+		open var full: SPSafeSymbol { ext(.start + ".full") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var fullFill: SFSymbol { ext(.start + ".full".fill) }
+		open var fullFill: SPSafeSymbol { ext(.start + ".full".fill) }
 	}
 }

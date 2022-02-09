@@ -19,25 +19,25 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var pentagon: Pentagon { .init(name: "pentagon") }
 
-	open class Pentagon: SFSymbol {
+	open class Pentagon: SPSafeSymbol {
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var bottomhalfFilled: SFSymbol { ext(.start + ".bottomhalf.filled") }
+		open var bottomhalfFilled: SPSafeSymbol { ext(.start + ".bottomhalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var fill: SFSymbol { ext(.start.fill) }
+		open var fill: SPSafeSymbol { ext(.start.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var lefthalfFilled: SFSymbol { ext(.start + ".lefthalf.filled") }
+		open var lefthalfFilled: SPSafeSymbol { ext(.start + ".lefthalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var righthalfFilled: SFSymbol { ext(.start + ".righthalf.filled") }
+		open var righthalfFilled: SPSafeSymbol { ext(.start + ".righthalf.filled") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var tophalfFilled: SFSymbol { ext(.start + ".tophalf.filled") }
+		open var tophalfFilled: SPSafeSymbol { ext(.start + ".tophalf.filled") }
 	}
 }

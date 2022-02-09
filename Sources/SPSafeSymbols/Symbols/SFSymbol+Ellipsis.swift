@@ -19,33 +19,33 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var ellipsis: Ellipsis { .init(name: "ellipsis") }
 
-	open class Ellipsis: SFSymbol {
+	open class Ellipsis: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bubble: SFSymbol { ext(.start + ".bubble") }
+		open var bubble: SPSafeSymbol { ext(.start + ".bubble") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var bubbleFill: SFSymbol { ext(.start + ".bubble".fill) }
+		open var bubbleFill: SPSafeSymbol { ext(.start + ".bubble".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circle: SFSymbol { ext(.start.circle) }
+		open var circle: SPSafeSymbol { ext(.start.circle) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var circleFill: SFSymbol { ext(.start.circle.fill) }
+		open var circleFill: SPSafeSymbol { ext(.start.circle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var curlybraces: SFSymbol { ext(.start + ".curlybraces") }
+		open var curlybraces: SPSafeSymbol { ext(.start + ".curlybraces") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangle: SFSymbol { ext(.start.rectangle) }
+		open var rectangle: SPSafeSymbol { ext(.start.rectangle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleFill: SFSymbol { ext(.start.rectangle.fill) }
+		open var rectangleFill: SPSafeSymbol { ext(.start.rectangle.fill) }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalBubble: SFSymbol { ext(.start + ".vertical.bubble") }
+		open var verticalBubble: SPSafeSymbol { ext(.start + ".vertical.bubble") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var verticalBubbleFill: SFSymbol { ext(.start + ".vertical.bubble".fill) }
+		open var verticalBubbleFill: SPSafeSymbol { ext(.start + ".vertical.bubble".fill) }
 	}
 }

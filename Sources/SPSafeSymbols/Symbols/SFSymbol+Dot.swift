@@ -19,44 +19,44 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-extension SFSymbol {
+extension SPSafeSymbol {
 
 	public static var dot: Dot { .init(name: "dot") }
 
-	open class Dot: SFSymbol {
+	open class Dot: SPSafeSymbol {
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var arrowtrianglesUpRightDownLeftCircle: SFSymbol { ext(.start + ".arrowtriangles.up.right.down.left".circle) }
+		open var arrowtrianglesUpRightDownLeftCircle: SPSafeSymbol { ext(.start + ".arrowtriangles.up.right.down.left".circle) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var circleAndCursorarrow: SFSymbol { ext(.start.circle + ".and.cursorarrow") }
+		open var circleAndCursorarrow: SPSafeSymbol { ext(.start.circle + ".and.cursorarrow") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circleAndHandPointUpLeftFill: SFSymbol { ext(.start.circle + ".and.hand.point.up.left".fill) }
+		open var circleAndHandPointUpLeftFill: SPSafeSymbol { ext(.start.circle + ".and.hand.point.up.left".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var circleViewfinder: SFSymbol { ext(.start.circle + ".viewfinder") }
+		open var circleViewfinder: SPSafeSymbol { ext(.start.circle + ".viewfinder") }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var radiowavesForward: SFSymbol { ext(.start + ".radiowaves.forward") }
+		open var radiowavesForward: SPSafeSymbol { ext(.start + ".radiowaves.forward") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var radiowavesLeftAndRight: SFSymbol { ext(.start + ".radiowaves.left.and.right") }
+		open var radiowavesLeftAndRight: SPSafeSymbol { ext(.start + ".radiowaves.left.and.right") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var radiowavesRight: SFSymbol { ext(.start + ".radiowaves.right") }
+		open var radiowavesRight: SPSafeSymbol { ext(.start + ".radiowaves.right") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var radiowavesUpForward: SFSymbol { ext(.start + ".radiowaves.up.forward") }
+		open var radiowavesUpForward: SPSafeSymbol { ext(.start + ".radiowaves.up.forward") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var square: SFSymbol { ext(.start.square) }
+		open var square: SPSafeSymbol { ext(.start.square) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var squareFill: SFSymbol { ext(.start.square.fill) }
+		open var squareFill: SPSafeSymbol { ext(.start.square.fill) }
 
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareshape: SFSymbol { ext(.start + ".squareshape") }
+		open var squareshape: SPSafeSymbol { ext(.start + ".squareshape") }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareshapeFill: SFSymbol { ext(.start + ".squareshape".fill) }
+		open var squareshapeFill: SPSafeSymbol { ext(.start + ".squareshape".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var squareshapeSplit_2x2: SFSymbol { ext(.start + ".squareshape.split.2x2") }
+		open var squareshapeSplit_2x2: SPSafeSymbol { ext(.start + ".squareshape.split.2x2") }
 
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var viewfinder: SFSymbol { ext(.start + ".viewfinder") }
+		open var viewfinder: SPSafeSymbol { ext(.start + ".viewfinder") }
 	}
 }
