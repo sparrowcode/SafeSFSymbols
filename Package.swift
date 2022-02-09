@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SFSymbols",
+    name: "SPSafeSymbols",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v13),
@@ -13,14 +13,14 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SFSymbols", 
-            targets: ["SFSymbols"]
+            name: "SPSafeSymbols", 
+            targets: ["SPSafeSymbols"]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "SFSymbols"
+            name: "SPSafeSymbols"
         )
     ]
 )
