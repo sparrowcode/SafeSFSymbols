@@ -1,6 +1,6 @@
 # SPSafeSymbols
 
-Wrapper of `SFSymbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of `iOS/macOS/tvOS`, the compiler will show a warning. Processed all symbols by script.
+Wrapper of `SF Symbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of `iOS/macOS/tvOS`, the compiler will show a warning. Processed all symbols by script.
 
 - [Installation](#installation)
     - [Swift Package Manager](#swift-package-manager)
