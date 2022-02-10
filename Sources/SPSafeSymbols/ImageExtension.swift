@@ -26,7 +26,7 @@ import SwiftUI
 extension Image {
     
     /**
-     SFSymbols: Create `SFSymbols` image by symbol.
+     SPSafeSymbols: Create `SPSafeSymbol` image by symbol.
      
      - parameter symbol: Symbol.
      */
@@ -45,7 +45,7 @@ extension NSImage {
     
     #else
     /**
-     SFSymbols: Create `SFSymbols` image by symbol.
+     SPSafeSymbols: Create `SPSafeSymbol` image by symbol.
      
      - parameter symbol: Symbol.
      */
@@ -62,7 +62,7 @@ import UIKit
 extension UIImage {
     
     /**
-     SFSymbols: Create `SFSymbols` image by symbol.
+     SPSafeSymbols: Create `SPSafeSymbol` image by symbol.
      
      - parameter symbol: Symbol.
      */
@@ -72,7 +72,7 @@ extension UIImage {
     }
     
     /**
-     SFSymbols: Create `SFSymbols` image by symbol with specific configuration.
+     SPSafeSymbols: Create `SPSafeSymbol` image by symbol with specific configuration.
      
      - parameter symbol: Symbol.
      - parameter pointSize: Font size of image.
@@ -85,7 +85,7 @@ extension UIImage {
     }
     
     /**
-     SFSymbols: Create `SFSymbols` image by symbol with specific configuration.
+     SPSafeSymbols: Create `SPSafeSymbol` image by symbol with specific configuration.
      
      - parameter symbol: Symbol.
      - parameter font: Font of image.
