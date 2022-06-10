@@ -111,3 +111,4 @@ let image = NSImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
     <a href="https://apps.apple.com/app/id1617055933"><img src="https://cdn.sparrowcode.io/github/apps-using/arabesque-kitchen.png?version=2" height="65"></a>
 </p>
 
+If you use a `SafeSFSymbols`, add your application via Pull Request.
