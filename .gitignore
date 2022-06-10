@@ -1,12 +1,6 @@
-# osX files
+# macOS Files
 .DS_Store
 .Trashes
 
 # Swift Package Manager
 .swiftpm
-
-# User Interface
-*UserInterfaceState.xcuserstate
-
-# Generator Script
-/Generator

@@ -1,6 +1,18 @@
-# SPSafeSymbols
+# SafeSFSymbols
 
-Wrapper of `SF Symbols`. You choose the icon and what style to draw it in. You can specify the font with which to draw the icon. If the symbol is not available for your version of `iOS/macOS/tvOS`, the compiler will show a warning. Processed all symbols by script.
+Easy usage SFSymbols with static types. If symbol not available, compiler will show warning.
+
+<p float="left">
+    <a href="https://discord.gg/ZAqUguHYGw">
+        <img src="https://cdn.sparrowcode.io/github/badges/discord.png?version=2" height="52">
+    </a>
+    <a href="#apps-using">
+        <img src="https://cdn.sparrowcode.io/github/badges/download-on-the-appstore.png?version=2" height="52">
+    </a>
+    <a href="https://github.com/sponsors/sparrowcode">
+        <img src="https://cdn.sparrowcode.io/github/badges/github-sponsor.png?version=3" height="52">
+    </a>
+</p>
 
 - [Installation](#installation)
     - [Swift Package Manager](#swift-package-manager)
@@ -13,31 +25,35 @@ Wrapper of `SF Symbols`. You choose the icon and what style to draw it in. You c
 
 ## Installation
 
-Ready for use on iOS 13+.
+Ready to use on iOS 13+, tvOS 13+ & watchOS 6+
 
 ### Swift Package Manager
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
+In Xcode go to `File` -> `Packages` -> `Update to Latest Package Versions` and insert url: 
 
-Once you have your Swift package set up, adding as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+```
+https://github.com/sparrowcode/SafeSFSymbols
+```
+
+or adding it to the `dependencies` value of your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sparrowcode/SPSafeSymbols", .upToNextMajor(from: "1.0.4"))
+    .package(url: "https://github.com/sparrowcode/SafeSFSymbols", .upToNextMajor(from: "1.0.6"))
 ]
 ```
 
 ### CocoaPods:
 
-[CocoaPods](https://cocoapods.org) is a dependency manager. For usage and installation instructions, visit their website. To integrate using CocoaPods, specify it in your `Podfile`:
+Specify it in your `Podfile`:
 
 ```ruby
-pod 'SPSafeSymbols'
+pod 'SafeSFSymbols'
 ```
 
 ### Manually
 
-If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/SPSafeSymbols` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
+If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/SafeSFSymbols` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
 
 ## Usage
 
@@ -83,3 +99,15 @@ If need with specific font, use this:
 ```swift
 let image = NSImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
 ```
+
+## Apps Using
+
+<p float="left">
+    <a href="https://apps.apple.com/app/id1624477055"><img src="https://cdn.sparrowcode.io/github/apps-using/seqvoia.png?version=2" height="65"></a>
+    <a href="https://apps.apple.com/app/id875280793"><img src="https://cdn.sparrowcode.io/github/apps-using/salat.png?version=2" height="65"></a>
+    <a href="https://apps.apple.com/app/id743843090"><img src="https://cdn.sparrowcode.io/github/apps-using/athan.png?version=2" height="65"></a>
+    <a href="https://apps.apple.com/app/id537070378"><img src="https://cdn.sparrowcode.io/github/apps-using/quran.png?version=2" height="65"></a>
+    <a href="https://apps.apple.com/app/id1570676244"><img src="https://cdn.sparrowcode.io/github/apps-using/debts.png?version=2" height="65"></a>
+    <a href="https://apps.apple.com/app/id1617055933"><img src="https://cdn.sparrowcode.io/github/apps-using/arabesque-kitchen.png?version=2" height="65"></a>
+</p>
+

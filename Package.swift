@@ -1,26 +1,28 @@
-// swift-tools-version: 5.4
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
-    name: "SPSafeSymbols",
-    defaultLocalization: "en",
+    name: "SafeSFSymbols",
     platforms: [
-        .iOS(.v13),
-        .watchOS(.v6),
-        .tvOS(.v13),
-        .macOS(.v11)
+        .iOS(.v13), 
+        .tvOS(.v13), 
+        .watchOS(.v6)
     ],
     products: [
         .library(
-            name: "SPSafeSymbols", 
-            targets: ["SPSafeSymbols"]
+            name: "SafeSFSymbols",
+            targets: ["SafeSFSymbols"]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "SPSafeSymbols"
+            name: "SafeSFSymbols",
+            swiftSettings: [
+                .define("SAFESFSYMBOLS_SPM")
+            ]
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
