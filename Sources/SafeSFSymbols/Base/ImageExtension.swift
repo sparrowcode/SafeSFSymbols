@@ -30,7 +30,7 @@ extension Image {
      
      - parameter symbol: Symbol.
      */
-    public init(_ symbol: SafeSFSymbols) {
+    public init(_ symbol: SafeSFSymbol) {
         self.init(systemName: symbol.name)
     }
 }
@@ -49,7 +49,7 @@ extension NSImage {
      
      - parameter symbol: Symbol.
      */
-    public convenience init(_ symbol: SafeSFSymbols) {
+    public convenience init(_ symbol: SafeSFSymbol) {
         self.init(systemSymbolName: symbol.name, accessibilityDescription: nil)!
     }
     #endif
@@ -67,7 +67,7 @@ extension UIImage {
      - parameter symbol: Symbol.
      */
     @available(iOS 13, tvOS 13, *)
-    public convenience init(_ symbol: SafeSFSymbols) {
+    public convenience init(_ symbol: SafeSFSymbol) {
         self.init(systemName: symbol.name)!
     }
     
@@ -79,7 +79,7 @@ extension UIImage {
      - parameter weight: Weight of font of image.
      */
     @available(iOS 13, tvOS 13, *)
-    public convenience init(_ symbol: SafeSFSymbols, pointSize: CGFloat, weight: UIImage.SymbolWeight) {
+    public convenience init(_ symbol: SafeSFSymbol, pointSize: CGFloat, weight: UIImage.SymbolWeight) {
         let configuration = UIImage.SymbolConfiguration(pointSize: pointSize, weight: weight)
         self.init(systemName: symbol.name, withConfiguration: configuration)!
     }
@@ -91,7 +91,7 @@ extension UIImage {
      - parameter font: Font of image.
      */
     @available(iOS 13, tvOS 13, *)
-    public convenience init(_ symbol: SafeSFSymbols, font: UIFont) {
+    public convenience init(_ symbol: SafeSFSymbol, font: UIFont) {
         let configuration = UIImage.SymbolConfiguration(font: font)
         self.init(systemName: symbol.name, withConfiguration: configuration)!
     }
