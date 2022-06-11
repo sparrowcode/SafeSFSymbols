@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = 'SafeSFSymbols'
-  s.version = '1.0.9'
+  s.version = '1.1.0'
   s.summary = 'Easy usage SFSymbols with static types. If symbol not available, compiler will show warning.'
   s.homepage = 'https://github.com/sparrowcode/SafeSFSymbols'
   s.source = { :git => 'https://github.com/sparrowcode/SafeSFSymbols.git', :tag => s.version }
