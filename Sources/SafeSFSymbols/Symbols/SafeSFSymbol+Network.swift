@@ -21,7 +21,7 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+	@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 	public static var network: Network { .init(name: "network") }
 
 	open class Network: SafeSFSymbol {

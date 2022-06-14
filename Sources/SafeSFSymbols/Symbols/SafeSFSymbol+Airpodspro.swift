@@ -21,7 +21,7 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+	@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 	public static var airpodspro: Airpodspro { .init(name: "airpodspro") }
 
 	open class Airpodspro: SafeSFSymbol {

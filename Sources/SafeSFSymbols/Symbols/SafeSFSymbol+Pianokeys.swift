@@ -21,7 +21,7 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+	@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 	public static var pianokeys: Pianokeys { .init(name: "pianokeys") }
 
 	open class Pianokeys: SafeSFSymbol {
