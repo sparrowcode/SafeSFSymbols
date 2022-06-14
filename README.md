@@ -1,6 +1,6 @@
 # SafeSFSymbols
 
-Easy usage SFSymbols with static types. If symbol not available, compiler will show warning.
+Easy usage SF Symbols with static types. If symbol not available, compiler will show warning.
 
 <p float="left">
     <a href="https://discord.gg/ZAqUguHYGw">
