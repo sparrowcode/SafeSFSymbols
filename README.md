@@ -3,16 +3,15 @@
 Easy usage SF Symbols with static types. If symbol not available, compiler will show warning.
 
 <p float="left">
-    <a href="https://discord.gg/ZAqUguHYGw">
-        <img src="https://cdn.sparrowcode.io/github/badges/discord.png?version=2" height="52">
+    <a href="https://twitter.com/sparrowcode_en">
+        <img src="https://cdn.sparrowcode.io/github%2Fbadges%2Ftwitter.png?version=4" height="52">
     </a>
     <a href="#apps-using">
-        <img src="https://cdn.sparrowcode.io/github/badges/download-on-the-appstore.png?version=2" height="52">
-    </a>
-    <a href="https://github.com/sponsors/sparrowcode">
-        <img src="https://cdn.sparrowcode.io/github/badges/github-sponsor.png?version=3" height="52">
+        <img src="https://cdn.sparrowcode.io/github/badges/download-on-the-appstore.png?version=4" height="52">
     </a>
 </p>
+
+## Navigate
 
 - [Installation](#installation)
     - [Swift Package Manager](#swift-package-manager)
@@ -25,31 +24,35 @@ Easy usage SF Symbols with static types. If symbol not available, compiler will 
 
 ## Installation
 
-Ready to use on iOS 13+, tvOS 13+ & watchOS 6+
+Ready to use on iOS 13+, tvOS 13+ & watchOS 6+.
 
 ### Swift Package Manager
 
-In Xcode go to `File` -> `Packages` -> `Update to Latest Package Versions` and insert url: 
+In Xcode go to Project -> Your Project Name -> `Package Dependencies` -> Tap *Plus*. Insert url:
 
 ```
 https://github.com/sparrowcode/SafeSFSymbols
 ```
 
-or adding it to the `dependencies` value of your `Package.swift`:
+or adding it to the `dependencies` of your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sparrowcode/SafeSFSymbols", .upToNextMajor(from: "1.0.6"))
+    .package(url: "https://github.com/sparrowcode/SafeSFSymbols", .upToNextMajor(from: "1.0.0"))
 ]
 ```
-
 ### CocoaPods:
 
-Specify it in your `Podfile`:
+This is an outdated way of doing things. I advise you to use [SPM](#swift-package-manager). However, I will continue to support Cocoapods for some time.
+
+<details><summary>Cocoapods Instalation</summary>
+
+[CocoaPods](https://cocoapods.org) is a dependency manager. For usage and installation instructions, visit their website. To integrate using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'SafeSFSymbols'
 ```
+</details>
 
 ### Manually
 
