@@ -28,6 +28,10 @@ extension SafeSFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var _2: SafeSFSymbol { ext(.start + ".2") }
+    	@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+		open var _2BadgeGearshape: SafeSFSymbol { ext(.start + ".2.badge.gearshape") }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+		open var _2BadgeGearshapeFill: SafeSFSymbol { ext(.start + ".2.badge.gearshape".fill) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 		open var _2Circle: SafeSFSymbol { ext(.start + ".2".circle) }
 		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
@@ -42,6 +46,8 @@ extension SafeSFSymbol {
 		open var _2Wave_2: SafeSFSymbol { ext(.start + ".2.wave.2") }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
 		open var _2Wave_2Fill: SafeSFSymbol { ext(.start + ".2.wave.2".fill) }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+		open var _2Slash: SafeSFSymbol { ext(.start + ".2".slash) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var _3: SafeSFSymbol { ext(.start + ".3") }
@@ -63,6 +69,10 @@ extension SafeSFSymbol {
 		open var badgeMinus: SafeSFSymbol { ext(.start + ".badge.minus") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var badgePlus: SafeSFSymbol { ext(.start + ".badge.plus") }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+		open var badgeShieldCheckmark: SafeSFSymbol { ext(.start + ".badge.shield.checkmark") }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+		open var badgeShieldCheckmarkFill: SafeSFSymbol { ext(.start + ".badge.shield.checkmark".fill) }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 		open var circle: SafeSFSymbol { ext(.start.circle) }
