@@ -1,17 +1,13 @@
 # SafeSFSymbols
 
-Safe access SFSymbols. If symbol not available, will show warning. Easy using:
+Safe access SFSymbols. If symbol not available, will show warning.
 
 ```swift
-UIImage(systemName: "star.fill")
-```
-
-to
-
-```swift
+// Replace this
+UIImage(systemName: "star.fill") 
+// to this
 UIImage(.star.fill)
 ```
-
 
 ### Community
 
