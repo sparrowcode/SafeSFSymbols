@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,17 +25,23 @@ extension SafeSFSymbol {
 
 	open class Rotate: SafeSFSymbol {
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var _3d: SafeSFSymbol { ext(.start + ".3d") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _3dCircle: SafeSFSymbol { ext(.start + ".3d".circle) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _3dCircleFill: SafeSFSymbol { ext(.start + ".3d".circle.fill) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _3dFill: SafeSFSymbol { ext(.start + ".3d".fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var left: SafeSFSymbol { ext(.start + ".left") }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var leftFill: SafeSFSymbol { ext(.start + ".left".fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var right: SafeSFSymbol { ext(.start + ".right") }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var rightFill: SafeSFSymbol { ext(.start + ".right".fill) }
 	}
 }

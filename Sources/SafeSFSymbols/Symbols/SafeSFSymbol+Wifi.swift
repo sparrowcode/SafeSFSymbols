@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,25 +21,34 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+	@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 	public static var wifi: Wifi { .init(name: "wifi") }
 
 	open class Wifi: SafeSFSymbol {
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var circle: SafeSFSymbol { ext(.start.circle) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var exclamationmark: SafeSFSymbol { ext(.start + ".exclamationmark") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var exclamationmarkCircle: SafeSFSymbol { ext(.start + ".exclamationmark".circle) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var exclamationmarkCircleFill: SafeSFSymbol { ext(.start + ".exclamationmark".circle.fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
+		open var router: SafeSFSymbol { ext(.start + ".router") }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
+		open var routerFill: SafeSFSymbol { ext(.start + ".router".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var slash: SafeSFSymbol { ext(.start.slash) }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var square: SafeSFSymbol { ext(.start.square) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var squareFill: SafeSFSymbol { ext(.start.square.fill) }
 	}
 }

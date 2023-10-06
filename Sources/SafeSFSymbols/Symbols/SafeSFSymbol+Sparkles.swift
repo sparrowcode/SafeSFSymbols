@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,22 +21,22 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+	@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 	public static var sparkles: Sparkles { .init(name: "sparkles") }
 
 	open class Sparkles: SafeSFSymbol {
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var rectangleStack: SafeSFSymbol { ext(.start.rectangle + ".stack") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var rectangleStackFill: SafeSFSymbol { ext(.start.rectangle + ".stack".fill) }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var squareFilledOnSquare: SafeSFSymbol { ext(.start.square + ".filled.on".square) }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var tv: SafeSFSymbol { ext(.start + ".tv") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var tvFill: SafeSFSymbol { ext(.start + ".tv".fill) }
 	}
 }

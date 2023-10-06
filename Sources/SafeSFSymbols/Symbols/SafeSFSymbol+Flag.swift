@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,47 +21,60 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+	@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 	public static var flag: Flag { .init(name: "flag") }
 
 	open class Flag: SafeSFSymbol {
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var _2Crossed: SafeSFSymbol { ext(.start + ".2.crossed") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
+		open var _2CrossedCircle: SafeSFSymbol { ext(.start + ".2.crossed".circle) }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
+		open var _2CrossedCircleFill: SafeSFSymbol { ext(.start + ".2.crossed".circle.fill) }
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var _2CrossedFill: SafeSFSymbol { ext(.start + ".2.crossed".fill) }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var andFlagFilledCrossed: SafeSFSymbol { ext(.start + ".and.flag.filled.crossed") }
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var badgeEllipsis: SafeSFSymbol { ext(.start + ".badge.ellipsis") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var badgeEllipsisFill: SafeSFSymbol { ext(.start + ".badge.ellipsis".fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
+		open var checkered: SafeSFSymbol { ext(.start + ".checkered") }
+		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
+		open var checkered_2Crossed: SafeSFSymbol { ext(.start + ".checkered.2.crossed") }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var checkeredCircle: SafeSFSymbol { ext(.start + ".checkered".circle) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var checkeredCircleFill: SafeSFSymbol { ext(.start + ".checkered".circle.fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var circle: SafeSFSymbol { ext(.start.circle) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var fill: SafeSFSymbol { ext(.start.fill) }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var filledAndFlagCrossed: SafeSFSymbol { ext(.start + ".filled.and.flag.crossed") }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var slash: SafeSFSymbol { ext(.start.slash) }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var slashCircle: SafeSFSymbol { ext(.start.slash.circle) }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var slashCircleFill: SafeSFSymbol { ext(.start.slash.circle.fill) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var slashFill: SafeSFSymbol { ext(.start.slash.fill) }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var square: SafeSFSymbol { ext(.start.square) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var squareFill: SafeSFSymbol { ext(.start.square.fill) }
 	}
 }

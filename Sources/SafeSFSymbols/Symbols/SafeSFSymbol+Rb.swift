@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,9 +25,14 @@ extension SafeSFSymbol {
 
 	open class Rb: SafeSFSymbol {
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedbottom: SafeSFSymbol { ext(.start.rectangle + ".roundedbottom") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedbottomFill: SafeSFSymbol { ext(.start.rectangle + ".roundedbottom".fill) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var buttonRoundedbottomHorizontal: SafeSFSymbol { ext(.start + ".button.roundedbottom.horizontal") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var buttonRoundedbottomHorizontalFill: SafeSFSymbol { ext(.start + ".button.roundedbottom.horizontal".fill) }
+
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var circle: SafeSFSymbol { ext(.start.circle) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
 	}
 }

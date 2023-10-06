@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,48 +25,48 @@ extension SafeSFSymbol {
 
 	open class R: SafeSFSymbol {
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var buttonRoundedbottomHorizontal: SafeSFSymbol { ext(.start + ".button.roundedbottom.horizontal") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var buttonRoundedbottomHorizontalFill: SafeSFSymbol { ext(.start + ".button.roundedbottom.horizontal".fill) }
+
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var circle: SafeSFSymbol { ext(.start.circle) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var joystick: SafeSFSymbol { ext(.start + ".joystick") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var joystickFill: SafeSFSymbol { ext(.start + ".joystick".fill) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickPressDown: SafeSFSymbol { ext(.start + ".joystick.press.down") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickPressDownFill: SafeSFSymbol { ext(.start + ".joystick.press.down".fill) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltDown: SafeSFSymbol { ext(.start + ".joystick.tilt.down") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltDownFill: SafeSFSymbol { ext(.start + ".joystick.tilt.down".fill) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltLeft: SafeSFSymbol { ext(.start + ".joystick.tilt.left") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltLeftFill: SafeSFSymbol { ext(.start + ".joystick.tilt.left".fill) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltRight: SafeSFSymbol { ext(.start + ".joystick.tilt.right") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltRightFill: SafeSFSymbol { ext(.start + ".joystick.tilt.right".fill) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltUp: SafeSFSymbol { ext(.start + ".joystick.tilt.up") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var joystickTiltUpFill: SafeSFSymbol { ext(.start + ".joystick.tilt.up".fill) }
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedbottom: SafeSFSymbol { ext(.start.rectangle + ".roundedbottom") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var rectangleRoundedbottomFill: SafeSFSymbol { ext(.start.rectangle + ".roundedbottom".fill) }
-
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var square: SafeSFSymbol { ext(.start.square) }
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var squareFill: SafeSFSymbol { ext(.start.square.fill) }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var squareOnSquare: SafeSFSymbol { ext(.start.square + ".on".square) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var squareOnSquareFill: SafeSFSymbol { ext(.start.square + ".on".square.fill) }
 	}
 }

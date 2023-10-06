@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,14 +21,22 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+	@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 	public static var snowflake: Snowflake { .init(name: "snowflake") }
 
 	open class Snowflake: SafeSFSymbol {
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var circle: SafeSFSymbol { ext(.start.circle) }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
+
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var roadLane: SafeSFSymbol { ext(.start + ".road.lane") }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var roadLaneDashed: SafeSFSymbol { ext(.start + ".road.lane.dashed") }
+
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var slash: SafeSFSymbol { ext(.start.slash) }
 	}
 }

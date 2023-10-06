@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,23 +25,27 @@ extension SafeSFSymbol {
 
 	open class Battery: SafeSFSymbol {
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _0: SafeSFSymbol { ext(.start + ".0") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _0percent: SafeSFSymbol { ext(.start + ".0percent") }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _100: SafeSFSymbol { ext(.start + ".100") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _100Bolt: SafeSFSymbol { ext(.start + ".100.bolt") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
-		open var _100BoltRtl: SafeSFSymbol { ext(.start + ".100.bolt.rtl") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _100percent: SafeSFSymbol { ext(.start + ".100percent") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _100percentBolt: SafeSFSymbol { ext(.start + ".100percent.bolt") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _100percentBoltRtl: SafeSFSymbol { ext(.start + ".100percent.bolt.rtl") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _100percentCircle: SafeSFSymbol { ext(.start + ".100percent".circle) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _100percentCircleFill: SafeSFSymbol { ext(.start + ".100percent".circle.fill) }
 
-		@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
-		open var _25: SafeSFSymbol { ext(.start + ".25") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _25percent: SafeSFSymbol { ext(.start + ".25percent") }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _50: SafeSFSymbol { ext(.start + ".50") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _50percent: SafeSFSymbol { ext(.start + ".50percent") }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
-		open var _75: SafeSFSymbol { ext(.start + ".75") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var _75percent: SafeSFSymbol { ext(.start + ".75percent") }
 	}
 }

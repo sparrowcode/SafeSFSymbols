@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,14 +21,18 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+	@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 	public static var airpodspro: Airpodspro { .init(name: "airpodspro") }
 
 	open class Airpodspro: SafeSFSymbol {
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var chargingcaseWireless: SafeSFSymbol { ext(.start + ".chargingcase.wireless") }
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var chargingcaseWirelessFill: SafeSFSymbol { ext(.start + ".chargingcase.wireless".fill) }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var chargingcaseWirelessRadiowavesLeftAndRight: SafeSFSymbol { ext(.start + ".chargingcase.wireless.radiowaves.left.and.right") }
+		@available(iOS 17.0, macOS 14.0, tvOS 17.0, visionOS 1.0, watchOS 10.0, *)
+		open var chargingcaseWirelessRadiowavesLeftAndRightFill: SafeSFSymbol { ext(.start + ".chargingcase.wireless.radiowaves.left.and.right".fill) }
 	}
 }

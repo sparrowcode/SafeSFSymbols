@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,15 +25,15 @@ extension SafeSFSymbol {
 
 	open class Airpod: SafeSFSymbol {
 
-		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, visionOS 1.0, watchOS 8.3, *)
 		open var gen3Left: SafeSFSymbol { ext(.start + ".gen3.left") }
-		@available(iOS 15.2, macOS 12.1, tvOS 15.2, watchOS 8.3, *)
+		@available(iOS 15.2, macOS 12.1, tvOS 15.2, visionOS 1.0, watchOS 8.3, *)
 		open var gen3Right: SafeSFSymbol { ext(.start + ".gen3.right") }
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var left: SafeSFSymbol { ext(.start + ".left") }
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var right: SafeSFSymbol { ext(.start + ".right") }
 	}
 }

@@ -1,6 +1,19 @@
 # SafeSFSymbols
 
-Easy usage SF Symbols with static types. If symbol not available, compiler will show warning.
+Safe access SFSymbols. If symbol not available, will show warning. Easy using:
+
+```swift
+UIImage(systemName: "star.fill")
+```
+
+to
+
+```swift
+UIImage(.star.fill)
+```
+
+
+### Community
 
 <p float="left">
     <a href="https://twitter.com/sparrowcode_en">
@@ -8,9 +21,6 @@ Easy usage SF Symbols with static types. If symbol not available, compiler will 
     </a>
     <a href="https://t.me/sparrowcode_en">
         <img src="https://cdn.sparrowcode.io/github/badges/telegram.png?version=1" height="52">
-    </a>
-    <a href="https://mastodon.social/@sparrowcode_en">
-        <img src="https://cdn.sparrowcode.io/github/badges/mastodon.png?version=2" height="52">
     </a>
     <a href="#apps-using">
         <img src="https://cdn.sparrowcode.io/github/badges/download-on-the-appstore.png?version=4" height="52">
@@ -44,12 +54,13 @@ or adding it to the `dependencies` of your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/sparrowcode/SafeSFSymbols", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/sparrowcode/SafeSFSymbols", .upToNextMajor(from: "2.0.0"))
 ]
 ```
+
 ### CocoaPods:
 
-This is an outdated way of doing things. I advise you to use [SPM](#swift-package-manager). However, I will continue to support Cocoapods for some time.
+This is an outdated way. I advise you to use [SPM](#swift-package-manager). However, I will continue to support Cocoapods for some time.
 
 <details><summary>Cocoapods Instalation</summary>
 
@@ -62,51 +73,26 @@ pod 'SafeSFSymbols'
 
 ### Manually
 
-If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/SafeSFSymbols` folder in your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
+If you prefer not to use any of dependency managers, you can integrate manually. Put `Sources/SafeSFSymbols` folder to your Xcode project. Make sure to enable `Copy items if needed` and `Create groups`.
 
 ## Usage
 
 ### UIKit
 
-To create an image:
-
 ```swift
 let image = UIImage(.trash.circle)
 ```
 
-If need with specific font, use this:
-
-```swift
-let image = UIImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
-```
-
 ### SwiftUI
-
-To create an image:
 
 ```swift
 Image(.trash.circle)
 ```
 
-With a font:
-
-```swift
-Image(.plus)
-    .font(.body)
-```
-
 ### AppKit
-
-To create an image:
 
 ```swift
 let image = NSImage(.trash.circle)
-```
-
-If need with specific font, use this:
-
-```swift
-let image = NSImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
 ```
 
 ## Apps Using
@@ -121,4 +107,4 @@ let image = NSImage(.plus, font: UIFont.preferredFont(forTextStyle: .body))
     <a href="https://apps.apple.com/app/id1617055933"><img src="https://cdn.sparrowcode.io/github/apps-using/id1617055933.png?version=2" height="65"></a>
 </p>
 
-If you use a `SafeSFSymbols`, add your application via Pull Request.
+If you use a `SafeSFSymbols`, add your app via Pull Request.

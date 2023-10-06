@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,14 +25,39 @@ extension SafeSFSymbol {
 
 	open class Signpost: SafeSFSymbol {
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var andArrowtriangleUp: SafeSFSymbol { ext(.start + ".and.arrowtriangle.up") }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var andArrowtriangleUpCircle: SafeSFSymbol { ext(.start + ".and.arrowtriangle.up".circle) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var andArrowtriangleUpCircleFill: SafeSFSymbol { ext(.start + ".and.arrowtriangle.up".circle.fill) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var andArrowtriangleUpFill: SafeSFSymbol { ext(.start + ".and.arrowtriangle.up".fill) }
+
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var left: SafeSFSymbol { ext(.start + ".left") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var leftCircle: SafeSFSymbol { ext(.start + ".left".circle) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var leftCircleFill: SafeSFSymbol { ext(.start + ".left".circle.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var leftFill: SafeSFSymbol { ext(.start + ".left".fill) }
 
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var right: SafeSFSymbol { ext(.start + ".right") }
-		@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var rightAndLeft: SafeSFSymbol { ext(.start + ".right.and.left") }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var rightAndLeftCircle: SafeSFSymbol { ext(.start + ".right.and.left".circle) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var rightAndLeftCircleFill: SafeSFSymbol { ext(.start + ".right.and.left".circle.fill) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var rightAndLeftFill: SafeSFSymbol { ext(.start + ".right.and.left".fill) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var rightCircle: SafeSFSymbol { ext(.start + ".right".circle) }
+		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
+		open var rightCircleFill: SafeSFSymbol { ext(.start + ".right".circle.fill) }
+		@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 		open var rightFill: SafeSFSymbol { ext(.start + ".right".fill) }
 	}
 }

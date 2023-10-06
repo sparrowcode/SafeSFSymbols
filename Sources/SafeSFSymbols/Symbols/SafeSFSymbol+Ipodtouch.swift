@@ -1,5 +1,5 @@
 // The MIT License (MIT)
-// Copyright © 2022 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
+// Copyright © 2023 Sparrow Code LTD (https://sparrowcode.io, hello@sparrowcode.io)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,15 +21,15 @@
 
 extension SafeSFSymbol {
 
-	@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+	@available(iOS 14.0, macOS 11.0, tvOS 14.0, visionOS 1.0, watchOS 7.0, *)
 	public static var ipodtouch: Ipodtouch { .init(name: "ipodtouch") }
 
 	open class Ipodtouch: SafeSFSymbol {
 
-		@available(iOS 14.2, macOS 11.0, tvOS 14.2, watchOS 7.1, *)
+		@available(iOS 14.2, macOS 11.0, tvOS 14.2, visionOS 1.0, watchOS 7.1, *)
 		open var landscape: SafeSFSymbol { ext(.start + ".landscape") }
 
-		@available(iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, *)
+		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var slash: SafeSFSymbol { ext(.start.slash) }
 	}
 }
