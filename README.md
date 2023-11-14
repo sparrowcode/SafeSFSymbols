@@ -11,8 +11,6 @@ UIImage(.star.fill)
 
 ### Community
 
-### Community
-
 <p float="left">
     <a href="https://twitter.com/sparrowcode_en">
         <img src="https://cdn.sparrowcode.io/github/badges/twitter-en.png?version=5" height="52">
