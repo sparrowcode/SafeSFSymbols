@@ -9,26 +9,9 @@ UIImage(systemName: "star.fill")
 UIImage(.star.fill)
 ```
 
-### Community
-
 <p float="left">
-    <a href="https://twitter.com/sparrowcode_en">
-        <img src="https://cdn.sparrowcode.io/github/badges/twitter-en.png?version=5" height="52">
-    </a>
-    <a href="https://twitter.com/sparrowcode_">
-        <img src="https://cdn.sparrowcode.io/github/badges/twitter-ru.png?version=5" height="52">
-    </a>
-    <a href="https://t.me/sparrowcode_en">
-        <img src="https://cdn.sparrowcode.io/github/badges/telegram-en.png?version=2" height="52">
-    </a>
-    <a href="https://t.me/sparrowcode">
-        <img src="https://cdn.sparrowcode.io/github/badges/telegram-ru.png?version=2" height="52">
-    </a>
-        <a href="https://youtube.com/@sparrowcode">
-        <img src="https://cdn.sparrowcode.io/github/badges/youtube-ru.png?version=1" height="52">
-    </a>
-    <a href="#apps-using">
-        <img src="https://cdn.sparrowcode.io/github/badges/download-on-the-appstore.png?version=4" height="52">
+    <a href="https://twitter.com/i/communities/1730194338489987403">
+        <img src="https://cdn.sparrowcode.io/github/badges/x-community.png?version=1" height="52">
     </a>
 </p>
 
@@ -99,16 +82,3 @@ Image(.trash.circle)
 ```swift
 let image = NSImage(.trash.circle)
 ```
-
-## Apps Using
-
-<p float="left">
-    <a href="https://apps.apple.com/app/id1624477055"><img src="https://cdn.sparrowcode.io/github/apps-using/id1624477055.png?version=2" height="65"></a>
-    <a href="https://apps.apple.com/app/id1625641322"><img src="https://cdn.sparrowcode.io/github/apps-using/id1625641322.png?version=2" height="65"></a>
-    <a href="https://apps.apple.com/app/id875280793"><img src="https://cdn.sparrowcode.io/github/apps-using/id875280793.png?version=2" height="65"></a>
-    <a href="https://apps.apple.com/app/id743843090"><img src="https://cdn.sparrowcode.io/github/apps-using/id743843090.png?version=2" height="65"></a>
-    <a href="https://apps.apple.com/app/id537070378"><img src="https://cdn.sparrowcode.io/github/apps-using/id537070378.png?version=2" height="65"></a>
-    <a href="https://apps.apple.com/app/id1617055933"><img src="https://cdn.sparrowcode.io/github/apps-using/id1617055933.png?version=2" height="65"></a>
-</p>
-
-If you use a `SafeSFSymbols`, add your app via Pull Request.
