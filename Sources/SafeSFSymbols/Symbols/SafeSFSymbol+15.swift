@@ -27,12 +27,28 @@ extension SafeSFSymbol {
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var circle: SafeSFSymbol { ext(.start.circle) }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var circleAr: SafeSFSymbol { ext(.start.circle + ".ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var circleFillAr: SafeSFSymbol { ext(.start.circle.fill + ".ar") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var circleFillHi: SafeSFSymbol { ext(.start.circle.fill + ".hi") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var circleHi: SafeSFSymbol { ext(.start.circle + ".hi") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var square: SafeSFSymbol { ext(.start.square) }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var squareAr: SafeSFSymbol { ext(.start.square + ".ar") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var squareFill: SafeSFSymbol { ext(.start.square.fill) }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var squareFillAr: SafeSFSymbol { ext(.start.square.fill + ".ar") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var squareFillHi: SafeSFSymbol { ext(.start.square.fill + ".hi") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var squareHi: SafeSFSymbol { ext(.start.square + ".hi") }
 	}
 }

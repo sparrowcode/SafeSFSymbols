@@ -175,6 +175,14 @@ extension SafeSFSymbol {
 		open var cropRectangleStackFill: SafeSFSymbol { ext(.start + ".crop".rectangle + ".stack".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var cropSquare: SafeSFSymbol { ext(.start + ".crop".square) }
+		@available(iOS 17.1, macOS 14.1, tvOS 17.1, visionOS 1.0, watchOS 10.1, *)
+		open var cropSquareBadgeCamera: SafeSFSymbol { ext(.start + ".crop".square + ".badge.camera") }
+		@available(iOS 17.1, macOS 14.1, tvOS 17.1, visionOS 1.0, watchOS 10.1, *)
+		open var cropSquareBadgeCameraFill: SafeSFSymbol { ext(.start + ".crop".square + ".badge.camera".fill) }
+		@available(iOS 17.1, macOS 14.1, tvOS 17.1, visionOS 1.0, watchOS 10.1, *)
+		open var cropSquareBadgeVideo: SafeSFSymbol { ext(.start + ".crop".square + ".badge.video") }
+		@available(iOS 17.1, macOS 14.1, tvOS 17.1, visionOS 1.0, watchOS 10.1, *)
+		open var cropSquareBadgeVideoFill: SafeSFSymbol { ext(.start + ".crop".square + ".badge.video".fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var cropSquareFill: SafeSFSymbol { ext(.start + ".crop".square.fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)

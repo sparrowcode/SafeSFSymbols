@@ -40,8 +40,12 @@ extension SafeSFSymbol {
 		@available(iOS 16.0, macOS 13.0, tvOS 16.0, visionOS 1.0, watchOS 9.0, *)
 		open var backwardToLine: SafeSFSymbol { ext(.start + ".backward.to.line") }
 
+		@available(iOS 17.1, macOS 14.1, tvOS 17.1, visionOS 1.0, watchOS 10.1, *)
+		open var compactBackward: SafeSFSymbol { ext(.start + ".compact.backward") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var compactDown: SafeSFSymbol { ext(.start + ".compact.down") }
+		@available(iOS 17.1, macOS 14.1, tvOS 17.1, visionOS 1.0, watchOS 10.1, *)
+		open var compactForward: SafeSFSymbol { ext(.start + ".compact.forward") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var compactLeft: SafeSFSymbol { ext(.start + ".compact.left") }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)

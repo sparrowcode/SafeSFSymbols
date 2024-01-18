@@ -33,6 +33,10 @@ extension SafeSFSymbol {
 		open var circleFill: SafeSFSymbol { ext(.start.circle.fill) }
 		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
 		open var circleFillAr: SafeSFSymbol { ext(.start.circle.fill + ".ar") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var circleFillHi: SafeSFSymbol { ext(.start.circle.fill + ".hi") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var circleHi: SafeSFSymbol { ext(.start.circle + ".hi") }
 
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var square: SafeSFSymbol { ext(.start.square) }
@@ -42,5 +46,9 @@ extension SafeSFSymbol {
 		open var squareFill: SafeSFSymbol { ext(.start.square.fill) }
 		@available(iOS 16.1, macOS 13.0, tvOS 16.1, visionOS 1.0, watchOS 9.1, *)
 		open var squareFillAr: SafeSFSymbol { ext(.start.square.fill + ".ar") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var squareFillHi: SafeSFSymbol { ext(.start.square.fill + ".hi") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var squareHi: SafeSFSymbol { ext(.start.square + ".hi") }
 	}
 }

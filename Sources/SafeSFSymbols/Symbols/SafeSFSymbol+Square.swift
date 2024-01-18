@@ -72,6 +72,10 @@ extension SafeSFSymbol {
 		open var andArrowDownOnSquareFill: SafeSFSymbol { ext(.start + ".and.arrow.down.on".square.fill) }
 		@available(iOS 13.0, macOS 10.15, tvOS 13.0, visionOS 1.0, watchOS 6.0, *)
 		open var andArrowUp: SafeSFSymbol { ext(.start + ".and.arrow.up") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var andArrowUpBadgeClock: SafeSFSymbol { ext(.start + ".and.arrow.up.badge.clock") }
+		@available(iOS 17.2, macOS 14.2, tvOS 17.2, visionOS 1.1, watchOS 10.2, *)
+		open var andArrowUpBadgeClockFill: SafeSFSymbol { ext(.start + ".and.arrow.up.badge.clock".fill) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
 		open var andArrowUpCircle: SafeSFSymbol { ext(.start + ".and.arrow.up".circle) }
 		@available(iOS 15.0, macOS 12.0, tvOS 15.0, visionOS 1.0, watchOS 8.0, *)
